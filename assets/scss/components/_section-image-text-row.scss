@@ -2,8 +2,12 @@ section.image-text-row {
   display: flex;
   flex-wrap: wrap;
 
-  @media all and (min-width: 782px) {
+  @media all and (min-width: $screen-md) {
     flex-wrap: nowrap;
+
+    figure {
+      margin-top: 0;
+    }
   }
 
   .column {
@@ -12,7 +16,7 @@ section.image-text-row {
     word-break: break-word;
     overflow-wrap: break-word;
 
-    @media all and (max-width: 599px) {
+    @media all and (max-width: $screen-md) {
       flex-basis: 100% !important;
     }
 
