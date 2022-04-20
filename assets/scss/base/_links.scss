@@ -1,0 +1,36 @@
+/**
+*
+* Base => Links
+*
+*/
+
+a {
+  font-weight: 400;
+  color: $color-dark-purple;
+  -webkit-transition: all $duration-fast $ease;
+  -moz-transition: all $duration-fast $ease;
+  transition: all $duration-fast $ease;
+
+  &:hover,
+  &:focus {
+    -webkit-transition: all $duration-fast $ease;
+    -moz-transition: all $duration-fast $ease;
+    transition: all $duration-fast $ease;
+  }
+}
+
+#site-navigation,
+#site-content,
+#site-footer {
+  a {
+    text-decoration: underline;
+    text-decoration-thickness: 2.5px;
+    text-decoration-skip: none;
+    text-decoration-color: rgba($color-greyish-purple, 0.6);
+
+    &:hover,
+    &:focus {
+      text-decoration-color: rgba($color-purple, 0.6);
+    }
+  }
+}

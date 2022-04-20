@@ -1,0 +1,54 @@
+/**
+ *
+ * Layout => Site Content
+ *
+ **/
+
+#site-content {
+  max-width: $container-site;
+  margin-left: auto;
+  margin-right: auto;
+  @extend .site-padding;
+
+  /* Image block */
+  .wp-block-image {
+    margin-top: $unit400;
+
+    @media all and (min-width: $screen-md) {
+      margin-top: $unit500;
+    }
+
+    @media all and (min-width: $screen-lg) {
+      margin-top: $unit600;
+    }
+
+    img {
+      min-width: 100%;
+      height: auto;
+    }
+  }
+
+  figcaption {
+    margin-top: 0.4rem;
+    font-size: $font-size-smaller;
+    text-align: right;
+    color: rgba($color-dark-purple, 0.8);
+
+    @media all and (min-width: $screen-lg) {
+      font-size: $font-size-small;
+    }
+  }
+
+  /* Columns block */
+  div + .wp-block-columns {
+    margin-top: $unit500;
+
+    @media all and (min-width: $screen-md) {
+      margin-top: $unit600;
+    }
+
+    @media all and (min-width: $screen-lg) {
+      margin-top: $unit700;
+    }
+  }
+}

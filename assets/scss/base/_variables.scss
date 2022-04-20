@@ -1,0 +1,247 @@
+/**
+ *
+ * Base => Variables
+ *
+ */
+
+// Spacing
+$unit100: 1.6rem;
+$unit200: 2.4rem;
+$unit300: 3.2rem;
+$unit400: 4rem;
+$unit500: 6.4rem;
+$unit600: 9.6rem;
+$unit700: 12rem;
+$unit800: 18.4rem;
+$unit900: 22.4rem;
+
+// Breakpoints
+$screen-xs: 350px;
+$screen-sm: 460px;
+$screen-md: 750px;
+$screen-lg: 1088px;
+$screen-xl: 1504px;
+
+// Containers
+$container-site: 100%;
+$container-content: $screen-xl;
+$container-text: $screen-md;
+
+// Grid
+$grid-gutter-row: $unit400;
+$grid-gutter-column: $unit400;
+
+// Typography
+$font-family-primary: "Fira Code", monospace;
+$font-family-secondary: "Inter", system-ui;
+
+$font-size-smaller: 1.2rem;
+$font-size-small: 1.4rem;
+$font-size-base: 1.8rem;
+$font-size-large: 2rem;
+
+// Colors
+$color-purple-black: #170d24;
+$color-dark-purple: #241438;
+$color-purple: #845eb0;
+$color-greyish-purple: #c2aed8;
+$color-light-purple: #f8f5fb;
+
+// Transitions
+$duration-fast: 0.2s;
+$duration-normal: 0.4s;
+$duration-slow: 0.6s;
+
+$ease: cubic-bezier(0.29, 0, 0.28, 1); // https://cubic-bezier.com/#.29,0,.28,1
+$ease-in: cubic-bezier(
+  0.41,
+  0.03,
+  1,
+  1
+); // https://cubic-bezier.com/#.41,.03,1,1
+$ease-out: cubic-bezier(
+  0,
+  0.08,
+  0.47,
+  1
+); // https://cubic-bezier.com/#0,.08,.47,1
+$ease-in-out: cubic-bezier(
+  0.45,
+  0,
+  0.55,
+  1
+); // https://cubic-bezier.com/#.45,0,.55,1
+
+// Animations
+@keyframes slideLeft {
+  0% {
+    left: 100vw;
+  }
+
+  100% {
+    left: 0;
+  }
+}
+
+@-webkit-keyframes slideLeft {
+  0% {
+    left: 100vw;
+  }
+  $font-family-secondary: "Fira Code", monospace;
+
+  100% {
+    left: 0;
+  }
+}
+
+@media all and (min-width: $screen-md) {
+  @keyframes slideLeft {
+    0% {
+      left: 100vw;
+    }
+
+    100% {
+      left: 40vw;
+    }
+  }
+
+  @-webkit-keyframes slideLeft {
+    0% {
+      left: 100vw;
+    }
+
+    100% {
+      left: 50vw;
+    }
+  }
+}
+
+@media all and (min-width: $screen-lg) {
+  @keyframes slideLeft {
+    0% {
+      left: 100vw;
+    }
+
+    100% {
+      left: 50vw;
+    }
+  }
+
+  @-webkit-keyframes slideLeft {
+    0% {
+      left: 100vw;
+    }
+
+    100% {
+      left: 50vw;
+    }
+  }
+}
+
+@media all and (min-width: $screen-xl) {
+  @keyframes slideLeft {
+    0% {
+      left: 100vw;
+    }
+
+    100% {
+      left: 60vw;
+    }
+  }
+
+  @-webkit-keyframes slideLeft {
+    0% {
+      left: 100vw;
+    }
+
+    100% {
+      left: 60vw;
+    }
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: 100vw;
+  }
+}
+
+@-webkit-keyframes slideRight {
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: 100vw;
+  }
+}
+
+@media all and (min-width: $screen-md) {
+  @keyframes slideRight {
+    0% {
+      left: 40vw;
+    }
+
+    100% {
+      left: 100vw;
+    }
+  }
+
+  @-webkit-keyframes slideRight {
+    0% {
+      left: 40vw;
+    }
+
+    100% {
+      left: 100vw;
+    }
+  }
+}
+
+@media all and (min-width: $screen-lg) {
+  @keyframes slideRight {
+    0% {
+      left: 50vw;
+    }
+
+    100% {
+      left: 100vw;
+    }
+  }
+
+  @-webkit-keyframes slideRight {
+    0% {
+      left: 50vw;
+    }
+
+    100% {
+      left: 100vw;
+    }
+  }
+}
+
+@media all and (min-width: $screen-xl) {
+  @keyframes slideRight {
+    0% {
+      left: 60vw;
+    }
+
+    100% {
+      left: 100vw;
+    }
+  }
+
+  @-webkit-keyframes slideRight {
+    0% {
+      left: 60vw;
+    }
+
+    100% {
+      left: 100vw;
+    }
+  }
+}

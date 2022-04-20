@@ -1,0 +1,245 @@
+/**
+*
+* Base => Typography
+*
+*/
+
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 500;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  margin-top: $unit400;
+  line-height: 1.2;
+
+  @media all and (min-width: $screen-md) {
+    margin-top: $unit500;
+  }
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+  font-family: $font-family-secondary;
+
+  + p,
+  + ul {
+    margin-top: 0;
+  }
+}
+
+h4,
+p,
+ul,
+ol {
+  margin-top: $unit200;
+
+  @media all and (min-width: $screen-sm) {
+    margin-top: $unit300;
+  }
+}
+
+h2 {
+  margin-top: $unit500;
+  margin-bottom: $unit100;
+  font-size: calc(4rem * 0.7);
+  letter-spacing: 0.075rem;
+  line-height: 1.1;
+
+  &.page-title,
+  &.post-title,
+  &.entry-title {
+    margin: 0;
+  }
+
+  @media all and (min-width: $screen-md) {
+    margin-top: $unit700;
+    font-size: calc(5.2rem * 0.7);
+  }
+
+  @media all and (min-width: $screen-lg) {
+    margin-top: $unit700 + $unit200;
+    margin-bottom: $unit200;
+    font-size: 4.4rem;
+  }
+
+  @media all and (min-width: $screen-xl) {
+    margin-bottom: $unit300;
+    font-size: calc(7.6rem * 0.6);
+  }
+}
+
+h3 {
+  margin-bottom: $unit200;
+  font-size: 1.6rem;
+  letter-spacing: 0.075rem;
+
+  + h4 {
+    margin-top: 0;
+  }
+
+  @media all and (min-width: $screen-sm) {
+    margin-bottom: $unit300;
+  }
+
+  @media all and (min-width: $screen-md) {
+    margin-top: $unit500 + $unit200;
+    font-size: calc(3.2rem * 0.7);
+  }
+
+  @media all and (min-width: $screen-lg) {
+    margin-top: $unit600;
+    margin-bottom: $unit200 + ($unit100 / 2);
+    font-size: calc(4rem * 0.7);
+    line-height: 1.2;
+  }
+
+  @media all and (min-width: $screen-xl) {
+    font-size: calc(4.4rem * 0.7);
+  }
+}
+
+h4 {
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  line-height: 1.5;
+
+  @media all and (min-width: $screen-sm) {
+    font-size: 1.5rem;
+  }
+
+  @media all and (min-width: $screen-md) {
+    margin-bottom: $unit100;
+    font-size: 2rem;
+  }
+
+  @media all and (min-width: $screen-lg) {
+    margin-top: $unit500;
+    margin-bottom: $unit200;
+    font-size: 2.4rem;
+    line-height: 1.25;
+  }
+
+  @media all and (min-width: $screen-xl) {
+    font-size: 2.8rem;
+  }
+}
+
+h5 {
+  margin-bottom: 0.8rem;
+  font-size: 1.4rem;
+
+  @media all and (min-width: $screen-md) {
+    margin-bottom: 1.2rem;
+    font-size: 2rem;
+  }
+
+  @media all and (min-width: $screen-lg) {
+    margin-bottom: $unit100;
+    font-size: 2.4rem;
+  }
+}
+
+h6 {
+  margin-bottom: 0.8rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  @media all and (min-width: $screen-md) {
+    margin-bottom: 1.2rem;
+    font-size: 1.4rem;
+  }
+
+  @media all and (min-width: $screen-lg) {
+    margin-bottom: $unit100;
+    font-size: 1.6rem;
+  }
+}
+
+p,
+ul {
+  margin-bottom: 0;
+
+  @media all and (min-width: $screen-md) {
+    margin-top: $unit300;
+    margin-bottom: $unit300;
+  }
+}
+
+ul {
+  padding-left: $unit300;
+
+  li {
+    + li {
+      padding-top: $unit100;
+    }
+  }
+}
+
+strong,
+b {
+  font-weight: 500;
+}
+
+.display {
+  font-size: 2.8rem;
+  font-weight: 300;
+  line-height: 1.4;
+
+  @media all and (min-width: $screen-sm) {
+    font-size: 3.2rem;
+  }
+
+  @media all and (min-width: $screen-md) {
+    font-size: 3.6rem;
+  }
+
+  @media all and (min-width: $screen-lg) {
+    font-size: 4.4rem;
+  }
+
+  @media all and (min-width: $screen-xl) {
+    font-size: 5.6rem;
+  }
+}
+
+.has-large-font-size {
+  font-family: $font-family-secondary;
+  font-size: $font-size-base;
+  line-height: 1.5;
+
+  @media all and (min-width: $screen-md) {
+    font-size: $font-size-large;
+  }
+
+  strong,
+  b {
+    font-weight: 600;
+  }
+}
+
+.has-regular-font-size {
+  font-size: $font-size-small;
+
+  @media all and (min-width: $screen-md) {
+    font-size: $font-size-base;
+  }
+}
+
+.has-small-font-size {
+  font-size: $font-size-smaller;
+
+  @media all and (min-width: $screen-md) {
+    font-size: $font-size-small;
+  }
+}
