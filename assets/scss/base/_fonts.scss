@@ -5,19 +5,12 @@
  */
 
 @font-face {
-  font-family: "Fira Code";
-  font-weight: 400;
+  font-family: "Inter";
+  font-weight: 300;
   font-display: swap;
-  src: url("../assets/fonts/fira-code-regular.woff2") format("woff2"),
-    url("../assets/fonts/fira-code-regular.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Fira Code";
-  font-weight: 500;
-  font-display: swap;
-  src: url("../assets/fonts/fira-code-medium.woff2") format("woff2"),
-    url("../assets/fonts/fira-code-medium.woff") format("woff");
+  font-feature-settings: "cpsp", "cv01", "cv02", "cv03", "cv04", "cv05", "cv10";
+  src: url("../assets/fonts/Inter-Light.woff2") format("woff2"),
+    url("../assets/fonts/Inter-Light.woff") format("woff");
 }
 
 @font-face {

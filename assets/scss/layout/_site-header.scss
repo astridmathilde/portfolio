@@ -26,9 +26,8 @@
 
   .site-title,
   .site-menu-toggle {
-    font-family: $font-family-secondary;
     font-size: $font-size-smaller;
-    letter-spacing: 0.075rem;
+    letter-spacing: 0.05rem;
 
     @media all and (min-width: $screen-sm) {
       font-size: $font-size-small;
@@ -39,7 +38,7 @@
     }
 
     a {
-      font-weight: 500;
+      font-weight: 400;
       text-decoration: none;
       text-decoration-skip-ink: none;
     }
