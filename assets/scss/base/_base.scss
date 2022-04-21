@@ -30,7 +30,7 @@ body {
   margin: 0px; // Remove the margin in all browsers.
   min-height: 100%;
   font-family: $font-family-primary;
-  font-size: $font-size-small;
+  font-size: $font-size-smaller;
   line-height: 1.8;
   overflow-wrap: break-word;
   -webkit-hyphens: manual;
@@ -42,7 +42,7 @@ body {
     font-size: $font-size-small;
   }
 
-  @media all and (min-width: $screen-lg) {
+  @media all and (min-width: $screen-md) {
     font-size: $font-size-base;
   }
 
@@ -84,10 +84,6 @@ body {
 }
 
 /* Images */
-figure {
-  margin: 0;
-}
-
 figure,
 img {
   max-width: 100%;
@@ -95,6 +91,11 @@ img {
 }
 
 /* Reset */
+figure,
+p {
+  margin: 0;
+}
+
 blockquote,
 address,
 big,

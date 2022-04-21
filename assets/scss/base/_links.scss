@@ -5,8 +5,8 @@
 */
 
 a {
-  font-weight: 400;
-  color: $color-dark-purple;
+  font-weight: inherit;
+  color: inherit;
   -webkit-transition: all $duration-fast $ease;
   -moz-transition: all $duration-fast $ease;
   transition: all $duration-fast $ease;
@@ -26,11 +26,12 @@ a {
     text-decoration: underline;
     text-decoration-thickness: 2.5px;
     text-decoration-skip: none;
-    text-decoration-color: rgba($color-greyish-purple, 0.6);
+    text-decoration-skip-ink: none;
+    text-decoration-color: rgba($color-greyish-purple, 0.65);
 
     &:hover,
     &:focus {
-      text-decoration-color: rgba($color-purple, 0.6);
+      text-decoration-color: rgba($color-purple, 0.8);
     }
   }
 }

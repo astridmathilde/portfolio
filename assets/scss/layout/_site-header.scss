@@ -26,19 +26,19 @@
 
   .site-title,
   .site-menu-toggle {
-    font-size: $font-size-smaller;
+    font-size: $font-size-smallest;
     letter-spacing: 0.05rem;
 
-    @media all and (min-width: $screen-sm) {
-      font-size: $font-size-small;
+    @media all and (min-width: $screen-md) {
+      font-size: $font-size-smaller;
     }
 
     @media all and (min-width: $screen-xl) {
-      font-size: $font-size-base;
+      font-size: $font-size-small;
     }
 
     a {
-      font-weight: 400;
+      font-weight: 500;
       text-decoration: none;
       text-decoration-skip-ink: none;
     }
