@@ -6,32 +6,25 @@
 
 a {
   font-weight: inherit;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-decoration-skip: none;
+  text-decoration-skip-ink: none;
+  text-decoration-color: rgba($color-greyish-purple, 0.65);
   color: inherit;
   -webkit-transition: all $duration-fast $ease;
   -moz-transition: all $duration-fast $ease;
   transition: all $duration-fast $ease;
 
+  @media all and (min-width: $screen-sm) {
+    text-decoration-thickness: 2.5px;
+  }
+
   &:hover,
   &:focus {
+    text-decoration-color: rgba($color-purple, 0.8);
     -webkit-transition: all $duration-fast $ease;
     -moz-transition: all $duration-fast $ease;
     transition: all $duration-fast $ease;
-  }
-}
-
-#site-navigation,
-#site-content,
-#site-footer {
-  a {
-    text-decoration: underline;
-    text-decoration-thickness: 2.5px;
-    text-decoration-skip: none;
-    text-decoration-skip-ink: none;
-    text-decoration-color: rgba($color-greyish-purple, 0.65);
-
-    &:hover,
-    &:focus {
-      text-decoration-color: rgba($color-purple, 0.8);
-    }
   }
 }

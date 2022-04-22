@@ -1,8 +1,8 @@
 /**
- *
- * Layout => Header
- *
- **/
+*
+* Layout => Header
+*
+**/
 
 #site-header {
   display: grid;
@@ -28,64 +28,36 @@
   .site-menu-toggle {
     font-size: $font-size-smallest;
     font-weight: 500;
-    letter-spacing: 0.05rem;
 
-    @media all and (min-width: $screen-md) {
+    @media all and (min-width: $screen-sm) {
       font-size: $font-size-smaller;
     }
 
-    @media all and (min-width: $screen-xl) {
+    @media all and (min-width: $screen-lg) {
       font-size: $font-size-small;
+    }
+
+    @media all and (min-width: $screen-xl) {
+      font-size: $font-size-base;
     }
 
     a {
       text-decoration: none;
       text-decoration-skip-ink: none;
-      transition: none;
     }
   }
 
   .site-title {
     grid-area: title;
     margin: 0;
-
-    a {
-      text-decoration-color: $color-greyish-purple;
-
-      &:hover,
-      &:focus {
-        text-decoration: underline;
-        text-decoration-thickness: 1px;
-        text-decoration-color: $color-greyish-purple;
-
-        @media all and (min-width: $screen-sm) {
-          text-decoration-thickness: 2px;
-        }
-      }
-    }
   }
 
   .site-menu-toggle {
     grid-area: menu;
     text-align: right;
 
-    a {
-      > .label {
-        &:hover,
-        &:focus {
-          text-decoration: underline;
-          text-decoration-thickness: 1px;
-          text-decoration-color: $color-greyish-purple;
-
-          @media all and (min-width: $screen-sm) {
-            text-decoration-thickness: 2px;
-          }
-        }
-      }
-
-      span[role="img"] {
-        padding-right: 0.4rem;
-      }
+    span[role="img"] {
+      padding-right: 0.4rem;
     }
   }
 }
