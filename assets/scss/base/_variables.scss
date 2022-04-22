@@ -24,22 +24,22 @@ $screen-xl: 1504px;
 
 // Containers
 $container-site: 100%;
-$container-content: $screen-xl;
-$container-text: $screen-md;
+$container-content: 1600px;
+$container-text: 70ch;
 
 // Grid
 $grid-gutter-row: $unit400;
 $grid-gutter-column: $unit400;
 
 // Typography
-$font-family-primary: "Inter", system-ui;
-$font-family-secondary: "Fira Code", monospace;
+$font-family-primary: 'Inter', system-ui;
+$font-family-secondary: 'Fira Code', monospace;
 
 $font-size-smallest: 1.2rem;
 $font-size-smaller: 1.4rem;
 $font-size-small: 1.6rem;
 $font-size-base: 1.8rem;
-$font-size-large: 2.4rem;
+$font-size-large: 2rem;
 
 // Colors
 $color-purple-black: #170d24;

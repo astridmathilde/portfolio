@@ -79,6 +79,7 @@
           order: -1;
           font-size: $font-size-smaller;
           font-weight: 500;
+          line-height: 1;
           letter-spacing: 0.05rem;
           color: $color-dark-purple;
 
@@ -87,17 +88,21 @@
           }
         }
 
-        .project-title,
+        .project-title {
+          margin-top: 1.2rem;
+          margin-bottom: 0;
+
+          @media all and (min-width: $screen-md) {
+            margin-top: $unit100;
+          }
+        }
+
         .project-description {
           margin-top: $unit100;
 
           @media all and (min-width: $screen-md) {
             margin-top: $unit200;
           }
-        }
-
-        .project-title {
-          margin-bottom: 0;
         }
       }
 

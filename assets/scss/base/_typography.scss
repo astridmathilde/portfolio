@@ -54,24 +54,24 @@ figure {
 }
 
 .display {
-  font-size: calc(8rem * 0.4);
+  font-size: calc(6.4rem * 0.4);
   font-weight: 400;
   line-height: 1.4;
 
   @media all and (min-width: $screen-sm) {
-    font-size: calc(8rem * 0.5);
+    font-size: calc(6.4rem * 0.5);
   }
 
   @media all and (min-width: $screen-md) {
-    font-size: calc(8rem * 0.6);
+    font-size: calc(6.4rem * 0.6);
   }
 
   @media all and (min-width: $screen-lg) {
-    font-size: calc(8rem * 0.7);
+    font-size: calc(6.4rem * 0.7);
   }
 
   @media all and (min-width: $screen-xl) {
-    font-size: 8rem;
+    font-size: 6.4rem;
   }
 }
 
@@ -92,10 +92,6 @@ h2 {
   @media all and (min-width: $screen-lg) {
     margin-top: $unit700 + $unit200;
     font-size: calc(6.4rem * 0.7);
-  }
-
-  @media all and (min-width: $screen-xl) {
-    font-size: 6.4rem;
   }
 }
 
@@ -119,10 +115,6 @@ h3 {
     font-size: calc(4.4rem * 0.7);
     line-height: 1.2;
   }
-
-  @media all and (min-width: $screen-xl) {
-    font-size: 4.4rem;
-  }
 }
 
 h4,
@@ -143,16 +135,14 @@ h6 {
   @media all and (min-width: $screen-lg) {
     font-size: calc(3.2rem * 0.7);
   }
-
-  @media all and (min-width: $screen-xl) {
-    font-size: 3.2rem;
-  }
 }
 
 ul {
-  padding-left: 2.8rem;
+  padding-left: $unit300;
 
   li {
+    padding-left: $unit100 / 2;
+
     + li {
       padding-top: $unit100 / 2;
     }

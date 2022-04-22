@@ -5,19 +5,7 @@
  **/
 
 .entry-content {
-  max-width: $container-content;
+  max-width: $container-text;
   margin-left: auto;
   margin-right: auto;
-
-  > h2,
-  > h3,
-  > h4,
-  > h5,
-  > h6,
-  > p,
-  > ul {
-    max-width: $container-text;
-    margin-left: auto;
-    margin-right: auto;
-  }
 }
