@@ -29,7 +29,7 @@ body {
   background: #fefdfe;
   margin: 0px; // Remove the margin in all browsers.
   min-height: 100%;
-  font-family: $font-family-primary;
+  font-family: $font-family-primary, system-ui, sans-serif;
   font-size: $font-size-smaller;
   line-height: 1.8;
   overflow-wrap: break-word;
