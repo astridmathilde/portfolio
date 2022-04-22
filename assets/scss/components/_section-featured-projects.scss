@@ -101,10 +101,17 @@
         }
       }
 
+      header .project-title {
+        text-decoration: underline;
+        text-decoration-color: rgba($color-purple, 0);
+        -webkit-transition: all $duration-fast $ease;
+        -moz-transition: all $duration-fast $ease;
+        transition: all $duration-fast $ease;
+      }
+
       &:hover,
       &:focus {
         header .project-title {
-          text-decoration: underline;
           text-decoration-color: rgba($color-purple, 0.8);
           -webkit-transition: all $duration-fast $ease;
           -moz-transition: all $duration-fast $ease;
