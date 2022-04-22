@@ -80,12 +80,6 @@ h2 {
   font-size: calc(6.4rem * 0.4);
   letter-spacing: 0.075rem;
 
-  &.page-title,
-  &.post-title,
-  &.entry-title {
-    margin: 0;
-  }
-
   @media all and (min-width: $screen-sm) {
     font-size: calc(6.4rem * 0.5);
   }
@@ -114,17 +108,14 @@ h3 {
   }
 
   @media all and (min-width: $screen-sm) {
-    // margin-top: $unit500;
     font-size: calc(4.4rem * 0.5);
   }
 
   @media all and (min-width: $screen-md) {
-    //margin-top: $unit500;
     font-size: calc(4.4rem * 0.6);
   }
 
   @media all and (min-width: $screen-lg) {
-    //margin-top: $unit600;
     font-size: calc(4.4rem * 0.7);
     line-height: 1.2;
   }
@@ -137,8 +128,6 @@ h3 {
 h4,
 h5,
 h6 {
-  //margin-bottom: 1rem;
-
   @media all and (min-width: $screen-md) {
     font-size: calc(3.2rem * 0.4);
   }
@@ -152,7 +141,6 @@ h6 {
   }
 
   @media all and (min-width: $screen-lg) {
-    //margin-bottom: 1.4rem;
     font-size: calc(3.2rem * 0.7);
   }
 
