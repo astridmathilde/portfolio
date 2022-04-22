@@ -34,6 +34,6 @@
   .page .entry-header {
     opacity: 0;
     filter: alpha(opacity=0);
-    animation: fadeIn $duration-slow $ease-in-out 0.2s forwards;
+    animation: fadeIn $duration-slow $ease-in-out 0.1s forwards;
   }
 }
