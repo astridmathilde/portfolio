@@ -5,24 +5,26 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Start SEO -->
+  <meta name="robots" content="noindex">
+  <!--
   <meta name="title" content="Astrid Mathilde Andersen">
   <meta name="description" content="Heia! Jeg er utdannet mediegrafiker, selvlært webutvikler og studerer design på Arkitektur- og designhøgskolen i Oslo.">
   <meta property="og:title" content="Astrid Mathilde Andersen">
   <meta property="og:description" content="Heia! Jeg er utdannet mediegrafiker, selvlært webutvikler og studerer design på Arkitektur- og designhøgskolen i Oslo.">
   <meta property="og:url" content="https://astridandersen.no">
   <meta property="og:type" content="website">
-  <!--<meta property="og:image" content=""> -->
+  <meta property="og:image" content=""> -->
   <!-- End SEO -->
   <title>Astrid Mathilde Andersen</title>
   
-  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦄</text></svg>">
 </head>
 <body>
   
   <!-- SITE HEADER-->
   <header id="site-header">
-    <h1 class="site-title"><a href="/" rel="home">Astrid Mathilde Andersen</a></h1>
+    <h1 class="site-title"><a href="../index.html" rel="home">Astrid Mathilde Andersen</a></h1>
     
     <!-- MENU TOGGLE LINK -->
     <div class="site-menu-toggle open">
@@ -42,9 +44,9 @@
           <h3 class="screen-reader-text">Prosjekter</h3>
           <nav id="projects">
             <ul>
-              <li><a href="#">Prosjekt 1</a></li>
-              <li><a href="#">Prosjekt 2</a></li>
-              <li><a href="#">Prosjekt 3</a></li>
+              <li><a href="../projects/skatetracker.html">Skatetracker</a></li>
+              <li><a href="../projects/lole-landskap.html">Lo:Le Landskap og Plan</a></li>
+              <li><a href="../projects/svalbard-bryggeri.html">Svalbard Bryggeri</a></li>
             </ul>
           </nav> <!-- #projects -->
         </section> <!-- .projects -->
@@ -54,9 +56,9 @@
           <h3 class="screen-reader-text">Sider</h3>
           <nav id="pages">
             <ul>
-              <li><a href="#">Side 1</a></li>
-              <li><a href="#">Side 2</a></li>
-              <li><a href="#">Side 3</a></li>
+              <li><a href="/">Forside</a></li>
+              <li><a href="../pages/cv.html">Min CV</a></li>
+              <li><a href="../pages/klimaavtrykk.html">Klimaavtrykk</a></li>
             </ul>
           </nav> <!-- #pages-->
         </section> <!-- .pages -->
@@ -99,7 +101,7 @@
               <figure>
                 <source type="image/webp" srcset="../assets/img/projects/skatetracker/compressed/skatetracker-thumb.webp">
                 <source type="image/png" srcset="../assets/img/projects/skatetracker/compressed/skatetracker-thumb.jpg">
-                <img src="../assets/img/projects/skatetracker/compressed/skatetracker-thumb.jpg"
+                <img width="1436px" height="1087px" src="../assets/img/projects/skatetracker/compressed/skatetracker-thumb.jpg"
                 alt="En app for skatere" />
               </figure>
             </a>
@@ -115,7 +117,7 @@
               <figure>
                 <source type="image/webp" srcset="../assets/img/projects/lole-landskap/compressed/browser-lole-frontpage.webp">
                 <source type="image/jpeg" srcset="../assets/img/projects/lole-landskap/compressed/browser-lole-frontpage.jpg">
-                <img src="../assets/img/projects/lole-landskap/compressed/browser-lole-frontpage.jpg" alt="Nettside for Lo:Le Landskap"/>
+                <img width="1436px" height="1087px" src="../assets/img/projects/lole-landskap/compressed/browser-lole-frontpage.jpg" alt="Nettside for Lo:Le Landskap"/>
               </figure>
             </a>
           </article> <!-- #project-lole-landskap -->
@@ -130,7 +132,7 @@
                 <figure>
                   <source type="image/webp" srcset="../assets/img/projects/lole-landskap/compressed/browser-lole-frontpage.webp">
                   <source type="image/jpeg" srcset="../assets/img/projects/lole-landskap/compressed/browser-lole-frontpage.jpg">
-                  <img src="../assets/img/projects/lole-landskap/compressed/browser-lole-frontpage.jpg"
+                  <img width="1436px" height="1087px" src="../assets/img/projects/lole-landskap/compressed/browser-lole-frontpage.jpg"
                     alt="Nettside for Lo:Le Landskap" />
                 </figure>
               </a>
@@ -180,23 +182,14 @@
             <h3 class="footer-heading">Meny</h3>
             <nav id="footer-menu">
               <ul>
-                <li><a href="#">Side 1</a></li>
-                <li><a href="#">Side 2</a></li>
-                <li><a href="#">Side 3</a></li>
+                <li><a href="../pages/cv.html">Min CV</a></li>
+                <li><a href="../pages/klimaavtrykk.html">Klimaavtrykk</a></li>
               </ul>
             </nav> <!-- #footer-menu -->
             
-            <!-- Social media -->
-            <h3 class="footer-heading">Lenker</h3>
-            <ul class="social-profiles">
-              <li><a href="#" target="_blank" rel="nofollow">Lenke 1</a></li>
-              <li><a href="#" target="_blank" rel="nofollow">Lenke 2</a></li>
-              <li><a href="#" target="_blank" rel="nofollow">Lenke 3</a></li>
-            </ul> <!-- .social-profiles -->
-            
             <!-- Byline -->
             <div id="footer-byline">
-              <a href="https://github.com/astrixandersen/andersen" target="_blank" rel="nofollow">Se kildekoden -></a>
+              <a href="https://github.com/astrixandersen/andersen" target="_blank" rel="external">Se kildekoden -></a>
             </div> <!-- #footer-byline-->
             
           </div> <!-- .container -->

@@ -28,4 +28,12 @@
       font-size: $font-size-small;
     }
   }
+
+  /* Fade in */
+  .entry-content,
+  .page .entry-header {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    animation: fadeIn $duration-slow $ease-in-out 0.2s forwards;
+  }
 }
