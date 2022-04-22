@@ -8,10 +8,9 @@ a {
   font-weight: inherit;
   text-decoration: underline;
   text-decoration-thickness: 2px;
-  text-decoration-skip: none;
   text-decoration-skip-ink: none;
   text-decoration-color: rgba($color-greyish-purple, 0.65);
-  text-underline-offset: 0;
+  text-underline-offset: 1px;
   color: inherit;
   -webkit-transition: all $duration-fast $ease;
   -moz-transition: all $duration-fast $ease;
