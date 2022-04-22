@@ -11,6 +11,7 @@ a {
   text-decoration-skip: none;
   text-decoration-skip-ink: none;
   text-decoration-color: rgba($color-greyish-purple, 0.65);
+  text-underline-offset: 0;
   color: inherit;
   -webkit-transition: all $duration-fast $ease;
   -moz-transition: all $duration-fast $ease;
