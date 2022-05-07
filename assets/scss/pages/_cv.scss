@@ -2,10 +2,8 @@
   h4 {
     margin-top: $unit200;
     margin-bottom: 0;
-    font-weight: 500;
 
     @media all and (min-width: $screen-md) {
-      font-weight: 400;
       margin-top: $unit300;
     }
 

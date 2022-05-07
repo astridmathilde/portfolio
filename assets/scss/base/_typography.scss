@@ -120,20 +120,18 @@ h3 {
 h4,
 h5,
 h6 {
-  @media all and (min-width: $screen-md) {
-    font-size: calc(3.2rem * 0.4);
-  }
+  font-size: $font-size-smaller;
 
   @media all and (min-width: $screen-sm) {
-    font-size: calc(3.2rem * 0.5);
+    font-size: $font-size-small;
   }
 
   @media all and (min-width: $screen-md) {
-    font-size: calc(3.2rem * 0.6);
+    font-size: $font-size-base;
   }
 
-  @media all and (min-width: $screen-lg) {
-    font-size: calc(3.2rem * 0.7);
+  @media all and (min-width: $screen-xl) {
+    font-size: $font-size-large;
   }
 }
 
