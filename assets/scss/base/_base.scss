@@ -13,16 +13,16 @@ body {
   color: $color-text;
   -webkit-font-smoothing: antialiased;
   scroll-behavior: smooth;
-  
-  
+
+
   @media all and (min-width: $screen-md) {
     font-size: 18px;
   }
-  
+
   @media all and (min-width: $screen-lg) {
     font-size: 20px;
   }
-  
+
   @media all and (min-width: $screen-xl) {
     font-size: 22px;
   }
