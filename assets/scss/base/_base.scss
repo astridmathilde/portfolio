@@ -1,42 +1,18 @@
 /**
-*
 * Base
-*
 */
-
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
-html,
-body {
-  border: none;
-  margin: 0;
-  padding: 0;
-}
 
 html {
   font-size: 62.5%; // 10px = 1rem
-  box-sizing: border-box;
-  -ms-overflow-style: scrollbar;
-  height: 100%;
 }
 
 body {
   overflow-x: hidden;
   background: #fefdfe;
-  margin: 0px; // Remove the margin in all browsers.
-  min-height: 100%;
   font-family: $font-family-primary, system-ui, sans-serif;
   font-size: $font-size-smaller;
-  line-height: 1.8;
-  overflow-wrap: break-word;
-  -webkit-hyphens: manual;
-  -ms-hyphens: manual;
-  hyphens: manual;
   color: $color-dark-purple;
+  -webkit-font-smoothing: antialiased;
 
   @media all and (min-width: $screen-sm) {
     font-size: $font-size-small;
@@ -80,56 +56,6 @@ body {
   text-decoration: none;
   top: 5px;
   width: auto;
-  z-index: 100000; /* Above WP toolbar. */
-}
-
-/* Images */
-figure,
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Reset */
-figure,
-p {
-  margin: 0;
-}
-
-blockquote,
-address,
-big,
-cite,
-code,
-em,
-font,
-img,
-small,
-strike,
-sub,
-sup,
-li,
-ol,
-ul,
-fieldset,
-form,
-label,
-legend,
-button,
-table,
-caption,
-tr,
-th,
-td {
-  border: none;
-  font-size: inherit;
-  line-height: inherit;
-  margin: 0;
-  padding: 0;
-  text-align: inherit;
-}
-
-blockquote::before,
-blockquote::after {
-  content: "";
+  z-index: 100000;
+  /* Above WP toolbar. */
 }
