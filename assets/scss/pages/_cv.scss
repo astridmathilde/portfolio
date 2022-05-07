@@ -1,0 +1,18 @@
+#page-cv {
+  h4 {
+    margin-top: $unit200;
+    margin-bottom: 0;
+
+    @media all and (min-width: $screen-md) {
+      margin-top: $unit300;
+    }
+
+    @media all and (min-width: $screen-lg) {
+      margin-top: $unit400;
+    }
+
+    + p {
+      margin-top: $unit100 / 2;
+    }
+  }
+}
