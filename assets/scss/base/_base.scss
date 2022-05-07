@@ -7,7 +7,7 @@
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 html,
@@ -19,7 +19,6 @@ body {
 
 html {
   font-size: 62.5%; // 10px = 1rem
-  box-sizing: border-box;
   -ms-overflow-style: scrollbar;
   height: 100%;
 }
@@ -36,6 +35,7 @@ body {
   -webkit-hyphens: manual;
   -ms-hyphens: manual;
   hyphens: manual;
+  -webkit-font-smoothing: antialiased;
   color: $color-dark-purple;
 
   @media all and (min-width: $screen-sm) {
