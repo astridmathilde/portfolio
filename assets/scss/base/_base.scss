@@ -13,15 +13,15 @@ body {
   font-size: $font-size-smaller;
   color: $color-dark-purple;
   -webkit-font-smoothing: antialiased;
-  
+
   @media all and (min-width: $screen-sm) {
     font-size: $font-size-small;
   }
-  
+
   @media all and (min-width: $screen-md) {
     font-size: $font-size-base;
   }
-  
+
   @media all and (min-width: $screen-xl) {
     font-size: $font-size-large;
   }
@@ -56,5 +56,4 @@ body {
   text-decoration: none;
   top: 5px;
   width: auto;
-  z-index: 100000; /* Above WP toolbar. */
 }
