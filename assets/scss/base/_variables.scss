@@ -32,14 +32,16 @@ $grid-gutter-row: $unit400;
 $grid-gutter-column: $unit400;
 
 // Typography
-$font-family-primary: 'Inter', system-ui;
-$font-family-secondary: 'Fira Code', monospace;
+$font-family-primary: 'Inter',
+system-ui;
+$font-family-secondary: 'Fira Code',
+monospace;
 
-$font-size-smallest: 1.2rem;
-$font-size-smaller: 1.4rem;
-$font-size-small: 1.6rem;
-$font-size-base: 1.8rem;
-$font-size-large: 2rem;
+$font-size-smallest: 1.4rem;
+$font-size-smaller: 1.6rem;
+$font-size-small: 1.8rem;
+$font-size-base: 2rem;
+$font-size-large: 2.4rem;
 
 // Colors
 $color-purple-black: #170d24;
@@ -54,24 +56,18 @@ $duration-normal: 0.4s;
 $duration-slow: 0.6s;
 
 $ease: cubic-bezier(0.29, 0, 0.28, 1); // https://cubic-bezier.com/#.29,0,.28,1
-$ease-in: cubic-bezier(
-  0.41,
+$ease-in: cubic-bezier(0.41,
   0.03,
   1,
-  1
-); // https://cubic-bezier.com/#.41,.03,1,1
-$ease-out: cubic-bezier(
-  0,
+  1); // https://cubic-bezier.com/#.41,.03,1,1
+$ease-out: cubic-bezier(0,
   0.08,
   0.47,
-  1
-); // https://cubic-bezier.com/#0,.08,.47,1
-$ease-in-out: cubic-bezier(
-  0.45,
+  1); // https://cubic-bezier.com/#0,.08,.47,1
+$ease-in-out: cubic-bezier(0.45,
   0,
   0.55,
-  1
-); // https://cubic-bezier.com/#.45,0,.55,1
+  1); // https://cubic-bezier.com/#.45,0,.55,1
 
 // Animation
 @keyframes fadeIn {

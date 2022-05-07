@@ -17,8 +17,8 @@ h6 {
     margin-bottom: $unit300;
   }
 
-  + p,
-  + ul {
+  +p,
+  +ul {
     margin-top: 0;
   }
 }
@@ -99,7 +99,7 @@ h3 {
   font-size: calc(4.4rem * 0.4);
   letter-spacing: 0.075rem;
 
-  + h4 {
+  +h4 {
     margin-top: 0;
   }
 
@@ -120,20 +120,18 @@ h3 {
 h4,
 h5,
 h6 {
-  @media all and (min-width: $screen-md) {
-    font-size: calc(3.2rem * 0.4);
-  }
+  font-size: $font-size-smaller;
 
   @media all and (min-width: $screen-sm) {
-    font-size: calc(3.2rem * 0.5);
+    font-size: $font-size-small;
   }
 
   @media all and (min-width: $screen-md) {
-    font-size: calc(3.2rem * 0.6);
+    font-size: $font-size-base;
   }
 
-  @media all and (min-width: $screen-lg) {
-    font-size: calc(3.2rem * 0.7);
+  @media all and (min-width: $screen-xl) {
+    font-size: $font-size-large;
   }
 }
 
@@ -143,7 +141,7 @@ ul {
   li {
     padding-left: $unit100 / 2;
 
-    + li {
+    +li {
       padding-top: $unit100 / 2;
     }
   }

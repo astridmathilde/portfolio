@@ -34,19 +34,13 @@
   }
 
   .footer-heading {
-    font-size: $font-size-small;
-    font-weight: 500;
+    @extend h4;
     margin-top: $unit400;
     margin-bottom: $unit100 / 2;
 
     @media all and (min-width: $screen-lg) {
       margin-top: $unit500;
       margin-bottom: $unit100;
-      font-size: $font-size-base;
-    }
-
-    @media all and (min-width: $screen-xl) {
-      font-size: $font-size-large;
     }
 
     &:first-of-type {
@@ -63,7 +57,7 @@
       list-style: none;
       padding-left: 0;
 
-      + li {
+      +li {
         padding-left: $unit100 / 2;
 
         @media all and (min-width: $screen-md) {

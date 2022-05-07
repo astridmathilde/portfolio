@@ -1,6 +1,6 @@
 .featured-projects {
   .project {
-    + .project {
+    +.project {
       margin-top: $unit500;
 
       @media all and (min-width: $screen-sm) {
@@ -77,11 +77,14 @@
 
         .project-meta {
           order: -1;
-          font-size: $font-size-smaller;
-          font-weight: 500;
+          font-size: $font-size-smallest;
           line-height: 1;
           letter-spacing: 0.05rem;
           color: $color-dark-purple;
+
+          @media all and (min-width: $screen-sm) {
+            font-size: $font-size-smaller;
+          }
 
           @media all and (min-width: $screen-lg) {
             font-size: $font-size-small;
