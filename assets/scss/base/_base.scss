@@ -9,8 +9,10 @@ html {
 body {
   overflow-x: hidden;
   background: #fefdfe;
-  font-family: $font-family-primary, system-ui, sans-serif;
+  font-family: "Inter", system-ui, sans-serif;
+  font-feature-settings: "cpsp", "salt";
   font-size: $font-size-smaller;
+  font-weight: 400;
   color: $color-dark-purple;
   -webkit-font-smoothing: antialiased;
 
