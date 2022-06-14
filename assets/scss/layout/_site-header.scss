@@ -13,11 +13,6 @@
   padding-bottom: $unit200;
   @extend .site-padding;
   text-align: left;
-  font-size: $font-size-smallest;
-  
-  @media all and (min-width: $screen-sm) {
-    font-size: $font-size-smaller;
-  }
   
   @media all and (min-width: $screen-md) {
     padding-top: $unit300;
@@ -27,44 +22,52 @@
   @media all and (min-width: $screen-lg) {
     padding-top: $unit400;
     padding-bottom: $unit400;
-    font-size: $font-size-small;
-  }
-  
-  @media all and (min-width: $screen-xl) {
-    font-size: $font-size-base;
   }
   
   .site-title,
   .site-menu-toggle {
+    font-size: $font-size-smallest;
     font-weight: 500;
+    
+    @media all and (min-width: $screen-sm) {
+      font-size: $font-size-smaller;
+    }
+    
+    @media all and (min-width: $screen-lg) {
+      font-size: $font-size-small;
+    }
+    
+    @media all and (min-width: $screen-xl) {
+      font-size: $font-size-base;
+    }
   }
   
   .site-title {
     grid-area: title;
     margin-top: 0;
-    
+
     a {
-      text-decoration: none;
-      
-      &:hover,
-      &:focus {
-        @media all and (min-width: $screen-md) {
-          text-decoration: underline;
-          text-decoration-color: rgba($color-greyish-purple, 0.65) !important;
-        }
+    text-decoration: none;
+    
+    &:hover,
+    &:focus {
+      @media all and (min-width: $screen-md) {
+      text-decoration: underline;
+      text-decoration-color: rgba($color-greyish-purple, 0.65) !important;
       }
     }
+  }
   }
   
   .site-menu-toggle {
     grid-area: menu;
     text-align: right;
-    
+
     a {
-      text-decoration: none;
-      transition: none;
+    text-decoration: none;
+    transition: none;
     }
-    
+
     span[role="img"] {
       padding-right: 0.4rem;
     }
