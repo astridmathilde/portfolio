@@ -22,72 +22,123 @@
   
   <!-- SITE HEADER-->
   <header id="site-header">
-    <h1 class="site-title" style="text-align: center"><a href="/" rel="home">Astrid Mathilde Andersen</a></h1>
-  </header> <!-- #site-header-->
-  
-  <!-- SITE CONTENT -->
-  <main id="site-content">      
-      <!-- Introduction -->
-      <section class="page-hero">
-        <h2 class="screen-reader-text">Introduksjon</h2>
-        <p class="display">Heia! 🙋🏻‍♀ Jeg er utdannet mediegrafiker med hjerte for design og
-          teknologi, og akkurat nå er jeg utvikler/designer for <a href="https://bigfish.no/" target="_blank" rel="external">Big Fish</a> og student ved
-          <a href="https://aho.no/" target="_blank" rel="external">Arkitektur- og designhøgskolen i Oslo</a> ✨</p>
-        </section> <!-- .page-hero-->
-        
-        <!-- About -->
-        <section class="image-text-row">
+    <h1 class="site-title">
+      <a href="/" rel="home">Astrid Mathilde Andersen</a>
+    </h1>
+    
+    <!-- MENU TOGGLE LINK -->
+    <div class="site-menu-toggle open">
+      <h2 class="screen-reader-text">Hovedmeny</h2>
+      <a onclick="toggleMenu()" href="#" role="button" aria-label="Åpne hovedmeny"><span role="img"
+        aria-hidden="true">👈🏻</span>
+        <span class="label">Meny</span></a>
+      </div>
+      <!-- .site-menu-toggle -->
+      
+      <!-- MENU CONTENT-->
+      <div id="site-navigation">
+        <div class="site-menu-toggle close">
+          <a onclick="toggleMenu()" href="#" class="toggle-menu" role="button" aria-label="Lukk meny"><span
+            class="label">Lukk</span>
+            <span role="img" aria-hidden="true">👉🏻</span></a>
+          </div>
+          <!-- .site-menu-toggle-->
           
-          <div class="column align-center" style="flex-basis:66.66%">
-            <h2>Litt om meg</h2>
-            <p>Jeg er 24 år og er født og oppvokst i Nord-Troms. Nå studerer jeg design på <a href="https://aho.no/" target="_blank" rel="external">Arkitektur- og designhøgskolen i Oslo</a> og jobber litt som designer og utvikler for <a href="https://bigfish.no/" target="_blank" rel="external">Big Fish</a>. 🦄</p>
-
-<p>Tidligere har jeg designet brukeropplevelser og skrevet kode for Røst kommunikasjon i Tromsø, og i 2018 tok jeg svennebrev i mediegrafikerfaget hos Chili Harstad 🎉. Hvis du vil vite mer om hva jeg har gjort før, kan du <a href="https://astridandersen.no/cv.html" target="_blank" rel="external">ta en titt på CV-en min</a>! 🔍</p>
-            </div> <!-- .column-->
+          <div class="site-menu-content">
+            <!-- Pages -->
+            <section class="pages">
+              <nav id="pages">
+                <ul>
+                  <li class="home"><a href="/">Forside</a></li>
+                  <li><a href="klimaavtrykk.html">Klimaavtrykk</a></li>
+                  <li><a href="cv.html">Min CV</a></li>
+                </ul>
+              </nav>
+            </section>
+            <!-- .pages -->
             
-            <div class="column align-center" style="flex-basis:33.33%">
-              <figure>
-                <source type="image/webp" srcset="assets/img/index/compressed/IMG_0389-cropped1-sorthvitt-768x1024.webp">
-                <source type="image/jpeg" srcset="assets/img/index/compressed/IMG_0389-cropped1-sorthvitt-768x1024.jpg">
-                <img width="768" height="1024" src="assets/img/index/compressed/IMG_0389-cropped1-sorthvitt-768x1024.jpg" alt="Astrid Mathilde Andersen"
-                srcset="assets/img/index/compressed/IMG_0389-cropped1-sorthvitt-768x1024.jpg 768w, assets/img/index/compressed/IMG_0389-cropped1-sorthvitt-225x300.jpg 225w, assets/img/index/compressed/IMG_0389-cropped1-sorthvitt.jpg 1104w"
-                sizes="(max-width: 768px) 100vw, 768px">
-              </figure>
-            </div> <!-- .column -->
-            
-          </section> <!-- .image-text-row -->
+            <!-- Contact -->
+            <section class="contact">
+              <h3 class="screen-reader-text">Kontakt</h3>
+              <p><span class="screen-reader-text">E-post:</span>
+                <a href="mailto:heia@astridandersen.no">heia@astridandersen.no</a></p>
+                
+                <h3 class="screen-reader-text">Profiler</h3>
+                <ul class="social-profiles">
+                  <li><a href="https://instagram.com/astrid.prosjekter" rel="nofollow noreferrer" target="_blank">Instagram</a></li>
+                  <li><a href="https://github.com/astrixandersen" rel="nofollow noreferrer" target="_blank">Github</a></li>
+                </ul>
+              </section>
+              <!-- .contact -->
+            </div>
+            <!-- .site-menu-content -->
+          </div>
+          <!-- #site-navigation -->
+        </header>
+        <!-- #site-header-->
         
-      </main> <!-- #site-content -->
-      
-      <!-- SITE FOOTER -->
-      <footer id="site-footer">
-        <div class="container">
-          <h2 class="screen-reader-text">Kontaktinformasjon og lenker</h2>
+        <!-- SITE CONTENT -->
+        <main id="site-content">      
+          <!-- Introduction -->
+          <section class="page-hero">
+            <h2 class="screen-reader-text">Introduksjon</h2>
+            <p class="display">Heia! 🙋🏻‍♀ Jeg er faglært mediegrafiker med hjerte for design og
+              teknologi, og akkurat nå er jeg utvikler/designer for <a href="https://bigfish.no/" target="_blank" rel="external">Big Fish</a> og student ved
+              <a href="https://aho.no/" target="_blank" rel="external">Arkitektur- og designhøgskolen i Oslo</a> ✨</p>
+            </section> <!-- .page-hero-->
+            
+            <!-- About -->
+            <section class="image-text-row">
+              
+              <div class="column align-center" style="flex-basis:66.66%">
+                <h2>Litt om meg</h2>
+                <p>Jeg er 24 år og er født og oppvokst i Nord-Troms. Nå studerer jeg design på <a href="https://aho.no/" target="_blank" rel="external">Arkitektur- og designhøgskolen i Oslo</a> og jobber litt som designer og utvikler for <a href="https://bigfish.no/" target="_blank" rel="external">Big Fish</a>. 🦄</p>
+                
+                <p>Tidligere har jeg designet brukeropplevelser og skrevet kode for Røst kommunikasjon i Tromsø, og i 2018 tok jeg svennebrev i mediegrafikerfaget hos Chili Harstad 🎉. Hvis du vil vite mer om hva jeg har gjort før, kan du <a href="cv.html">ta en titt på CV-en min</a>! 🔍</p>
+              </div> <!-- .column-->
+              
+              <div class="column align-center" style="flex-basis:33.33%">
+                <figure>
+                  <source type="image/webp" srcset="assets/img/index/compressed/IMG_0389-cropped1-sorthvitt-768x1024.webp">
+                  <source type="image/jpeg" srcset="assets/img/index/compressed/IMG_0389-cropped1-sorthvitt-768x1024.jpg">
+                  <img width="768" height="1024" src="assets/img/index/compressed/IMG_0389-cropped1-sorthvitt-768x1024.jpg" alt="Astrid Mathilde Andersen"
+                  srcset="assets/img/index/compressed/IMG_0389-cropped1-sorthvitt-768x1024.jpg 768w, assets/img/index/compressed/IMG_0389-cropped1-sorthvitt-225x300.jpg 225w, assets/img/index/compressed/IMG_0389-cropped1-sorthvitt.jpg 1104w"
+                  sizes="(max-width: 768px) 100vw, 768px">
+                </figure>
+              </div> <!-- .column -->
+              
+            </section> <!-- .image-text-row -->
+            
+          </main> <!-- #site-content -->
           
-          <!-- Contact information -->
-          <h3 class="footer-heading">Kontakt</h3>
-          <p><span class="screen-reader-text">E-post:</span> <a href="mailto:heia@astridandersen.no">heia@astridandersen.no</a>
-          </p>
+          <!-- SITE FOOTER -->
+          <footer id="site-footer">
+            <div class="container">
+              <h2 class="screen-reader-text">Kontaktinformasjon og lenker</h2>
+              
+              <!-- Contact information -->
+              <h3 class="footer-heading">Kontakt</h3>
+              <p><span class="screen-reader-text">E-post:</span> <a href="mailto:heia@astridandersen.no">heia@astridandersen.no</a>
+              </p>
+              
+              <!-- Footer menu -->
+              <h3 class="footer-heading">Lenker</h3>
+              <nav id="footer-menu">
+                <ul>
+                  <li><a href="https://instagram.com/astrid.prosjekter" target="_blank" rel="noreferrer nofollow">Instagram</a></li>
+                  <li><a href="https://github.com/astrixandersen" target="_blank" rel="noreferrer nofollow">Github</a></li>
+                </ul>
+              </nav> <!-- #footer-menu -->
+              
+              <!-- Byline -->
+              <div id="footer-byline">
+                <a href="https://github.com/astrixandersen/astridandersen" target="_blank" rel="external">Se koden min -></a>
+              </div> <!-- #footer-byline-->
+              
+            </div> <!-- .container -->
+          </footer> <!-- #site-footer-->
           
-          <!-- Footer menu -->
-          <h3 class="footer-heading">Meny</h3>
-          <nav id="footer-menu">
-            <ul>
-              <li><a href="/">Forside</a></li>
-              <li><a href="cv.html">Min CV</a></li>
-              <li><a href="klimaavtrykk.html">Klimaavtrykk</a></li>
-            </ul>
-          </nav> <!-- #footer-menu -->
+          <script src="assets/js/min/open-menu.min.js"></script>
           
-          <!-- Byline -->
-          <div id="footer-byline">
-            <a href="https://github.com/astrixandersen/astridandersen" target="_blank" rel="external">Se koden på Github -></a>
-          </div> <!-- #footer-byline-->
-          
-        </div> <!-- .container -->
-      </footer> <!-- #site-footer-->
-      
-      <script src="assets/js/min/open-menu.min.js"></script>
-      
-    </body>
-    </html>
+        </body>
+        </html>

@@ -57,16 +57,8 @@
       list-style: none;
       padding-left: 0;
 
-      +li {
+      + li {
         padding-left: $unit100 / 2;
-
-        @media all and (min-width: $screen-md) {
-          padding-left: $unit100;
-        }
-
-        @media all and (min-width: $screen-xl) {
-          padding-left: $unit200;
-        }
       }
     }
   }
