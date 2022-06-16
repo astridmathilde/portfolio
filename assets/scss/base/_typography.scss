@@ -4,6 +4,22 @@
 *
 */
 
+h1 {
+  font-size: $font-size-smallest;
+  
+  @media all and (min-width: $screen-sm) {
+    font-size: $font-size-smaller;
+  }
+  
+  @media all and (min-width: $screen-lg) {
+    font-size: $font-size-small;
+  }
+  
+  @media all and (min-width: $screen-xl) {
+    font-size: $font-size-base;
+  }
+}
+
 h2,
 h3,
 h4,
@@ -12,11 +28,11 @@ h6 {
   margin-bottom: $unit200;
   font-weight: 400;
   line-height: 1.3;
-
+  
   @media all and (min-width: $screen-lg) {
     margin-bottom: $unit300;
   }
-
+  
   +p,
   +ul {
     margin-top: 0;
@@ -28,15 +44,15 @@ h4,
 h5,
 h6 {
   margin-top: $unit400 + $unit100;
-
+  
   @media all and (min-width: $screen-sm) {
     margin-top: $unit500;
   }
-
+  
   @media all and (min-width: $screen-md) {
     margin-top: $unit600;
   }
-
+  
   @media all and (min-width: $screen-lg) {
     margin-top: $unit600;
   }
@@ -47,7 +63,7 @@ ul,
 ol,
 figure {
   margin-top: $unit200;
-
+  
   @media all and (min-width: $screen-lg) {
     margin-top: $unit300;
   }
@@ -57,19 +73,19 @@ figure {
   font-size: calc(6.4rem * 0.4);
   font-weight: 400;
   line-height: 1.4;
-
+  
   @media all and (min-width: $screen-sm) {
     font-size: calc(6.4rem * 0.5);
   }
-
+  
   @media all and (min-width: $screen-md) {
     font-size: calc(6.4rem * 0.6);
   }
-
+  
   @media all and (min-width: $screen-lg) {
     font-size: calc(6.4rem * 0.7);
   }
-
+  
   @media all and (min-width: $screen-xl) {
     font-size: 6.4rem;
   }
@@ -79,16 +95,16 @@ h2 {
   margin-top: $unit500;
   font-size: calc(6.4rem * 0.4);
   letter-spacing: 0.075rem;
-
+  
   @media all and (min-width: $screen-sm) {
     font-size: calc(6.4rem * 0.5);
   }
-
+  
   @media all and (min-width: $screen-md) {
     margin-top: $unit700;
     font-size: calc(6.4rem * 0.6);
   }
-
+  
   @media all and (min-width: $screen-lg) {
     margin-top: $unit700 + $unit200;
     font-size: calc(6.4rem * 0.7);
@@ -98,19 +114,19 @@ h2 {
 h3 {
   font-size: calc(4.4rem * 0.4);
   letter-spacing: 0.075rem;
-
+  
   +h4 {
     margin-top: 0;
   }
-
+  
   @media all and (min-width: $screen-sm) {
     font-size: calc(4.4rem * 0.5);
   }
-
+  
   @media all and (min-width: $screen-md) {
     font-size: calc(4.4rem * 0.6);
   }
-
+  
   @media all and (min-width: $screen-lg) {
     font-size: calc(4.4rem * 0.7);
     line-height: 1.2;
@@ -121,15 +137,15 @@ h4,
 h5,
 h6 {
   font-size: $font-size-smaller;
-
+  
   @media all and (min-width: $screen-sm) {
     font-size: $font-size-small;
   }
-
+  
   @media all and (min-width: $screen-md) {
     font-size: $font-size-base;
   }
-
+  
   @media all and (min-width: $screen-xl) {
     font-size: $font-size-large;
   }
@@ -137,10 +153,10 @@ h6 {
 
 ul {
   padding-left: $unit300;
-
+  
   li {
     padding-left: $unit100 / 2;
-
+    
     +li {
       padding-top: $unit100 / 2;
     }
@@ -155,11 +171,11 @@ b {
 .has-large-font-size {
   font-size: $font-size-base;
   line-height: 1.5;
-
+  
   @media all and (min-width: $screen-md) {
     font-size: $font-size-large;
   }
-
+  
   strong,
   b {
     font-weight: 600;
@@ -168,7 +184,7 @@ b {
 
 .has-regular-font-size {
   font-size: $font-size-small;
-
+  
   @media all and (min-width: $screen-md) {
     font-size: $font-size-base;
   }
@@ -176,7 +192,7 @@ b {
 
 .has-small-font-size {
   font-size: $font-size-smaller;
-
+  
   @media all and (min-width: $screen-md) {
     font-size: $font-size-small;
   }
