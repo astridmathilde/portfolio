@@ -24,7 +24,7 @@
     padding-bottom: $unit400;
   }
   
-  .site-title,
+  .site-title a,
   .site-menu-toggle {
     font-size: $font-size-smallest;
     font-weight: 500;
@@ -47,6 +47,7 @@
     margin-top: 0;
 
     a {
+    color: $color-dark-purple;
     text-decoration: none;
     text-decoration-color: rgba($color-greyish-purple, 0.65) !important;
     
