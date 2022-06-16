@@ -28,6 +28,11 @@
   .site-menu-toggle {
     font-size: $font-size-smallest;
     font-weight: 500;
+    transition: none;
+
+    a {
+      transition: none;
+    }
     
     @media all and (min-width: $screen-sm) {
       font-size: $font-size-smaller;
