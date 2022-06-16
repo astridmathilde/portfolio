@@ -14,26 +14,8 @@
 
 @font-face {
   font-family: "Inter";
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
-  src: url("assets/fonts/Inter-Italic.woff2") format("woff2"),
-    url("assets/fonts/Inter-Italic.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Inter";
   font-weight: 500;
   font-display: swap;
   src: url("assets/fonts/Inter-Medium.woff2") format("woff2"),
     url("assets/fonts/Inter-Medium.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Inter";
-  font-weight: 500;
-  font-style: italic;
-  font-display: swap;
-  src: url("assets/fonts/Inter-MediumItalic.woff2") format("woff2"),
-    url("assets/fonts/Inter-MediumItalic.woff") format("woff");
 }

@@ -15,7 +15,7 @@
   <!-- End SEO -->
   <title>Astrid Mathilde Andersen</title>
   
-  <link rel="stylesheet" href="style.css" />
+  <link rel="preload stylesheet" href="style.css" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦄</text></svg>">
 </head>
 <body>
@@ -99,11 +99,9 @@
               
               <div class="column align-center" style="flex-basis:33.33%">
                 <figure>
-                  <source type="image/webp" srcset="assets/img/index/compressed/IMG_0389-cropped1-sorthvitt-768x1024.webp">
-                  <source type="image/jpeg" srcset="assets/img/index/compressed/IMG_0389-cropped1-sorthvitt-768x1024.jpg">
-                  <img width="768" height="1024" src="assets/img/index/compressed/IMG_0389-cropped1-sorthvitt-768x1024.jpg" alt="Astrid Mathilde Andersen"
-                  srcset="assets/img/index/compressed/IMG_0389-cropped1-sorthvitt-768x1024.jpg 768w, assets/img/index/compressed/IMG_0389-cropped1-sorthvitt-225x300.jpg 225w, assets/img/index/compressed/IMG_0389-cropped1-sorthvitt.jpg 1104w"
-                  sizes="(max-width: 768px) 100vw, 768px">
+                  <source type="image/webp" sizes="(max-width: 750px) 750px, 100vw" srcset="assets/img/index/compressed/IMG_0389-cropped1-sorthvitt-768x1024.webp 768w, assets/img/index/compressed/IMG_0389-cropped1-sorthvitt-225x300.webp 225w, assets/img/index/compressed/IMG_0389-cropped1-sorthvitt.webp 1104w">
+                  <source type="image/jpeg" sizes="(max-width: 750px) 750px, 100vw" srcset="assets/img/index/compressed/IMG_0389-cropped1-sorthvitt-768x1024.jpg 768w, assets/img/index/compressed/IMG_0389-cropped1-sorthvitt-225x300.jpg 225w, assets/img/index/compressed/IMG_0389-cropped1-sorthvitt.jpg 1104w">
+                  <img width="768" height="1024" src="assets/img/index/compressed/IMG_0389-cropped1-sorthvitt.jpg" sizes="(max-width: 750px) 750px, 100vw" srcset="assets/img/index/compressed/IMG_0389-cropped1-sorthvitt-768x1024.jpg 768w, assets/img/index/compressed/IMG_0389-cropped1-sorthvitt-225x300.jpg 225w, assets/img/index/compressed/IMG_0389-cropped1-sorthvitt.jpg 1104w" alt="Astrid Mathilde Andersen" />
                 </figure>
               </div> <!-- .column -->
               
@@ -138,7 +136,7 @@
             </div> <!-- .container -->
           </footer> <!-- #site-footer-->
           
-          <script src="assets/js/min/open-menu.min.js"></script>
+          <script src="assets/js/min/open-menu.min.js" defer></script>
           
         </body>
         </html>
