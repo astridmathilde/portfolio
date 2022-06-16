@@ -4,22 +4,6 @@
 *
 */
 
-h1 {
-  font-size: $font-size-smallest;
-  
-  @media all and (min-width: $screen-sm) {
-    font-size: $font-size-smaller;
-  }
-  
-  @media all and (min-width: $screen-lg) {
-    font-size: $font-size-small;
-  }
-  
-  @media all and (min-width: $screen-xl) {
-    font-size: $font-size-base;
-  }
-}
-
 h2,
 h3,
 h4,
