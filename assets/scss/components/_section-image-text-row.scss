@@ -34,7 +34,7 @@ section.image-text-row {
       flex-basis: 100% !important;
     }
 
-    @media all and (min-width: 782px) {
+    @media all and (min-width: $screen-md) {
       flex-basis: 0;
       flex-grow: 1;
 

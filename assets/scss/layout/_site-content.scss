@@ -10,6 +10,11 @@
   margin-right: auto;
   @extend .site-padding;
 
+  @media all and (min-width: 1720px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   section + section {
     margin-top: $unit600;
 
