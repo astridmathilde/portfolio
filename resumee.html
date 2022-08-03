@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="nb-no">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -9,100 +9,101 @@
   <link rel="preload" as="font" type="font/woff2" href="assets/fonts/Inter-Regular.woff2">
   <link rel="stylesheet" href="fonts.css" />
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="assets/css/cv.css" />
+  <link rel="stylesheet" href="assets/css/index.css" />
   <!-- Start SEO -->
-  <meta name="title" content="Min CV – Astrid Mathilde Andersen">
+  <meta name="title" content="My CV – Astrid Mathilde Andersen">
   <meta name="description"
-  content="Nå tar jeg master i design på AHO, og jobber litt som utvikler/designer hos Big Fish. Tidligere har jeg vært designer/utvikler hos Røst, og i 2018 tok jeg svennebrev som mediegrafiker hos reklamebyrået Chili Harstad.">
-  <meta property="og:title" content="Min CV – Astrid Mathilde Andersen">
+    content="I am from Northern Norway and I have always been passionate about design and technology. Currently I am studying design at The Oslo School of Architecture and Design, and this is my resumee.">
+  <meta property="og:title" content="My CV – Astrid Mathilde Andersen">
   <meta property="og:description"
-  content="Nå tar jeg master i design på AHO, og jobber litt som utvikler/designer hos Big Fish. Tidligere har jeg vært designer/utvikler hos Røst, og i 2018 tok jeg svennebrev som mediegrafiker hos reklamebyrået Chili Harstad.">
-  <meta property="og:url" content="https://astridandersen.no/cv.html">
+    content="I am from Northern Norway and I have always been passionate about design and technology. Currently I am studying design at The Oslo School of Architecture and Design, and this is my resumee.">
+  <meta property="og:url" content="https://astridandersen.no/resumee.html">
   <meta property="og:type" content="website">
   <meta property="og:image" content="">
   <!-- End SEO -->
-  
-  <title>Min CV – Astrid Mathilde Andersen</title>
+  <title>My CV – Astrid Mathilde Andersen</title>
   <link rel="icon"
-  href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦄</text></svg>">
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦄</text></svg>">
 </head>
 
 <body>
-  
+
   <!-- SITE HEADER-->
   <header id="site-header">
     <h1 class="site-title">
       <a href="/" rel="home">Astrid Mathilde Andersen</a>
     </h1>
-    
+
     <!-- MENU TOGGLE LINK -->
     <div class="site-menu-toggle open">
-      <h2 class="screen-reader-text">Hovedmeny</h2>
-      <a onclick="toggleMenu()" href="#" role="button" aria-label="Åpne hovedmeny"><span role="img"
-        aria-hidden="true">👈</span>
-        <span class="label">Meny</span></a>
+      <h2 class="screen-reader-text">Main menu</h2>
+      <a onclick="toggleMenu()" href="#" role="button" aria-label="Open main menu"><span role="img"
+          aria-hidden="true">👈</span>
+        <span class="label">Menu</span></a>
+    </div>
+    <!-- .site-menu-toggle -->
+
+    <!-- MENU CONTENT-->
+    <div id="site-navigation">
+      <div class="site-menu-toggle close">
+        <a onclick="toggleMenu()" href="#" class="toggle-menu" role="button" aria-label="Close menu"><span
+            class="label">Close</span>
+          <span role="img" aria-hidden="true">👉</span></a>
       </div>
-      <!-- .site-menu-toggle -->
-      
-      <!-- MENU CONTENT-->
-      <div id="site-navigation">
-        <div class="site-menu-toggle close">
-          <a onclick="toggleMenu()" href="#" class="toggle-menu" role="button" aria-label="Lukk meny"><span
-            class="label">Lukk</span>
-            <span role="img" aria-hidden="true">👉</span></a>
-          </div>
-          <!-- .site-menu-toggle-->
-          
-          <div class="site-menu-content">
-            <!-- Pages -->
-            <section class="pages">
-              <nav id="pages">
-                <ul>
-                  <li class="home"><a href="/">Forside</a></li>
-                  <li><a href="klimaavtrykk.html">Klimaavtrykk</a></li>
-                  <li><a href="cv.html">Min CV</a></li>
-                </ul>
-              </nav>
-            </section>
-            <!-- .pages -->
-            
-            <!-- Contact -->
-            <section class="contact">
-              <h3 class="screen-reader-text">Kontakt</h3>
-              <p><span class="screen-reader-text">E-post:</span>
-                <a href="mailto:heia@astridandersen.no">heia@astridandersen.no</a>
-              </p>
-              
-              <h3 class="screen-reader-text">Profiler</h3>
-              <ul class="social-profiles">
-                <li><a href="https://instagram.com/astrid.prosjekter" rel="nofollow noreferrer" target="_blank">Instagram</a>
-                </li>
-                <li><a href="https://github.com/astrixandersen" rel="nofollow noreferrer" target="_blank">Github</a></li>
-              </ul>
-            </section>
-            <!-- .contact -->
-          </div>
-          <!-- .site-menu-content -->
-        </div>
-        <!-- #site-navigation -->
-      </header>
-      <!-- #site-header-->
-      
+      <!-- .site-menu-toggle-->
+
+      <div class="site-menu-content">
+        <!-- Pages -->
+        <section class="pages">
+          <nav id="pages">
+            <ul>
+              <li class="home"><a href="/">Front page</a></li>
+              <li><a href="/#projects">Projects</a></li>
+              <li><a href="/#about">About</a></li>
+              <li><a href="resumee.html">CV</a></li>
+            </ul>
+          </nav>
+        </section>
+        <!-- .pages -->
+
+        <!-- Contact -->
+        <section class="contact">
+          <h3 class="screen-reader-text">Say hi</h3>
+          <p><span class="screen-reader-text">Email:</span>
+            <a href="mailto:heia@astridandersen.no">heia@astridandersen.no</a>
+          </p>
+
+          <h3 class="screen-reader-text">Links</h3>
+          <ul class="social-profiles">
+            <li><a href="https://instagram.com/astrid.aho" rel="nofollow noreferrer" target="_blank">Instagram</a></li>
+            <li><a href="https://github.com/astrixandersen" rel="nofollow noreferrer" target="_blank">Github</a></li>
+          </ul>
+        </section>
+        <!-- .contact -->
+      </div>
+      <!-- .site-menu-content -->
+    </div>
+    <!-- #site-navigation -->
+  </header>
+  <!-- #site-header-->
+
       <!-- SITE CONTENT -->
       <main id="site-content">
         <article id="page-cv" class="page">
           
           <header class="entry-header">
-            <h2 class="entry-title">Min CV</h2>
+            <h2 class="entry-title">My resumee</h2>
           </header> <!-- .entry-header -->
           
           <div class="entry-content">
-            <h3>🎓 Utdanning</h3>
-            <h4>Master i design (5 år), Arkitektur- og designhøgskolen i Oslo</h4>
+            <h3>🎓 Education</h3>
+            <h4>Master of Design (5 years), The Oslo School of Architecture and Design</h4>
             <p><em>august 2021-></em></p>
             
-            <h4>Svennebrev i mediegrafikerfaget, Chili Harstad AS</h4>
-            <p><em>august 2016–juli 2018:</em> Design av trykksaker, skilt og folie. Digitale annonser for Facebook og Google Display. Design, lansering, drift og vedlikehold av nettsider i WordPress. Noe kundekontakt. </p>
+            <h4>Craft Certificate in Graphic Design, Chili Harstad AS</h4>
+            <p><em>august 2016–juli 2018:</em> Design of prints, signs and websites. Digital ads for Facebook and Google Display. Design, launch and mainteinance of websites in WordPress.</p>
+              
+              Design av trykksaker, skilt og folie. Digitale annonser for Facebook og Google Display. Design, lansering, drift og vedlikehold av nettsider i WordPress. Noe kundekontakt. </p>
             
             <h4>Medier og kommunikasjon, Bardufoss videregående skole</h4>
             <p>august <em>2014–juni 2016:</em> Utplasseringer i byråene Digitalt Byrå AS og Whitefox AS. Praksisplass hos Universitetet i Tromsø.</p>
@@ -159,33 +160,35 @@
       <!-- SITE FOOTER -->
       <footer id="site-footer">
         <div class="container">
-          <h2 class="screen-reader-text">Kontaktinformasjon og lenker</h2>
-          
+          <h2 class="screen-reader-text">Links and contact info</h2>
+      
           <!-- Contact information -->
-          <h3 class="footer-heading">Kontakt</h3>
-          <p><span class="screen-reader-text">E-post:</span> <a
-            href="mailto:heia@astridandersen.no">heia@astridandersen.no</a>
+          <h3 class="footer-heading">Say hi</h3>
+          <p><span class="screen-reader-text">Email:</span> <a href="mailto:heia@astridandersen.no">heia@astridandersen.no</a>
           </p>
-          
+      
           <!-- Footer menu -->
-          <h3 class="footer-heading">Lenker</h3>
+          <h3 class="footer-heading">Links</h3>
           <nav id="footer-menu">
             <ul>
-              <li><a href="https://instagram.com/astrid.prosjekter" target="_blank" rel="noreferrer nofollow">Instagram</a></li>
+              <li><a href="https://instagram.com/astrid.prosjekter" target="_blank" rel="noreferrer nofollow">Instagram</a>
+              </li>
               <li><a href="https://github.com/astrixandersen" target="_blank" rel="noreferrer nofollow">Github</a></li>
             </ul>
           </nav> <!-- #footer-menu -->
-          
+      
           <!-- Byline -->
-          <div id="footer-byline">
-            <a href="https://github.com/astrixandersen/astridandersen" target="_blank" rel="external">Se koden min -></a>
-          </div> <!-- #footer-byline-->
-          
+          <ul id="footer-byline">
+            <li><a href="carbon-footprint.html">Carbon footprint</a></li>
+            <li><a href="https://github.com/astrixandersen/astridandersen" target="_blank" rel="external">Browse the code</a>
+            </li>
+          </ul> <!-- #footer-byline-->
+      
         </div> <!-- .container -->
       </footer> <!-- #site-footer-->
       
       <script src="assets/js/min/open-menu.min.js"></script>
       
-    </body>
-    
-    </html>
+      </body>
+      
+      </html>

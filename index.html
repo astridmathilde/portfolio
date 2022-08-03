@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="nb-no">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,9 +11,9 @@
   <link rel="stylesheet" href="assets/css/index.css" />
   <!-- Start SEO -->
   <meta name="title" content="Astrid Mathilde Andersen">
-  <meta name="description" content="Heia! Jeg er utdannet mediegrafiker, selvlært webutvikler og studerer design på Arkitektur- og designhøgskolen i Oslo.">
+  <meta name="description" content="I am from Northern Norway and I have always been passionate about design and technology. Currently I am studying design at The Oslo School of Architecture and Design, and this is some of my work.">
   <meta property="og:title" content="Astrid Mathilde Andersen">
-  <meta property="og:description" content="Heia! Jeg er utdannet mediegrafiker, selvlært webutvikler og studerer design på Arkitektur- og designhøgskolen i Oslo.">
+  <meta property="og:description" content="I am from Northern Norway and I have always been passionate about design and technology. Currently I am studying design at The Oslo School of Architecture and Design, and this is some of my work.">
   <meta property="og:url" content="https://astridandersen.no">
   <meta property="og:type" content="website">
   <meta property="og:image" content="">
@@ -31,18 +31,18 @@
     
     <!-- MENU TOGGLE LINK -->
     <div class="site-menu-toggle open">
-      <h2 class="screen-reader-text">Hovedmeny</h2>
-      <a onclick="toggleMenu()" href="#" role="button" aria-label="Åpne hovedmeny"><span role="img"
+      <h2 class="screen-reader-text">Main menu</h2>
+      <a onclick="toggleMenu()" href="#" role="button" aria-label="Open main menu"><span role="img"
         aria-hidden="true">👈</span>
-        <span class="label">Meny</span></a>
+        <span class="label">Menu</span></a>
       </div>
       <!-- .site-menu-toggle -->
       
       <!-- MENU CONTENT-->
       <div id="site-navigation">
         <div class="site-menu-toggle close">
-          <a onclick="toggleMenu()" href="#" class="toggle-menu" role="button" aria-label="Lukk meny"><span
-            class="label">Lukk</span>
+          <a onclick="toggleMenu()" href="#" class="toggle-menu" role="button" aria-label="Close menu"><span
+            class="label">Close</span>
             <span role="img" aria-hidden="true">👉</span></a>
           </div>
           <!-- .site-menu-toggle-->
@@ -52,9 +52,10 @@
             <section class="pages">
               <nav id="pages">
                 <ul>
-                  <li class="home"><a href="/">Forside</a></li>
-                  <li><a href="klimaavtrykk.html">Klimaavtrykk</a></li>
-                  <li><a href="cv.html">Min CV</a></li>
+                  <li class="home"><a href="/">Front page</a></li>
+                  <li><a href="/#projects">Projects</a></li>
+                  <li><a href="/#about">About</a></li>
+                  <li><a href="resumee.html">CV</a></li>
                 </ul>
               </nav>
             </section>
@@ -62,13 +63,13 @@
             
             <!-- Contact -->
             <section class="contact">
-              <h3 class="screen-reader-text">Kontakt</h3>
-              <p><span class="screen-reader-text">E-post:</span>
+              <h3 class="screen-reader-text">Say hi</h3>
+              <p><span class="screen-reader-text">Email:</span>
                 <a href="mailto:heia@astridandersen.no">heia@astridandersen.no</a></p>
                 
-                <h3 class="screen-reader-text">Profiler</h3>
+                <h3 class="screen-reader-text">Links</h3>
                 <ul class="social-profiles">
-                  <li><a href="https://instagram.com/astrid.prosjekter" rel="nofollow noreferrer" target="_blank">Instagram</a></li>
+                  <li><a href="https://instagram.com/astrid.aho" rel="nofollow noreferrer" target="_blank">Instagram</a></li>
                   <li><a href="https://github.com/astrixandersen" rel="nofollow noreferrer" target="_blank">Github</a></li>
                 </ul>
               </section>
@@ -84,63 +85,91 @@
         <main id="site-content">      
           <!-- Introduction -->
           <section class="page-hero">
-            <h2 class="screen-reader-text">Introduksjon</h2>
-            <p class="display">Heia! 🙋🏻‍♀ Jeg er faglært mediegrafiker med hjerte for design og
-              teknologi, og akkurat nå er jeg utvikler/designer for <a href="https://bigfish.no/" target="_blank" rel="external">Big Fish</a> og student ved
-              <a href="https://aho.no/" target="_blank" rel="external">Arkitektur- og designhøgskolen i Oslo</a> ✨</p>
-            </section> <!-- .page-hero-->
+            <h2 class="screen-reader-text">Introduction</h2>
+            <p class="display">I am from Northern Norway and I have always been passionate about design and technology. Currently I am studying design at <a href="https://aho.no/" target="_blank" rel="external">The Oslo School of Architecture and Design</a>, and this is some of my work 👇</p>
+          </section> <!-- .page-hero-->
+          
+          <!-- Projects -->
+          <section id="projects">
+            <h2 class="screen-reader-text">Projects</h2>
             
-            <!-- About -->
-            <section class="image-text-row">
-              
-              <div class="column align-center" style="flex-basis:66.66%">
-                <h2>Litt om meg</h2>
-                <p>Jeg kommer fra Nord-Troms, studerer design på <a href="https://aho.no/" target="_blank" rel="external">Arkitektur- og designhøgskolen i Oslo</a> og jobber litt som designer og utvikler for <a href="https://bigfish.no/" target="_blank" rel="external">Big Fish</a> 🦄. Ellers holder jeg på med hest, er glad i musikk og bøker, og elsker å være ute i skogen 🍃.</p>
-                
-                <p>Tidligere har jeg designet brukeropplevelser og skrevet kode for Røst kommunikasjon i Tromsø, og i 2018 tok jeg svennebrev i mediegrafikerfaget hos Chili Harstad 🎉. Hvis du vil vite mer om hva jeg har gjort før, kan du <a href="cv.html">ta en titt på CV-en min</a>! 🔍</p>
-              </div> <!-- .column-->
-              
-              <div class="column align-center" style="flex-basis:33.33%">
+            <article class="project" id="this-is-the-internet">
+              <header>
+                <h3>What would the Internet look like if it was a person?</h3>
+                <p class="meta">Academic project / Web</p>
+              </header>
+              <figure>
+               <img src="assets/img/projects/this-is-the-internet/compressed/this-is-the-internet-2048x1228.jpg" alt="A website about the Internet" />
+              </figure>
+            </article> <!-- .project #this-is-the-internet -->
+
+              <article class="project" id="skatetracker">
+                <header>
+                  <h3>App for skaters looking for skating spots & routes</h3>
+                  <p class="meta">Academic project / App</p>
+                </header>
                 <figure>
-                  <source type="image/webp" sizes="(max-width: 380px) 350px, (max-width: 748px) 768px, (max-width: 1210px) 350px, 100vw" srcset="assets/img/index/compressed/theia-768x1365.webp 768w, assets/img/index/compressed/theia-350x622.webp 350w, assets/img/index/compressed/theia.webp 2048w">
-                  <source type="image/jpeg" sizes="(max-width: 380px) 350px, (max-width: 748px) 768px, (max-width: 1210px) 350px, 100vw" srcset="assets/img/index/compressed/theia-768x1365.jpg 768w, assets/img/index/compressed/theia-350x622.jpg 225w, assets/img/index/compressed/theia.jpg 2048w">
-                  <img src="assets/img/index/compressed/theia.jpg" sizes="(max-width: 380px) 350px, (max-width: 748px) 768px, (max-width: 1210px) 350px, 100vw" srcset="assets/img/index/compressed/theia-768x1365.jpg 768w, assets/img/index/compressed/theia-350x622.jpg 225w, assets/img/index/compressed/theia.jpg 2048w" alt="Astrid Mathilde Andersen" />
-                  <figcaption>Sammen med hesten min, Theia</figcaption>
+                  <img src="assets/img/projects/skatetracker/compressed/skatetracker-2048x1228.jpg" alt="An app for skaters" />
                 </figure>
-              </div> <!-- .column -->
-              
-            </section> <!-- .image-text-row -->
+              </article> <!-- .project #skatetracker -->
             
-          </main> <!-- #site-content -->
+          </section>
           
-          <!-- SITE FOOTER -->
-          <footer id="site-footer">
-            <div class="container">
-              <h2 class="screen-reader-text">Kontaktinformasjon og lenker</h2>
+          <!-- About -->
+          <section id="about" class="image-text-row">
+            
+            <div class="column align-center" style="flex-basis:66.66%">
+              <h2>About me</h2>
+              <p>I grew up in the most northern part of Norway surrounded by nature and horses. I started doing photography when I was very young, which sparked my interest in design and technology later on. I learned to code at the age of 10, and when I was 19 I started my first job as a web developer after receiving my craft
+                certificate in graphic design.</p>
+                
+                <p>Since then I have been working as a designer/developer in several agencies in both Oslo and Northern Norway, and 2021 I
+                  started my 5 year masters degree in design at <a href="https://aho.no/" target="_blank" rel="external">The Oslo School of Architecture and Design</a>.</p>
+                  
+                  <p>If you want to read more about my career, <a href="resumee.html">take a look at my resumee</a>! 🔎</p>
+                </div> <!-- .column-->
+                
+                <div class="column align-center" style="flex-basis:33.33%">
+                  <figure>
+                    <source type="image/webp" sizes="(max-width: 380px) 350px, (max-width: 748px) 768px, (max-width: 1210px) 350px, 100vw" srcset="assets/img/index/compressed/theia-768x1365.webp 768w, assets/img/index/compressed/theia-350x622.webp 350w, assets/img/index/compressed/theia.webp 2048w">
+                    <source type="image/jpeg" sizes="(max-width: 380px) 350px, (max-width: 748px) 768px, (max-width: 1210px) 350px, 100vw" srcset="assets/img/index/compressed/theia-768x1365.jpg 768w, assets/img/index/compressed/theia-350x622.jpg 225w, assets/img/index/compressed/theia.jpg 2048w">
+                    <img src="assets/img/index/compressed/theia.jpg" sizes="(max-width: 380px) 350px, (max-width: 748px) 768px, (max-width: 1210px) 350px, 100vw" srcset="assets/img/index/compressed/theia-768x1365.jpg 768w, assets/img/index/compressed/theia-350x622.jpg 225w, assets/img/index/compressed/theia.jpg 2048w" alt="Astrid Mathilde Andersen" />
+                  </figure>
+                </div> <!-- .column -->
+                
+              </section> <!-- .image-text-row -->
               
-              <!-- Contact information -->
-              <h3 class="footer-heading">Kontakt</h3>
-              <p><span class="screen-reader-text">E-post:</span> <a href="mailto:heia@astridandersen.no">heia@astridandersen.no</a>
-              </p>
-              
-              <!-- Footer menu -->
-              <h3 class="footer-heading">Lenker</h3>
-              <nav id="footer-menu">
-                <ul>
-                  <li><a href="https://instagram.com/astrid.prosjekter" target="_blank" rel="noreferrer nofollow">Instagram</a></li>
-                  <li><a href="https://github.com/astrixandersen" target="_blank" rel="noreferrer nofollow">Github</a></li>
-                </ul>
-              </nav> <!-- #footer-menu -->
-              
-              <!-- Byline -->
-              <div id="footer-byline">
-                <a href="https://github.com/astrixandersen/astridandersen" target="_blank" rel="external">Se koden min -></a>
-              </div> <!-- #footer-byline-->
-              
-            </div> <!-- .container -->
-          </footer> <!-- #site-footer-->
-          
-          <script src="assets/js/min/open-menu.min.js"></script>
-          
-        </body>
-        </html>
+            </main> <!-- #site-content -->
+            
+            <!-- SITE FOOTER -->
+            <footer id="site-footer">
+              <div class="container">
+                <h2 class="screen-reader-text">Links and contact info</h2>
+                
+                <!-- Contact information -->
+                <h3 class="footer-heading">Say hi</h3>
+                <p><span class="screen-reader-text">Email:</span> <a href="mailto:heia@astridandersen.no">heia@astridandersen.no</a>
+                </p>
+                
+                <!-- Footer menu -->
+                <h3 class="footer-heading">Links</h3>
+                <nav id="footer-menu">
+                  <ul>
+                    <li><a href="https://instagram.com/astrid.prosjekter" target="_blank" rel="noreferrer nofollow">Instagram</a></li>
+                    <li><a href="https://github.com/astrixandersen" target="_blank" rel="noreferrer nofollow">Github</a></li>
+                  </ul>
+                </nav> <!-- #footer-menu -->
+                
+                <!-- Byline -->
+                <ul id="footer-byline">
+                  <li><a href="carbon-footprint.html">Carbon footprint</a></li>
+                  <li><a href="https://github.com/astrixandersen/astridandersen" target="_blank" rel="external">Browse the code</a></li>
+                </ul> <!-- #footer-byline-->
+                
+              </div> <!-- .container -->
+            </footer> <!-- #site-footer-->
+            
+            <script src="assets/js/min/open-menu.min.js"></script>
+            
+          </body>
+          </html>
