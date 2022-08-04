@@ -20,55 +20,57 @@
   }
   
   @media all and (min-width: $screen-lg) {
+    /* z-index: 1000;
+    position: fixed;*/
     padding-top: $unit400;
     padding-bottom: $unit400;
   }
   
   .site-title,
   .site-menu-toggle {
-    font-size: $font-size-smallest;
+    font-size: $font-size-smaller;
     font-weight: 400;
     
-    @media all and (min-width: $screen-sm) {
-      font-size: $font-size-smaller;
-    }
-    
-    @media all and (min-width: $screen-lg) {
+    @media all and (min-width: $screen-md) {
       font-size: $font-size-small;
     }
     
-    @media all and (min-width: $screen-xl) {
+    @media all and (min-width: $screen-lg) {
       font-size: $font-size-base;
+    }
+    
+    @media all and (min-width: $screen-xl) {
+      font-size: $font-size-large;
     }
   }
   
   .site-title {
     grid-area: title;
     margin-top: 0;
-
-    a {
-    text-decoration: none;
-    text-decoration-color: $color-link !important;
     
-    &:hover,
-    &:focus {
-      @media all and (min-width: $screen-md) {
-      text-decoration: underline;
+    a {
+      text-decoration: none;
       text-decoration-color: $color-link !important;
+      
+      &:hover,
+      &:focus {
+        @media all and (min-width: $screen-md) {
+          text-decoration: underline;
+          text-decoration-color: $color-link !important;
+        }
       }
     }
-  }
   }
   
   .site-menu-toggle {
     grid-area: menu;
     text-align: right;
-
+    
     a {
-    text-decoration: none;
-    transition: none;
+      text-decoration: none;
+      transition: none;
     }
-
+    
     span[role="img"] {
       padding-right: 0.4rem;
     }

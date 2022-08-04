@@ -9,9 +9,13 @@ h3,
 h4,
 h5,
 h6 {
-  margin-bottom: $unit200;
+  margin-bottom: $unit100;
   font-weight: 400;
   line-height: 1.3;
+
+  @media all and (min-width: $screen-md) {
+    margin-bottom: $unit200;
+  }
   
   @media all and (min-width: $screen-lg) {
     margin-bottom: $unit300;
@@ -27,18 +31,52 @@ h3,
 h4,
 h5,
 h6 {
-  margin-top: $unit400 + $unit100;
+  margin-top: $unit400;
   
-  @media all and (min-width: $screen-sm) {
+  @media all and (min-width: $screen-md) {
     margin-top: $unit500;
   }
   
+  @media all and (min-width: $screen-lg) {
+    margin-top: $unit500;
+  }
+}
+
+
+.display, 
+h2 {
+  margin-top: 0;
+  font-size: calc(3.1rem * 0.6);
+
   @media all and (min-width: $screen-md) {
-    margin-top: $unit600;
+    font-size: calc(3.1rem * 0.7);
   }
   
   @media all and (min-width: $screen-lg) {
-    margin-top: $unit600;
+    font-size: 3.1rem;
+  }
+  
+  @media all and (min-width: $screen-xl) {
+    font-size: calc(3.1rem * 1.1);
+  }
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-size: $font-size-small;
+
+  @media all and (min-width: $screen-sm) {
+    font-size: $font-size-base;
+  }
+  
+  @media all and (min-width: $screen-md) {
+    font-size: $font-size-large;
+  }
+  
+  @media all and (min-width: $screen-xl) {
+    font-size: calc($font-size-large * 1.1);
   }
 }
 
@@ -46,92 +84,10 @@ p,
 ul,
 ol,
 figure {
-  margin-top: $unit200;
-  
-  @media all and (min-width: $screen-lg) {
-    margin-top: $unit300;
-  }
-}
+  margin-top: $unit100;
 
-.display {
-  font-size: calc(6.4rem * 0.4);
-  font-weight: 400;
-  line-height: 1.4;
-  
-  @media all and (min-width: $screen-sm) {
-    font-size: calc(6.4rem * 0.5);
-  }
-  
   @media all and (min-width: $screen-md) {
-    font-size: calc(6.4rem * 0.6);
-  }
-  
-  @media all and (min-width: $screen-lg) {
-    font-size: calc(6.4rem * 0.7);
-  }
-  
-  @media all and (min-width: $screen-xl) {
-    font-size: 6.4rem;
-  }
-}
-
-h2 {
-  margin-top: $unit500;
-  font-size: calc(6.4rem * 0.4);
-  letter-spacing: 0.075rem;
-  
-  @media all and (min-width: $screen-sm) {
-    font-size: calc(6.4rem * 0.5);
-  }
-  
-  @media all and (min-width: $screen-md) {
-    margin-top: $unit700;
-    font-size: calc(6.4rem * 0.6);
-  }
-  
-  @media all and (min-width: $screen-lg) {
-    margin-top: $unit700 + $unit200;
-    font-size: calc(6.4rem * 0.7);
-  }
-}
-
-h3 {
-  font-size: calc(4.4rem * 0.4);
-  letter-spacing: 0.075rem;
-  
-  +h4 {
-    margin-top: 0;
-  }
-  
-  @media all and (min-width: $screen-sm) {
-    font-size: calc(4.4rem * 0.5);
-  }
-  
-  @media all and (min-width: $screen-md) {
-    font-size: calc(4.4rem * 0.6);
-  }
-  
-  @media all and (min-width: $screen-lg) {
-    font-size: calc(4.4rem * 0.7);
-    line-height: 1.2;
-  }
-}
-
-h4,
-h5,
-h6 {
-  font-size: $font-size-smaller;
-  
-  @media all and (min-width: $screen-sm) {
-    font-size: $font-size-small;
-  }
-  
-  @media all and (min-width: $screen-md) {
-    font-size: $font-size-base;
-  }
-  
-  @media all and (min-width: $screen-xl) {
-    font-size: $font-size-large;
+    margin-top: $unit200;
   }
 }
 
@@ -152,30 +108,16 @@ b {
   font-weight: 600;
 }
 
-.has-large-font-size {
-  font-size: $font-size-base;
-  line-height: 1.5;
-  
-  @media all and (min-width: $screen-md) {
-    font-size: $font-size-large;
-  }
-  
-  strong,
-  b {
-    font-weight: 600;
-  }
-}
-
-.has-regular-font-size {
-  font-size: $font-size-small;
-  
-  @media all and (min-width: $screen-md) {
-    font-size: $font-size-base;
-  }
+.display {
+  margin: 0;
 }
 
 .has-small-font-size {
-  font-size: $font-size-smaller;
+  font-size: $font-size-smallest;
+
+  @media all and (min-width: $screen-sm) {
+    font-size: $font-size-smaller;
+  }
   
   @media all and (min-width: $screen-md) {
     font-size: $font-size-small;

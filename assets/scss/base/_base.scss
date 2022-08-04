@@ -11,14 +11,10 @@ body {
   background: $color-background;
   font-family: "Inter", system-ui, sans-serif;
   font-feature-settings: "cpsp", "salt";
-  font-size: $font-size-smaller;
+  font-size: $font-size-small;
   font-weight: 400;
   color: $color-text;
   -webkit-font-smoothing: antialiased;
-
-  @media all and (min-width: $screen-sm) {
-    font-size: $font-size-small;
-  }
 
   @media all and (min-width: $screen-md) {
     font-size: $font-size-base;

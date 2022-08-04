@@ -126,8 +126,19 @@
       li {
         padding: 0;
         list-style: none;
+        
+        + li {
+          @media all and (max-width: $screen-md) {
+            padding-top: 0.4rem;
+          }
+          
+          @media all and (min-width: $screen-md) {
+            padding-left: 0.8rem;
+          }
+        }
       }
     }
+    
     section + section {
       @media all and (max-width: $screen-md) {
         margin-top: $unit500;
@@ -136,13 +147,15 @@
     
     nav {
       li {
-        @media all and (max-width: $screen-md) {
-          font-size: 2rem;
+        font-size: $font-size-base; 
+        
+        @media all and (min-width: $screen-sm) {
+          font-size: $font-size-large;
         }
         
         @media all and (min-width: $screen-md) {
           display: inline-block;
-          font-size: 1.8rem;
+          font-size: $font-size-small;
           font-weight: 400;
           
           a {
@@ -156,53 +169,42 @@
             }
           }
         }
-      }
-    }
-    
-    /* Projects */
-    #projects {
-      @media all and (max-width: $screen-md) {
-        margin: 0;
-      }
-      
-      li + li {
-        @media all and (max-width: $screen-md) {
-          padding-top: 0.4rem;
-        }
-      }
-    }
-    
-    /* Pages */
-    #pages {
-      @media all and (max-width: $screen-md) {
-        margin: 0;
-      }
-      
-      li + li {
-        @media all and (max-width: $screen-md) {
-          padding-top: $unit100 / 2;
-        }
         
-        @media all and (min-width: $screen-md) {
-          padding-left: 0.8rem;
+        @media all and (min-width: $screen-lg) {
+          font-size: $font-size-base;
         }
+        }
+      }
+      
+      /* Projects */
+      #projects {
+        @media all and (max-width: $screen-md) {
+          margin: 0;
+        }
+      }
+      
+      /* Pages */
+      #pages {
+        @media all and (max-width: $screen-md) {
+          margin: 0;
+        }
+      }
+      
+      /* Contact */
+      .contact {
+        font-size: $font-size-small;
+      }
+      
+      /* Social profiles */ 
+      .social-profiles {
+        margin-top: 0.4rem;
       }
     }
     
-    /* Contact */
-    .contact {
-      font-size: 1.6rem;
-      
-      .social-profiles {
-        margin-top: $unit100;
+    @media all and (min-width: $screen-md) {
+      .contact,
+      #pages li.home {
+        display: none;
       }
     }
   }
-  
-  @media all and (min-width: $screen-md) {
-    .contact,
-    #pages li.home {
-      display: none;
-    }
-  }
-}
