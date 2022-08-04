@@ -27,7 +27,7 @@
   .site-title,
   .site-menu-toggle {
     font-size: $font-size-smallest;
-    font-weight: 500;
+    font-weight: 400;
     
     @media all and (min-width: $screen-sm) {
       font-size: $font-size-smaller;
@@ -48,13 +48,13 @@
 
     a {
     text-decoration: none;
-    text-decoration-color: rgba($color-greyish-purple, 0.65) !important;
+    text-decoration-color: $color-link !important;
     
     &:hover,
     &:focus {
       @media all and (min-width: $screen-md) {
       text-decoration: underline;
-      text-decoration-color: rgba($color-greyish-purple, 0.65) !important;
+      text-decoration-color: $color-link !important;
       }
     }
   }

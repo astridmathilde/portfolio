@@ -38,12 +38,11 @@ $font-size-small: 1.8rem;
 $font-size-base: 2rem;
 $font-size-large: 2.4rem;
 
-// Colors
-$color-purple-black: #170d24;
-$color-dark-purple: #241438;
-$color-purple: #845eb0;
-$color-greyish-purple: #c2aed8;
-$color-light-purple: #f8f5fb;
+// Colors'
+$color-background: #f8f5fb; // $color-light-purple
+$color-text: #241438; // $color-dark-purple
+$color-link: #D4C7E4; // $color-greyish-purple
+$color-link-hover: #9B7CBF; // $color-purple:
 
 // Transitions
 $duration-fast: 0.2s;

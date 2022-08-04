@@ -3,9 +3,9 @@ a {
   font-weight: inherit;
   text-decoration: underline;
   text-decoration-thickness: 2px;
-  text-decoration-skip: none;
-  text-decoration-skip-ink: none;
-  text-decoration-color: rgba($color-greyish-purple, 0.65);
+  text-decoration-skip: objects;
+  text-decoration-skip-ink: auto;
+  text-decoration-color: $color-link;
   text-underline-offset: 1px;
   color: inherit;
   -webkit-transition: all $duration-fast $ease;
@@ -13,12 +13,12 @@ a {
   transition: all $duration-fast $ease;
 
   @media all and (min-width: $screen-sm) {
-    text-decoration-thickness: 2.5px;
+    text-decoration-thickness: 2px;
   }
 
   &:hover,
   &:focus {
-    text-decoration-color: rgba($color-purple, 0.8);
+    text-decoration-color: $color-link-hover;
     -webkit-transition: all $duration-fast $ease;
     -moz-transition: all $duration-fast $ease;
     transition: all $duration-fast $ease;

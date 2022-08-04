@@ -8,12 +8,12 @@ html {
 
 body {
   overflow-x: hidden;
-  background: #fefdfe;
+  background: $color-background;
   font-family: "Inter", system-ui, sans-serif;
   font-feature-settings: "cpsp", "salt";
   font-size: $font-size-smaller;
   font-weight: 400;
-  color: $color-dark-purple;
+  color: $color-text;
   -webkit-font-smoothing: antialiased;
 
   @media all and (min-width: $screen-sm) {
@@ -45,7 +45,7 @@ body {
 
 .screen-reader-text:focus {
   background-color: white;
-  border: 1px solid $color-purple-black;
+  border: 1px solid $color-link-hover;
   clip: auto !important;
   clip-path: none;
   color: #444;
