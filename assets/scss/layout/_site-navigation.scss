@@ -149,10 +149,6 @@
       li {
         font-size: $font-size-base; 
         
-        @media all and (min-width: $screen-sm) {
-          font-size: $font-size-large;
-        }
-        
         @media all and (min-width: $screen-md) {
           display: inline-block;
           font-size: $font-size-small;
@@ -176,23 +172,11 @@
         }
       }
       
-      /* Projects */
-      #projects {
-        @media all and (max-width: $screen-md) {
-          margin: 0;
-        }
-      }
-      
       /* Pages */
-      #pages {
+      #list-pages {
         @media all and (max-width: $screen-md) {
           margin: 0;
         }
-      }
-      
-      /* Contact */
-      .contact {
-        font-size: $font-size-small;
       }
       
       /* Social profiles */ 
@@ -202,8 +186,8 @@
     }
     
     @media all and (min-width: $screen-md) {
-      .contact,
-      #pages li.home {
+      .menu-contact,
+      #list-pages li.home {
         display: none;
       }
     }

@@ -3,7 +3,7 @@ section.page-hero {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 80vh;
+  min-height: 75vh;
   padding-top: $unit500;
   padding-bottom: $unit500;
   text-align: center;
@@ -11,10 +11,6 @@ section.page-hero {
   @media all and (min-width: $screen-sm) {
     padding-top: $unit600;
     padding-bottom: $unit600;
-  }
-
-  @media all and (min-width: $screen-md) {
-    min-height: 75vh;
   }
 
   + section {
