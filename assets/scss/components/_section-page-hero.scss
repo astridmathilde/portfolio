@@ -1,12 +1,11 @@
 section.page-hero {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  min-height: 75vh;
+  height: 75vh;
   padding-top: $unit500;
   padding-bottom: $unit500;
-  text-align: center;
 
   @media all and (min-width: $screen-sm) {
     padding-top: $unit600;
@@ -19,7 +18,5 @@ section.page-hero {
 
   p {
     max-width: $container-text;
-    margin-left: auto;
-    margin-right: auto;
   }
 }

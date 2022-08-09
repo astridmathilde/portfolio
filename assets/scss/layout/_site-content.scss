@@ -1,33 +1,30 @@
 /**
- *
- * Layout => Site Content
- *
- **/
+*
+* Layout => Site Content
+*
+**/
 
 #site-content {
-  max-width: $container-content;
-  /*margin-left: auto;
-  margin-right: auto;*/
   @extend .site-padding;
-
-  @media all and (min-width: 1720px) {
-    /*padding-left: 0;
-    padding-right: 0;*/
-  }
-
+  
   section + section {
     margin-top: $unit600;
-
+    
     @media all and (min-width: $screen-md) {
       margin-top: $unit700;
     }
+    
+    
+    @media all and (min-width: $screen-lg) {
+      margin-top: $unit800;
+    }
   }
-
+  
   figcaption {
     margin-top: 0.4rem;
     font-size: $font-size-smaller;
     text-align: right;
-
+    
     @media all and (min-width: $screen-lg) {
       font-size: $font-size-small;
     }
@@ -44,8 +41,8 @@
 @media all and (min-width: $screen-md) {
   #site-header,
   #site-content {
-      opacity: 0;
-      filter: alpha(opacity=0);
-      animation: fadeIn $duration-slow $ease-in-out 0.1s forwards;
-    }
+    opacity: 0;
+    filter: alpha(opacity=0);
+    animation: fadeIn $duration-slow $ease-in-out 0.1s forwards;
+  }
 }

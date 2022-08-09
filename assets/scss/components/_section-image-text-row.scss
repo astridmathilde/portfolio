@@ -1,56 +1,71 @@
 section.image-text-row {
   display: flex;
   flex-wrap: wrap;
-
+  
   @media all and (min-width: $screen-md) {
     flex-wrap: nowrap;
   }
-
+  
+  &.align-center {
+    .column {
+      width: 100%;
+      align-self: center;
+    }
+  }
+  
   h2,
   h3,
   h4 {
     margin-top: 0;
   }
-
+  
   figure {
     margin-top: 0;
   }
-
+  
   .column {
     flex-grow: 1;
     min-width: 0;
     word-break: break-word;
     overflow-wrap: break-word;
-
-    &:not(:first-child) {
-      margin-top: $unit200;
-    }
-
-    p:first-child {
-      margin-top: 0;
-    }
-
+    
     @media all and (max-width: $screen-md) {
       flex-basis: 100% !important;
     }
-
+    
     @media all and (min-width: $screen-md) {
       flex-basis: 0;
       flex-grow: 1;
-
+      
       &[style*="flex-basis"] {
         flex-grow: 0;
       }
-
-      &:not(:first-child) {
+      
+      &.has-image {
         margin-top: 0;
+      }
+      
+      &.has-text {
         margin-left: $unit400;
       }
     }
-
-    &.align-center {
-      width: 100%;
-      align-self: center;
+    
+    &.has-image {
+      @media all and (min-width: $screen-md) {
+        order: -1;
+      }
+    }
+    
+    &.has-image {
+      margin-top: $unit200;
+    }
+    
+    p {
+      max-width: $container-text;
+      
+      &:first-child {
+        margin-top: 0;
+      }
     }
   }
 }
