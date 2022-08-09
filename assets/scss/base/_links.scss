@@ -2,7 +2,7 @@ a {
   font-size: inherit;
   font-weight: inherit;
   text-decoration: underline;
-  text-decoration-thickness: 2px;
+  text-decoration-thickness: 1.5px;
   text-decoration-skip: objects;
   text-decoration-skip-ink: auto;
   text-decoration-color: $color-link;
@@ -12,7 +12,7 @@ a {
   -moz-transition: all $duration-fast $ease;
   transition: all $duration-fast $ease;
 
-  @media all and (min-width: $screen-sm) {
+  @media all and (min-width: $screen-md) {
     text-decoration-thickness: 2px;
   }
 
