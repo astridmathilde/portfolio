@@ -6,6 +6,7 @@
 
 #site-header {
   display: flex;
+  position: relative;
   width: 100%;
   justify-content: space-between;
   align-items: center;
@@ -15,13 +16,12 @@
   text-align: left;
   
   @media all and (min-width: $screen-md) {
+    z-index: 1000;
     padding-top: $unit300;
     padding-bottom: $unit300;
   }
   
   @media all and (min-width: $screen-lg) {
-    /* z-index: 1000;
-    position: fixed;*/
     padding-top: $unit400;
     padding-bottom: $unit400;
   }

@@ -90,13 +90,13 @@
 
 /* Menu */
 #site-navigation {
+  z-index: 1000;
+  position: fixed;
   @extend .site-padding;
   
   @media all and (max-width: $screen-md) {
-    z-index: 1000;
     display: none;
     overflow-y: scroll;
-    position: fixed;
     top: 0;
     left: 100vw;
     
@@ -110,7 +110,18 @@
   }
   
   @media all and (min-width: $screen-md) {
+    top: $unit300;
+    right: $unit400;
     padding: 0;
+  }
+  
+  @media all and (min-width: $screen-lg) {
+    top: $unit400;
+    right: $unit500;
+  }
+  
+  @media all and (min-width: $screen-xl) {
+    right: $unit500;
   }
   
   /* Menu content */
@@ -169,26 +180,26 @@
         @media all and (min-width: $screen-lg) {
           font-size: $font-size-base;
         }
-        }
-      }
-      
-      /* Pages */
-      #list-pages {
-        @media all and (max-width: $screen-md) {
-          margin: 0;
-        }
-      }
-      
-      /* Social profiles */ 
-      .social-profiles {
-        margin-top: 0.4rem;
       }
     }
     
-    @media all and (min-width: $screen-md) {
-      .menu-contact,
-      #list-pages li.home {
-        display: none;
+    /* Pages */
+    #list-pages {
+      @media all and (max-width: $screen-md) {
+        margin: 0;
       }
     }
+    
+    /* Social profiles */ 
+    .social-profiles {
+      margin-top: 0.4rem;
+    }
   }
+  
+  @media all and (min-width: $screen-md) {
+    .menu-contact,
+    #list-pages li.home {
+      display: none;
+    }
+  }
+}
