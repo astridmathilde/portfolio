@@ -50,6 +50,19 @@
       }
     }
   }
+
+    a {
+      text-decoration: none;
+      text-decoration-color: $color-link  !important;
+  
+      &:hover,
+      &:focus {
+        @media all and (min-width: $screen-md) {
+          text-decoration: underline;
+          text-decoration-color: $color-link  !important;
+        }
+      }
+    }
   
   #footer-byline {
     width: 100%;
