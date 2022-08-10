@@ -98,12 +98,19 @@ h6 {
 
 p,
 ul,
-ol,
-figure {
+ol {
   margin-top: $unit100;
   
   @media all and (min-width: $screen-md) {
     margin-top: $unit200;
+  }
+}
+
+figure {
+  margin-top: $unit200;
+  
+  @media all and (min-width: $screen-md) {
+    margin-top: $unit300;
   }
 }
 

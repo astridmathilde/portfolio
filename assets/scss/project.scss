@@ -1,0 +1,76 @@
+@import "base/variables";
+
+.single-project {
+  
+  .entry-thumbnail { 
+    margin: 0;
+  }
+  
+  .container {
+    position: relative;
+    margin-top: $unit200;
+    
+    @media all and (min-width: $screen-lg) {
+      margin-top: $unit300;
+    }
+    
+    @media all and (min-width: 873px) {
+      display: grid;
+      grid-template-columns: [meta] 3fr [content] 9fr;
+      gap: 0 $grid-gutter-column;
+      justify-items: start;
+    }
+    
+    @media all and (min-width: 1150px) {
+      grid-template-columns: [meta] 3fr [content] 9fr;
+    }
+    
+    .entry-meta {
+      display: block;
+      margin:  0;
+      padding: 0;
+
+      &.visible {
+
+      }
+      
+      @media all and (min-width: 873px) {
+        grid-area: meta;
+      }
+      
+      li {
+        list-style: none;
+        margin-top: $unit100;
+        padding: 0;
+
+        @media all and (min-width: 873px) {
+          max-width: 20ch;
+          margin-top: $unit200;
+        }
+        
+        .title {
+          display: block;
+          margin-bottom: 0.8rem;
+          font-size: $font-size-smallest;
+          
+          @media all and (min-width: $screen-sm) {
+            font-size: $font-size-smaller;
+          }
+          
+          @media all and (min-width: $screen-md) {
+            font-size: $font-size-small;
+          }
+        }
+      }
+    }
+    
+    .entry-content {
+      margin-top: $unit400;
+
+      @media all and (min-width: 873px) {
+        grid-area: content;
+        margin: 0;
+      }
+    }
+  }
+}
