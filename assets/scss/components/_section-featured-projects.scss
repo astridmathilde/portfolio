@@ -1,5 +1,6 @@
 .featured-projects {
-  .project {    
+  .project {
+    
     +.project {
       margin-top: $unit300;
       
@@ -14,22 +15,21 @@
     
     
     &:nth-child(odd) {
+      text-align: right;
       a {
         @media all and (min-width: $screen-sm) {
-          align-items: flex-end;
+          text-align: left;
         }
       }
     }
     
     a {
-      display: flex;
+      display: inline-flex;
       flex-direction: column;
       text-decoration: none !important;
-      header, 
-      figure {
-        @media all and (min-width: $screen-sm) {
-          width: 80%;
-        }
+      
+      @media all and (min-width: $screen-sm) {
+        width: 75%;
       }
       
       figure {
@@ -45,7 +45,7 @@
           margin-top: 0;
           margin-bottom: $unit100 / 2;
           text-decoration: underline;
-          text-decoration-color: $color-link;
+          text-decoration-color: transparent;
           -webkit-transition: all $duration-fast $ease;
           -moz-transition: all $duration-fast $ease;
           transition: all $duration-fast $ease;
@@ -54,17 +54,18 @@
             margin-top: 0.8rem;
           }
         }
-        
-        &:hover,
-        &:focus {
-          header .project-title {
-            text-decoration-color: $color-link-hover;
-            -webkit-transition: all $duration-fast $ease;
-            -moz-transition: all $duration-fast $ease;
-            transition: all $duration-fast $ease;
-          }
+      }
+      
+      &:hover,
+      &:focus {
+        header .entry-title {
+          text-decoration-color: $color-link;
+          -webkit-transition: all $duration-fast $ease;
+          -moz-transition: all $duration-fast $ease;
+          transition: all $duration-fast $ease;
         }
       }
     }
+    
   }
 }
