@@ -1,0 +1,48 @@
+The app was done in 13 days as part of an introduction to screen based interactions, one of the modules in the course “Exploring design through interactions”. The brief was to design a digital service that explores different ways of non-commercial sharing. By the end of the project we delivered a demo of the prototype with an example of usage. 
+
+Each one of us was delivered an object, and mine was a skateboard. This resulted in the app Skatetracker, where skaters can share and find new skating spots and routes. The app includes an overview of locations to avoid due to traffic, road damage or high bust risk. The users can add danger warnings for others to find on their map. This creates a nice and safe experience for beginners, while also adding more challenges for the pros.
+
+[video showing the result]
+
+The prosess
+
+I started by brainstorming different ways to share skateboarding. It was clear that nobody would actually want to share their skateboard, and that it might be more relevant with a digital service that lets skaters share their favorite skating spots. From there I did some research and created two user personas.
+
+Andreas (40) lives at Grünerløkka and he used to skate when he was younger. He does not have any friends that skate anymore and he is looking for quiet places to  practice his skills and meet other skaters.
+
+Kaja (19) lives at Tøyen and she is trying to save money on public transport, but she is struggling to find routes to take with her longboard.  
+
+[personas]
+
+I checked existing apps and websites for skating spots, and worked with the app structure. I created a map over the functions, making it easier to find what screens I had to design.
+
+[app structure map]
+
+Based on the app structure, I drew simple paper prototypes and did some user testing within the prototype app Marvel. The users were given different tasks, like adding a danger warning, look for their saved locations or find the locations they had posted. I observed that some of the users hesitated when they looked for their saved locations. Otherwise they did not have any struggles navigating the app. 
+
+[paper prototypes]
+
+After the first user test, I went back to my personas and sketched out the user journey for one of them. The user journey helped me highlight the exact functions I needed, and that saved me lots of time! 
+
+[user journeys]
+
+Then I started setting up a wireframe in Figma, and at the same time I wrote the copy for the app. Transferring the paper prototypes as wireframes to Figma helped me focus on the interactions and content structure. 
+
+[first version of wireframe]
+
+[video of first version of wireframe that shows the interactions]
+
+After the first draft, I did a second round of user testing. The general feedback was good, but I discovered that some of the checkboxes was hard to touch and that the touch area needed to be larger. On the main screen showing the map, some users spent a few seconds longer to find the filter icon. 
+
+[feedback from user testing]
+
+I spent the last week working with UI and the visual identity. I experimented with different typefaces and color palettes until I found a combination that fitted the theme and target group. 
+
+[working with the visual identity]
+
+[the screens showing the UI]
+
+[video showing the navigation]
+
+The final prototype I delivered by the end of the project was a bit too stripped down, so I made a few adjustments after the presentation. I re-added the labels on the dots showing the different spots, parks and routes in the area, making it easier to distinct them. Also, I kept the "close"-button after opening the spots, parks or routes, so that the user did not have to think about how to find their way back.
+ 
