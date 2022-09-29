@@ -15,11 +15,12 @@
     
     
     &:nth-child(odd) {
-      text-align: right;
+      @media all and (min-width: $screen-sm) {
+        text-align: right;
+      }
+
       a {
-        @media all and (min-width: $screen-sm) {
-          text-align: left;
-        }
+        text-align: left;
       }
     }
     
@@ -49,10 +50,6 @@
           -webkit-transition: all $duration-fast $ease;
           -moz-transition: all $duration-fast $ease;
           transition: all $duration-fast $ease;
-          
-          @media all and (min-width: $screen-sm) {
-            margin-top: 0.8rem;
-          }
         }
       }
       

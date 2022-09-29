@@ -158,11 +158,8 @@
     
     nav {
       li {
-        font-size: $font-size-base; 
-        
         @media all and (min-width: $screen-md) {
           display: inline-block;
-          font-size: $font-size-small;
           font-weight: 400;
           
           a {
@@ -176,10 +173,6 @@
             }
           }
         }
-        
-        @media all and (min-width: $screen-lg) {
-          font-size: $font-size-base;
-        }
       }
     }
     
@@ -187,12 +180,26 @@
     #list-pages {
       @media all and (max-width: $screen-md) {
         margin: 0;
+        font-size: 1.3rem;
+      }
+    }
+    
+    /* Contact */
+    .menu-contact {
+      p {
+        @media all and (max-width: $screen-md) {
+          font-size: 1rem;
+        }
       }
     }
     
     /* Social profiles */ 
     .social-profiles {
       margin-top: 0.4rem;
+
+      @media all and (max-width: $screen-md) {
+        font-size: 1rem;
+      }
     }
   }
   
