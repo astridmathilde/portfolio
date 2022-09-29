@@ -22,12 +22,8 @@
   
   figcaption {
     margin-top: 0.4rem;
-    font-size: $font-size-smaller;
+    font-size: 0.9em;
     text-align: right;
-    
-    @media all and (min-width: $screen-lg) {
-      font-size: $font-size-small;
-    }
   }
 }
 
