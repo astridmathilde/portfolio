@@ -2,7 +2,7 @@ section.image-text-row {
   display: flex;
   flex-wrap: wrap;
   
-  @media all and (min-width: $screen-md) {
+  @media all and (min-width: 1010px) {
     flex-wrap: nowrap;
   }
   
@@ -29,11 +29,11 @@ section.image-text-row {
     word-break: break-word;
     overflow-wrap: break-word;
     
-    @media all and (max-width: $screen-md) {
+    @media all and (max-width: 1010px) {
       flex-basis: 100% !important;
     }
     
-    @media all and (min-width: $screen-md) {
+    @media all and (min-width: 1010px) {
       flex-basis: 0;
       flex-grow: 1;
       
@@ -51,7 +51,7 @@ section.image-text-row {
     }
     
     &.has-image {
-      @media all and (min-width: $screen-md) {
+      @media all and (min-width: 1010px) {
         order: -1;
       }
     }

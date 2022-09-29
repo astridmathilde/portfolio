@@ -43,28 +43,20 @@ h6 {
   }
 }
 
-
+h1 {
+  font-size: inherit;
+}
 
 .display, 
 h2 {
   margin-top: 0;
-  font-size: calc(3.1rem * 0.6);
-  
-  @media all and (min-width: $screen-md) {
-    font-size: calc(3.1rem * 0.7);
-  }
-  
-  @media all and (min-width: $screen-lg) {
-    font-size: 3.1rem;
-  }
-  
-  @media all and (min-width: $screen-xl) {
-    font-size: calc(3.1rem * 1.1);
-  }
 }
 
-h2,
-h3  {
+.display {
+ font-size: 1.3em;
+}
+
+h2 {
   margin-bottom: $unit100;
   
   @media all and (min-width: $screen-md) {
@@ -73,32 +65,10 @@ h3  {
 }
 
 h3 {
-  font-size: $font-size-small;
-  
-  @media all and (min-width: $screen-sm) {
-    font-size: $font-size-base;
-  }
+  margin-bottom: $unit100;
   
   @media all and (min-width: $screen-md) {
-    font-size: $font-size-large;
-  }
-  
-  @media all and (min-width: $screen-xl) {
-    font-size: calc($font-size-large * 1.1);
-  }
-}
-
-h4,
-h5,
-h6 {
-  font-size: $font-size-smaller;
-  
-  @media all and (min-width: $screen-sm) {
-    font-size: $font-size-small;
-  }
-  
-  @media all and (min-width: $screen-md) {
-    font-size: $font-size-base;
+    margin-bottom: $unit100;
   }
 }
 
@@ -153,6 +123,7 @@ b {
   margin: 0;
 }
 
+
 .has-small-font-size {
   font-size: $font-size-smallest;
   
@@ -162,5 +133,29 @@ b {
   
   @media all and (min-width: $screen-md) {
     font-size: $font-size-small;
+  }
+  
+  @media all and (min-width: $screen-lg) {
+    font-size: $font-size-base;
+  }
+  
+  @media all and (min-width: $screen-xl) {
+    font-size: $font-size-large;
+  }
+}
+
+.has-extra-small-font-size {
+  font-size: $font-size-smallest;
+
+  @media all and (min-width: $screen-md) {
+    font-size: $font-size-smaller;
+  }
+
+  @media all and (min-width: $screen-lg) {
+    font-size: $font-size-small;
+  }
+
+  @media all and (min-width: $screen-xl) {
+    font-size: $font-size-base;
   }
 }

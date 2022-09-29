@@ -29,10 +29,6 @@
       display: block;
       margin:  0;
       padding: 0;
-
-      &.visible {
-
-      }
       
       @media all and (min-width: 873px) {
         grid-area: meta;
@@ -50,10 +46,11 @@
         
         .title {
           display: block;
-          margin-bottom: 0.8rem;
-          font-size: $font-size-smallest;
+          margin-bottom: 0.4rem;
+          font-size: $font-size-smaller;
           
           @media all and (min-width: $screen-sm) {
+            margin-bottom: 0.8rem;
             font-size: $font-size-smaller;
           }
           

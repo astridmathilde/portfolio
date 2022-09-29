@@ -66,12 +66,14 @@
   
   #footer-byline {
     width: 100%;
-    margin-top: $unit200;
+    margin-top: $unit500;
     line-height: 1.6;
     text-align: right;
+    font-size: 0.9rem;
     
     @media all and (min-width: $screen-md) {
       margin-top: 0;
+      font-size: 1rem;
     }
     
     p {

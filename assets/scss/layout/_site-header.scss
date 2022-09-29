@@ -13,7 +13,12 @@
   padding-top: $unit200;
   padding-bottom: $unit200;
   @extend .site-padding;
+  font-size: 0.9rem;
   text-align: left;
+  
+  @media all and (min-width: $screen-sm) {
+    font-size: inherit;
+  }
   
   @media all and (min-width: $screen-md) {
     z-index: 1000;
@@ -28,20 +33,7 @@
   
   .site-title,
   .site-menu-toggle {
-    font-size: $font-size-smaller;
     font-weight: 400;
-    
-    @media all and (min-width: $screen-md) {
-      font-size: $font-size-small;
-    }
-    
-    @media all and (min-width: $screen-lg) {
-      font-size: $font-size-base;
-    }
-    
-    @media all and (min-width: $screen-xl) {
-      font-size: $font-size-large;
-    }
   }
   
   .site-title {
