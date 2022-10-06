@@ -1,48 +1,73 @@
 @import "base/variables";
 
 .single-project {
-  
+
+  .entry-header {
+    h2 {
+      margin-bottom: $unit100 / 2;
+
+      @media all and (min-width: $screen-sm) {
+        margin-bottom: $unit100;
+      }
+
+      @media all and (min-width: $screen-lg) {
+        margin-bottom: $unit200;
+      }
+    }
+  }
+
   .entry-thumbnail {
     margin: 0;
   }
-  
+
   .container {
     position: relative;
-    margin-top: $unit200;
-    
-    @media all and (min-width: $screen-lg) {
+    margin-top: $unit100;
+
+    @media all and (min-width: $screen-sm) {
       margin-top: $unit300;
     }
-    
+
+    @media all and (min-width: $screen-lg) {
+      margin-top: $unit400;
+    }
+
     @media all and (min-width: 873px) {
       display: grid;
       grid-template-columns: 3fr 9fr;
       gap: 0 $grid-gutter-column;
       justify-items: start;
     }
-    
+
     .entry-meta {
       display: block;
-      
+
       ul {
         margin: 0;
         padding: 0;
-        
+
         @media all and (min-width: 873px) {
           position: sticky;
-          top: 40px;
+          top: $unit400;
         }
-        
+
         li {
           list-style: none;
-          margin-top: $unit100;
+          margin: 0;
           padding: 0;
-          
+
+          +li {
+            margin-top: $unit100;
+
+            @media all and (min-width: $screen-md) {
+              margin-top: $unit200;
+            }
+          }
+
           @media all and (min-width: 873px) {
             max-width: 20ch;
-            margin-top: $unit200;
           }
-          
+
           .title {
             display: block;
             margin-bottom: 0.4rem;
@@ -51,12 +76,16 @@
         }
       }
     }
-    
+
     .entry-content {
       margin-top: $unit400;
-      
+
       @media all and (min-width: 873px) {
         margin: 0;
+      }
+
+      p:first-child {
+        margin-top: 0;
       }
     }
   }
