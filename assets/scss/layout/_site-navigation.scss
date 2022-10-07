@@ -126,8 +126,14 @@
   
   /* Menu content */
   .site-menu-content {
+    position: relative;
+    
     @media all and (max-width: $screen-md) {
-      margin-top: $unit600;
+      margin-top: $unit500;
+    }
+    
+    h3 {
+      font-size: 1em;
     }
     
     ul {
@@ -150,17 +156,43 @@
       }
     }
     
-    section + section {
+    section + section{
       @media all and (max-width: $screen-md) {
-        margin-top: $unit500;
+        margin-top: $unit400;
       }
     }
     
     nav {
+      &#list-pages,
+      &#list-projects {
+        @media all and (max-width: $screen-md) {
+          font-size: 1.3em;
+        }
+      }
+      
+      &#list-pages {
+        @media all and (max-width: $screen-md) {
+          .about,
+          .projects {
+            display: none;
+          }
+        }
+      }
+      
+      &#list-projects {
+        @media all and (min-width: $screen-md) {
+          display: none;
+        }
+      }
+      
       li {
         @media all and (min-width: $screen-md) {
           display: inline-block;
           font-weight: 400;
+          
+          &.index {
+            display: none;
+          }
           
           a {
             text-decoration: none;
@@ -176,37 +208,28 @@
       }
     }
     
-    /* Pages */
-    #list-pages {
-      @media all and (max-width: $screen-md) {
-        margin: 0;
-        font-size: 1.3rem;
-      }
-    }
     
     /* Contact */
     .menu-contact {
+      margin-top: $unit700;
+      
+      @media all and (min-width: $screen-md) {
+        display: none;
+      }
+      
       p {
         @media all and (max-width: $screen-md) {
-          font-size: 1rem;
+          font-size: 1em;
         }
       }
-    }
-    
-    /* Social profiles */ 
-    .social-profiles {
-      margin-top: 0.4rem;
-
-      @media all and (max-width: $screen-md) {
-        font-size: 1rem;
+      
+      .social-profiles {
+        margin-top: 0.4rem;
+        
+        @media all and (max-width: $screen-md) {
+          font-size: 1em;
+        }
       }
-    }
-  }
-  
-  @media all and (min-width: $screen-md) {
-    .menu-contact,
-    #list-pages li.home {
-      display: none;
     }
   }
 }

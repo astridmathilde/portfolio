@@ -52,93 +52,76 @@
 </head>
 
 <body class="single-project">
+
   <!-- SITE HEADER-->
   <header id="site-header">
     <h1 class="site-title">
       <a href="/" rel="home">Astrid Mathilde Andersen</a>
     </h1>
-    
+  
     <!-- MENU TOGGLE LINK -->
     <div class="site-menu-toggle open">
       <h2 class="screen-reader-text">Main menu</h2>
-      <a
-      onclick="toggleMenu()"
-      href="#"
-      role="button"
-      aria-label="Open main menu"
-      ><span role="img" aria-hidden="true">👈</span>
-      <span class="label">Menu</span></a
-      >
+      <a onclick="toggleMenu()" href="#" role="button" aria-label="Open main menu"><span role="img"
+          aria-hidden="true">👈</span>
+        <span class="label">Menu</span></a>
     </div>
     <!-- .site-menu-toggle -->
-    
+  
     <!-- MENU CONTENT-->
     <div id="site-navigation">
       <div class="site-menu-toggle close">
-        <a
-        onclick="toggleMenu()"
-        href="#"
-        class="toggle-menu"
-        role="button"
-        aria-label="Close menu"
-        ><span class="label">Close</span>
-        <span role="img" aria-hidden="true">👉</span></a
-        >
+        <a onclick="toggleMenu()" href="#" class="toggle-menu" role="button" aria-label="Close menu"><span
+            class="label">Close</span>
+          <span role="img" aria-hidden="true">👉</span></a>
       </div>
       <!-- .site-menu-toggle-->
-      
+  
       <div class="site-menu-content">
         <!-- Pages -->
         <section class="menu-pages">
           <h3 class="screen-reader-text">Pages</h3>
           <nav id="list-pages">
             <ul>
-              <li><a href="../#projects">Projects</a></li>
-              <li><a href="../#about">About</a></li>
-              <li><a href="../resumee.html">CV</a></li>
+              <li class="index"><a href="/">Index</a></li>
+              <li class="projects"><a href="/#projects">Projects</a></li>
+              <li class="about"><a href="/#about">About</a></li>
+              <li class="cv"><a href="resumee.html">CV</a></li>
             </ul>
-          </nav>
-        </section>
-        <!-- .menu-pages -->
-        
+          </nav> <!-- #list-pages-->
+        </section> <!-- .menu-pages -->
+  
+        <section class="menu-projects">
+          <h3 class="screen-reader-text">Projects</h3>
+          <nav id="list-projects">
+            <ul>
+              <li><a href="skatetracker.html">Skatetracker (app)</a></li>
+              <li><a href="this-is-the-internet.html">This is the Internet (website)</a></li>
+            </ul>
+          </nav> <!-- #list-projects -->
+        </section> <!-- .menu-projects -->
+  
+  
         <!-- Contact -->
         <section class="menu-contact">
           <h3>Say hi</h3>
-          <p>
-            <span class="screen-reader-text">Email: </span
-              ><a href="mailto:heia@astridandersen.no"
-              >heia@astridandersen.no</a
-              >
-            </p>
-            
-            <h3>Links</h3>
-            <ul class="social-profiles">
-              <li>
-                <a
-                href="https://instagram.com/astrid.aho"
-                rel="nofollow noreferrer"
-                target="_blank"
-                >Instagram</a
-                >
-              </li>
-              <li>
-                <a
-                href="https://github.com/astrixandersen"
-                rel="nofollow noreferrer"
-                target="_blank"
-                >Github</a
-                >
-              </li>
-            </ul>
-          </section>
-          <!-- .menu-contact -->
-        </div>
-        <!-- .site-menu-content -->
+          <p><span class="screen-reader-text">Email: </span><a
+              href="mailto:heia@astridandersen.no">heia@astridandersen.no</a></p>
+  
+          <h3>Links</h3>
+          <ul class="social-profiles">
+            <li><a href="https://instagram.com/astrid.aho" rel="nofollow noreferrer" target="_blank">Instagram</a></li>
+            <li><a href="https://github.com/astrixandersen" rel="nofollow noreferrer" target="_blank">Github</a></li>
+          </ul>
+        </section>
+        <!-- .menu-contact -->
       </div>
-      <!-- #site-navigation -->
-    </header>
-    <!-- #site-header-->
-    
+      <!-- .site-menu-content -->
+    </div>
+    <!-- #site-navigation -->
+  </header>
+  <!-- #site-header-->
+
     <!-- SITE CONTENT -->
     <main id="site-content">
       <article id="this-is-the-internet" class="project">
