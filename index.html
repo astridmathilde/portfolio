@@ -53,14 +53,24 @@
               <h3 class="screen-reader-text">Pages</h3>
               <nav id="list-pages">
                 <ul>
-                  <li class="home"><a href="/">Home</a></li>
-                  <li><a href="/#projects">Projects</a></li>
-                  <li><a href="/#about">About</a></li>
-                  <li><a href="resumee.html">CV</a></li>
+                  <li class="index"><a href="/">Index</a></li>
+                  <li class="projects"><a href="/#projects">Projects</a></li>
+                  <li class="about"><a href="/#about">About</a></li>
+                  <li class="cv"><a href="resumee.html">CV</a></li>
                 </ul>
-              </nav>
-            </section>
-            <!-- .menu-pages -->
+              </nav> <!-- #list-pages-->
+            </section>  <!-- .menu-pages -->
+            
+            <section class="menu-projects">
+              <h3 class="screen-reader-text">Projects</h3>
+              <nav id="list-projects">
+                <ul>
+                  <li><a href="projects/skatetracker.html">Skatetracker (app)</a></li>
+                  <li><a href="projects/this-is-the-internet.html">This is the Internet (website)</a></li>
+                </ul>
+              </nav> <!-- #list-projects -->
+            </section> <!-- .menu-projects -->
+            
             
             <!-- Contact -->
             <section class="menu-contact">
@@ -100,7 +110,7 @@
                 <p class="entry-meta has-small-font-size">Academic project / Web</p>
               </header>
               <figure>
-                <img src="assets/img/projects/this-is-the-internet/compressed/this-is-the-internet-2048x1228.jpg" alt="A website about the Internet" />
+                <img src="assets/img/projects/this-is-the-internet/this-is-the-internet-2048x1228.jpg" alt="A website about the Internet" />
               </figure>
             </a>
           </article> <!-- #this-is-the-internet -->
@@ -112,7 +122,7 @@
                 <p class="entry-meta has-small-font-size">Academic project / App</p>
               </header>
               <figure>
-                <img src="assets/img/projects/skatetracker/compressed/skatetracker-mockup-revised-2048x1365.jpg" alt="An app for skaters" />
+                <img src="assets/img/projects/skatetracker/skatetracker-mockup-revised-2048x1365.jpg" alt="An app for skaters" />
               </figure>
             </a>
           </article> <!-- #skatetracker -->
@@ -135,15 +145,9 @@
               
               <div class="column has-image" style="flex-basis:33.33%">
                 <figure>
-                  <source type="image/webp"
+                  <img src="assets/img/index/theia.jpg"
                   sizes="(max-width: 380px) 350px, (max-width: 1010px) 768px, (max-width: 1210px) 350px, 100vw"
-                  srcset="assets/img/index/compressed/theia-768x1365.webp 768w, assets/img/index/compressed/theia-350x622.webp 350w, assets/img/index/compressed/theia.webp 2048w">
-                  <source type="image/jpeg"
-                  sizes="(max-width: 380px) 350px, (max-width: 1010px) 768px, (max-width: 1210px) 350px, 100vw"
-                  srcset="assets/img/index/compressed/theia-768x1365.jpg 768w, assets/img/index/compressed/theia-350x622.jpg 225w, assets/img/index/compressed/theia.jpg 2048w">
-                  <img src="assets/img/index/compressed/theia.jpg"
-                  sizes="(max-width: 380px) 350px, (max-width: 1010px) 768px, (max-width: 1210px) 350px, 100vw"
-                  srcset="assets/img/index/compressed/theia-768x1365.jpg 768w, assets/img/index/compressed/theia-350x622.jpg 225w, assets/img/index/compressed/theia.jpg 2048w"
+                  srcset="assets/img/index/theia-768x1365.jpg 768w, assets/img/index/theia-350x622.jpg 225w, assets/img/index/theia.jpg 2048w"
                   alt="Astrid Mathilde Andersen" />
                 </figure>
               </div> <!-- .column -->
@@ -166,9 +170,9 @@
             <nav id="footer-menu">
               <ul>
                 <li><a href="https://instagram.com/astrid.prosjekter" target="_blank" rel="noreferrer nofollow">Instagram</a></li>
-                  <li>
-                    <a href="https://www.linkedin.com/in/astridmathildeandersen/" target="_blank" rel="noreferrer nofollow">LinkedIn</a>
-                  </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/astridmathildeandersen/" target="_blank" rel="noreferrer nofollow">LinkedIn</a>
+                </li>
                 <li><a href="https://github.com/astrixandersen" target="_blank" rel="noreferrer nofollow">Github</a></li>
               </ul>
             </nav> <!-- #footer-menu -->
@@ -181,7 +185,7 @@
             
           </footer> <!-- #site-footer-->
           
-          <script src="assets/js/min/open-menu.min.js"></script>
+          <script src="assets/js/open-menu.js"></script>
           
         </body>
         </html>

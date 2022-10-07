@@ -52,93 +52,76 @@
 </head>
 
 <body class="single-project">
+
   <!-- SITE HEADER-->
   <header id="site-header">
     <h1 class="site-title">
       <a href="/" rel="home">Astrid Mathilde Andersen</a>
     </h1>
-    
+  
     <!-- MENU TOGGLE LINK -->
     <div class="site-menu-toggle open">
       <h2 class="screen-reader-text">Main menu</h2>
-      <a
-      onclick="toggleMenu()"
-      href="#"
-      role="button"
-      aria-label="Open main menu"
-      ><span role="img" aria-hidden="true">👈</span>
-      <span class="label">Menu</span></a
-      >
+      <a onclick="toggleMenu()" href="#" role="button" aria-label="Open main menu"><span role="img"
+          aria-hidden="true">👈</span>
+        <span class="label">Menu</span></a>
     </div>
     <!-- .site-menu-toggle -->
-    
+  
     <!-- MENU CONTENT-->
     <div id="site-navigation">
       <div class="site-menu-toggle close">
-        <a
-        onclick="toggleMenu()"
-        href="#"
-        class="toggle-menu"
-        role="button"
-        aria-label="Close menu"
-        ><span class="label">Close</span>
-        <span role="img" aria-hidden="true">👉</span></a
-        >
+        <a onclick="toggleMenu()" href="#" class="toggle-menu" role="button" aria-label="Close menu"><span
+            class="label">Close</span>
+          <span role="img" aria-hidden="true">👉</span></a>
       </div>
       <!-- .site-menu-toggle-->
-      
+  
       <div class="site-menu-content">
         <!-- Pages -->
         <section class="menu-pages">
           <h3 class="screen-reader-text">Pages</h3>
           <nav id="list-pages">
             <ul>
-              <li><a href="../#projects">Projects</a></li>
-              <li><a href="../#about">About</a></li>
-              <li><a href="../resumee.html">CV</a></li>
+              <li class="index"><a href="/">Index</a></li>
+              <li class="projects"><a href="/#projects">Projects</a></li>
+              <li class="about"><a href="/#about">About</a></li>
+              <li class="cv"><a href="resumee.html">CV</a></li>
             </ul>
-          </nav>
-        </section>
-        <!-- .menu-pages -->
-        
+          </nav> <!-- #list-pages-->
+        </section> <!-- .menu-pages -->
+  
+        <section class="menu-projects">
+          <h3 class="screen-reader-text">Projects</h3>
+          <nav id="list-projects">
+            <ul>
+              <li><a href="skatetracker.html">Skatetracker (app)</a></li>
+              <li><a href="this-is-the-internet.html">This is the Internet (website)</a></li>
+            </ul>
+          </nav> <!-- #list-projects -->
+        </section> <!-- .menu-projects -->
+  
+  
         <!-- Contact -->
         <section class="menu-contact">
           <h3>Say hi</h3>
-          <p>
-            <span class="screen-reader-text">Email: </span
-              ><a href="mailto:heia@astridandersen.no"
-              >heia@astridandersen.no</a
-              >
-            </p>
-            
-            <h3>Links</h3>
-            <ul class="social-profiles">
-              <li>
-                <a
-                href="https://instagram.com/astrid.aho"
-                rel="nofollow noreferrer"
-                target="_blank"
-                >Instagram</a
-                >
-              </li>
-              <li>
-                <a
-                href="https://github.com/astrixandersen"
-                rel="nofollow noreferrer"
-                target="_blank"
-                >Github</a
-                >
-              </li>
-            </ul>
-          </section>
-          <!-- .menu-contact -->
-        </div>
-        <!-- .site-menu-content -->
+          <p><span class="screen-reader-text">Email: </span><a
+              href="mailto:heia@astridandersen.no">heia@astridandersen.no</a></p>
+  
+          <h3>Links</h3>
+          <ul class="social-profiles">
+            <li><a href="https://instagram.com/astrid.aho" rel="nofollow noreferrer" target="_blank">Instagram</a></li>
+            <li><a href="https://github.com/astrixandersen" rel="nofollow noreferrer" target="_blank">Github</a></li>
+          </ul>
+        </section>
+        <!-- .menu-contact -->
       </div>
-      <!-- #site-navigation -->
-    </header>
-    <!-- #site-header-->
-    
+      <!-- .site-menu-content -->
+    </div>
+    <!-- #site-navigation -->
+  </header>
+  <!-- #site-header-->
+
     <!-- SITE CONTENT -->
     <main id="site-content">
       <article id="this-is-the-internet" class="project">
@@ -149,7 +132,7 @@
         
         <figure class="entry-thumbnail">
           <img
-          src="../assets/img/projects/this-is-the-internet/compressed/this-is-the-internet-2048x1228.jpg"
+          src="../assets/img/projects/this-is-the-internet/this-is-the-internet-2048x1228.jpg"
           alt="A website about the Internet"
           />
         </figure>
@@ -194,28 +177,28 @@
               
               <figure>
                 <img
-                src="../assets/img/projects/this-is-the-internet/compressed/this-is-the-internet-seksjon-2-2048x1228.jpg"
+                src="../assets/img/projects/this-is-the-internet/this-is-the-internet-seksjon-2-2048x1228.jpg"
                 alt="The Internet was born January 1, 1983. But the World Wide Web (WWW) did not exist until the british scientist Tim Berners-Lee invented it in March 1989."
                 />
               </figure>
               
               <figure>
                 <img
-                src="../assets/img/projects/this-is-the-internet/compressed/this-is-the-internet-seksjon-3-2048x1228.jpg"
+                src="../assets/img/projects/this-is-the-internet/this-is-the-internet-seksjon-3-2048x1228.jpg"
                 alt="On August 9, 1991 the World Wide Web (WWW) was unleashed into the world. People all over the world could now access the Internet from home."
                 />
               </figure>
               
               <figure>
                 <img
-                src="../assets/img/projects/this-is-the-internet/compressed/this-is-the-internet-seksjon-4-2048x1228.jpg"
+                src="../assets/img/projects/this-is-the-internet/this-is-the-internet-seksjon-4-2048x1228.jpg"
                 alt="4.9 billion people are using the Internet right now. That is 62% of the world's population! In total the Internet is connected to 50 billion devices all over the world."
                 />
               </figure>
               
               <figure>
                 <img
-                src="../assets/img/projects/this-is-the-internet/compressed/this-is-the-internet-seksjon-5-2048x1228.jpg"
+                src="../assets/img/projects/this-is-the-internet/this-is-the-internet-seksjon-5-2048x1228.jpg"
                 alt="By 2008 the Internet was so addictive that China declared Internet addiction a clinical disorder and started boot camps for Internet addicts."
                 />
               </figure>
@@ -226,7 +209,7 @@
           
           <figure>
             <img
-            src="../assets/img/projects/this-is-the-internet/compressed/this-is-the-internet-seksjon-6-2048x1228.jpg"
+            src="../assets/img/projects/this-is-the-internet/this-is-the-internet-seksjon-6-2048x1228.jpg"
             alt="The layers of the Internet"
             />
           </figure>
@@ -289,6 +272,6 @@
       </footer>
       <!-- #site-footer-->
       
-      <script src="../assets/js/min/open-menu.min.js"></script>
+      <script src="../assets/js/open-menu.js"></script>
     </body>
     </html>
