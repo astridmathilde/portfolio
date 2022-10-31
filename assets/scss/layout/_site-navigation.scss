@@ -12,11 +12,17 @@
   
   #site-navigation {
     display: block;
+    font-size: inherit;
     
     @media all and (max-width: $screen-md) {
       animation: slideLeft $duration-normal $ease-in-out 0.1s forwards;
       -webkit-animation: slideLeft $duration-normal $ease-in-out 0.1s forwards;
       -moz-animation: slideLeft $duration-normal $ease-in-out 0.1s forwards;
+    }
+
+    .site-menu-toggle span[role="img"] {
+      padding-left: 0.4rem;
+      padding-right: 0;
     }
   }
 }
@@ -24,6 +30,7 @@
 .menu-close {
   #site-navigation {
     display: block;
+    font-size: inherit;
     
     @media all and (max-width: $screen-md) {
       left: 0;
@@ -109,15 +116,19 @@
     line-height: 1.6;
   }
   
+  @media all and (min-width: $screen-sm) {
+    font-size: 0.95em;
+  }
+  
   @media all and (min-width: $screen-md) {
     top: $unit300;
-    right: $unit400;
+    right: $unit300;
     padding: 0;
   }
   
   @media all and (min-width: $screen-lg) {
     top: $unit400;
-    right: $unit500;
+    right: $unit400;
   }
   
   @media all and (min-width: $screen-xl) {

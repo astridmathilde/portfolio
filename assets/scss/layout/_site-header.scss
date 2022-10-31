@@ -13,7 +13,6 @@
   padding-top: $unit200;
   padding-bottom: $unit200;
   @extend .site-padding;
-  font-size: 0.9rem;
   text-align: left;
   
   @media all and (min-width: $screen-sm) {
@@ -34,6 +33,10 @@
   .site-title,
   .site-menu-toggle {
     font-weight: 400;
+    
+    @media all and (min-width: $screen-sm) {
+      font-size: 0.95em;
+    }
   }
   
   .site-title {
