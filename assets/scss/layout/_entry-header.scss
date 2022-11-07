@@ -1,0 +1,18 @@
+/**
+ *
+ * Layout => Entry header
+ *
+ **/
+
+.entry-header {
+  max-width: $container-text;
+  margin-top: $unit500;
+
+  @media all and (min-width: $screen-md) {
+    margin-top: $unit600;
+  }
+  
+  .entry-title {
+    margin-top: 0;
+  }
+}

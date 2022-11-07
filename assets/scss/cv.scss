@@ -1,0 +1,44 @@
+@import "base/variables";
+
+#page-cv {
+  .entry-header {
+    margin-bottom: $unit400;
+    
+    @media all and (min-width: $screen-md) {
+      margin-bottom: $unit500;
+    }
+    
+    @media all and (min-width: $screen-lg) {
+      margin-bottom: $unit500;
+    }
+  }
+  
+  .entry-content {
+    h3:first-child {
+      margin-top: 0;
+    }
+    
+    h3 {    
+      margin-bottom: 1.5em;
+      
+      +h4 {
+        margin-top: 0;
+      }
+    }
+    
+    h4 {
+      margin-top: $unit300;
+      margin-bottom: 0;
+      
+      @media all and (min-width: $screen-lg) {
+        margin-top: $unit400;
+      }
+      
+      + p {
+        margin-top: $unit100 / 2;
+      }
+      
+    }
+  }
+  
+}
