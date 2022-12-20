@@ -60,7 +60,7 @@ h2 {
   margin-bottom: $unit100;
   
   @media all and (min-width: $screen-md) {
-    margin-bottom: $unit200;
+    margin-bottom: $unit100;
   }
 }
 
@@ -87,13 +87,13 @@ video {
   margin-top: $unit200;
   
   @media all and (min-width: $screen-md) {
-    margin-top: $unit300;
+    margin-top: $grid-gutter-row;
   }
 }
 
 figcaption {
   margin-top: 0.4rem;
-  font-size: 0.9em;
+  font-size: 0.8em;
   text-align: right;
 }
 
