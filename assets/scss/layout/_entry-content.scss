@@ -1,11 +1,37 @@
 /**
- *
- * Layout => Entry Content
- *
- **/
+*
+* Layout => Entry Content
+*
+**/
 
 .entry-content {
   p {
-  max-width: $container-text;
+    max-width: $container-text;
+  }
+  
+  .portrait-images {
+    @media all and (min-width: $screen-sm) {
+      display: flex;
+      
+      figure {
+        max-width: 50%;
+        
+        &:nth-child(1) {
+          margin-right: $unit200 / 2;
+          
+          @media all and (min-width: $screen-md) {
+            margin-right: $unit400 / 2;
+          }
+        }
+        
+        &:nth-child(2) {
+          margin-left: $unit200 / 2;
+          
+          @media all and (min-width: $screen-md) {
+            margin-left: $unit400 / 2;
+          }
+        }
+      }
+    }
   }
 }
