@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bafaf2a762a9a8f5ea65a0fb0e0644d03c6b20746bf033d883978ea25ff7f4ad
-size 570
+const video = document.querySelector("video");
+
+/* Only play video when visible */
+const callback = (entries, observer) => {
+  entries.forEach((entry) => {
+    // Check if you have reached the element
+    if (entry.isIntersecting) {
+      entry.target.play();
+      entry.target.classList.add("visible");
+    }  else {
+      entry.target.pause();
+      entry.target.classList.remove("visible");
+    }
+  });
+}
+
+const options = {
+  root: null,
+  rootMargin: "0px",
+  threshold: 0.9
+}
+
+const observer = new IntersectionObserver(callback, options);
+
+observer.observe(video);

@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2cd0c7e3227382c74f6ffe2da23ddf31ad08ad90cb67db8ac0b84b9f43067067
-size 390
+@font-face {
+  font-family: "Inter";
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/Inter-Regular.woff2") format("woff2"),
+    url("../fonts/Inter-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/inter-medium.woff2") format("woff2"),
+    url("../fonts/inter-medium.woff") format("woff");
+}

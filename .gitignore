@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ba38f44b9dd18ed127ef4548a2eed5852da607748f560a6072c2bf69c6affe99
-size 44
+**.DS_store
+# Local Netlify folder
+.netlify

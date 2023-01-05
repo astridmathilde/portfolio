@@ -1,3 +1,77 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d8570f9edb1b6bba3a0c9d8b21358090bf9c472a0cafaf0150eadcb09b9f6255
-size 1362
+/**
+*
+* Layout => Header
+*
+**/
+
+#site-header {
+  display: flex;
+  position: relative;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: $unit200;
+  padding-bottom: $unit200;
+  @extend .site-padding;
+  text-align: left;
+  
+  @media all and (min-width: $screen-sm) {
+    font-size: inherit;
+  }
+  
+  @media all and (min-width: $screen-md) {
+    z-index: 1000;
+    padding-top: $unit300;
+    padding-bottom: $unit300;
+  }
+  
+  @media all and (min-width: $screen-lg) {
+    padding-top: $unit400;
+    padding-bottom: $unit400;
+  }
+  
+  .site-title,
+  .site-menu-toggle {
+    font-weight: 400;
+    
+    @media all and (min-width: $screen-sm) {
+      font-size: 0.95em;
+    }
+  }
+  
+  .site-title {
+    grid-area: title;
+    margin-top: 0;
+    
+    a {
+      text-decoration: none;
+      text-decoration-color: $color-link !important;
+      
+      &:hover,
+      &:focus {
+        @media all and (min-width: $screen-md) {
+          text-decoration: underline;
+          text-decoration-color: $color-link !important;
+        }
+      }
+    }
+  }
+  
+  .site-menu-toggle {
+    grid-area: menu;
+    text-align: right;
+    
+    a {
+      text-decoration: none;
+      transition: none;
+    }
+    
+    span[role="img"] {
+      padding-right: 0.4rem;
+    }
+    
+    @media all and (min-width: $screen-md) {
+      display: none;
+    }
+  }
+}

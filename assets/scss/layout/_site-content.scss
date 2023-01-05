@@ -1,3 +1,38 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b766297c7a1169d095fef7b3bf9e7dff56b988fb47f860e264ef681ffaa46658
-size 639
+/**
+*
+* Layout => Site Content
+*
+**/
+
+#site-content {
+  @extend .site-padding;
+  
+  section + section {
+    margin-top: $unit600;
+    
+    @media all and (min-width: $screen-md) {
+      margin-top: $unit700;
+    }
+    
+    
+    @media all and (min-width: $screen-lg) {
+      margin-top: $unit800;
+    }
+  }
+}
+
+/* Fade in */
+#site-content {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  animation: fadeIn $duration-slow $ease-in-out 0.1s forwards;
+}
+
+@media all and (min-width: $screen-md) {
+  #site-header,
+  #site-content {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    animation: fadeIn $duration-slow $ease-in-out 0.1s forwards;
+  }
+}

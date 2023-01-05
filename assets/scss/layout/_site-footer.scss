@@ -1,3 +1,83 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d99aceed56bbdc4b4e15f2398b1c56a93496964cc459432237a869dc2b2145a2
-size 1352
+/**
+*
+* Layout => Footer
+*
+**/
+
+#site-footer {
+  width: 100%;
+  margin: $unit500 0 0 0;
+  padding-top: $unit300;
+  padding-bottom: $unit300;
+  @extend .site-padding;
+
+  @media all and (min-width: $screen-md) {
+    margin-top: $unit600;
+    padding-top: $unit400;
+    padding-bottom: $unit400;
+  }
+
+  @media all and (min-width: $screen-lg) {
+    padding-top: $unit500;
+  }
+
+  .footer-heading {
+    @extend h4;
+    margin-top: $unit400;
+    margin-bottom: $unit100 / 2;
+
+    @media all and (min-width: $screen-lg) {
+      margin-top: $unit500;
+      margin-bottom: $unit100;
+    }
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: inline;
+      list-style: none;
+      padding-left: 0;
+
+      +li {
+        padding-left: $unit100 / 2;
+      }
+    }
+  }
+
+  a {
+    text-decoration: none;
+    text-decoration-color: $color-link !important;
+
+    &:hover,
+    &:focus {
+      @media all and (min-width: $screen-md) {
+        text-decoration: underline;
+        text-decoration-color: $color-link !important;
+      }
+    }
+  }
+
+  #footer-byline {
+    width: 100%;
+    margin-top: $unit500;
+    line-height: 1.6;
+    text-align: right;
+    font-size: 0.9em;
+
+    @media all and (min-width: $screen-md) {
+      margin-top: 0;
+      font-size: 0.8em;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+}

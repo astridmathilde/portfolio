@@ -1,3 +1,71 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6eefddaa29e2a60e62ac96f0da2a2bfcabebd2390b1e30dedd9a22f6ccd49bef
-size 1059
+section.image-text-row {
+  display: flex;
+  flex-wrap: wrap;
+  
+  @media all and (min-width: 1010px) {
+    flex-wrap: nowrap;
+  }
+  
+  &.align-center {
+    .column {
+      width: 100%;
+      align-self: center;
+    }
+  }
+  
+  h2,
+  h3,
+  h4 {
+    margin-top: 0;
+  }
+  
+  figure {
+    margin-top: 0;
+  }
+  
+  .column {
+    flex-grow: 1;
+    min-width: 0;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    
+    @media all and (max-width: 1010px) {
+      flex-basis: 100% !important;
+    }
+    
+    @media all and (min-width: 1010px) {
+      flex-basis: 0;
+      flex-grow: 1;
+      
+      &[style*="flex-basis"] {
+        flex-grow: 0;
+      }
+      
+      &.has-image {
+        margin-top: 0;
+      }
+      
+      &.has-text {
+        margin-left: $unit400;
+      }
+    }
+    
+    &.has-image {
+      @media all and (min-width: 1010px) {
+        order: -1;
+      }
+    }
+    
+    &.has-image {
+      margin-top: $unit200;
+    }
+    
+    p {
+      max-width: $container-text;
+      
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+}
