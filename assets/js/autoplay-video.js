@@ -1,6 +1,7 @@
+/* Autoplay video when visible */
+
 const video = document.querySelector("video");
 
-/* Only play video when visible */
 const callback = (entries, observer) => {
   entries.forEach((entry) => {
     // Check if you have reached the element
