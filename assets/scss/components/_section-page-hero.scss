@@ -3,13 +3,12 @@ section.page-hero {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  height: 68vh;
-  padding-top: $unit500;
-  padding-bottom: $unit500;
+  min-height: 50vh;
+  margin-top: $unit500;
+  margin-bottom: $unit300;
 
   @media all and (min-width: $screen-sm) {
-    padding-top: $unit600;
-    padding-bottom: $unit600;
+    margin-top: $unit600;
   }
 
   + section {
