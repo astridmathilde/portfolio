@@ -30,6 +30,10 @@
     @media all and (min-width: $screen-sm) {
       font-size: 0.95em;
     }
+    
+    @media all and (min-width: $screen-lg) {
+      font-size: 0.85em;
+    }
   }
   
   .site-title {

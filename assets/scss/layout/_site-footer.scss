@@ -11,6 +11,10 @@
   padding-bottom: $unit100;
   @extend .site-padding;
   
+  @media all and (min-width: $screen-sm) {
+    font-size: 0.95em;
+  }
+  
   @media all and (min-width: $screen-md) {
     margin-top: $unit600;
     padding-top: $unit400;
@@ -19,6 +23,7 @@
   
   @media all and (min-width: $screen-lg) {
     padding-top: $unit500;
+    font-size: 0.85em;
   }
   
   .footer-heading {
@@ -89,7 +94,7 @@
     position: relative;
     display: block;
     margin-top: $unit100;
-
+    
     text-align: right;
     
     @media all and (min-width: $screen-md) {
