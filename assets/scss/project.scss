@@ -89,8 +89,9 @@
       @media all and (min-width: 873px) {
         margin: 0;
       }
-      
-      p:first-child {
+
+      > figure:first-child,
+      > p:first-child {
         margin-top: 0;
       }
     }
