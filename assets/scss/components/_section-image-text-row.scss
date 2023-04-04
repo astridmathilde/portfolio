@@ -46,7 +46,7 @@ section.image-text-row {
       }
       
       &.has-text {
-        margin-left: $unit400;
+        margin-left: $unit200;
       }
     }
     
@@ -61,11 +61,13 @@ section.image-text-row {
     }
     
     p {
-      max-width: $container-text;
-      
       &:first-child {
         margin-top: 0;
       }
+    }
+    
+    p, figure {
+      max-width: $container-text;
     }
   }
 }
