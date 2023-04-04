@@ -1,6 +1,6 @@
 name: Crush images
 on:
-  pull_request:
+  workflow_dispatch:
     branches:
       - production
       - dev
