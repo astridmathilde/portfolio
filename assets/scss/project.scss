@@ -4,7 +4,7 @@
   
   .entry-header {
     h2 {
-      margin-bottom: $unit100 / 2;
+      margin-bottom: calc($unit100 / 2);
       
       @media all and (min-width: $screen-sm) {
         margin-bottom: $unit100;
@@ -89,8 +89,9 @@
       @media all and (min-width: 873px) {
         margin: 0;
       }
-      
-      p:first-child {
+
+      > figure:first-child,
+      > p:first-child {
         margin-top: 0;
       }
     }

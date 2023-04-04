@@ -118,19 +118,18 @@
     font-size: 0.95em;
   }
   
+  @media all and (min-width: $screen-lg) {
+    font-size: 0.85em;
+  }
+  
   @media all and (min-width: $screen-md) {
-    top: $unit300;
-    right: $unit300;
+    top: $unit200;
+    right: $unit200;
     padding: 0;
   }
   
   @media all and (min-width: $screen-lg) {
-    top: $unit400;
-    right: $unit400;
-  }
-  
-  @media all and (min-width: $screen-xl) {
-    right: $unit500;
+    right: $unit300;
   }
   
   /* Menu content */

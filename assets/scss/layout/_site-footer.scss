@@ -11,20 +11,25 @@
   padding-bottom: $unit100;
   @extend .site-padding;
   
+  @media all and (min-width: $screen-sm) {
+    font-size: 0.95em;
+  }
+  
   @media all and (min-width: $screen-md) {
     margin-top: $unit600;
     padding-top: $unit400;
-    padding-bottom: $unit400;
+    padding-bottom: $unit300;
   }
   
   @media all and (min-width: $screen-lg) {
     padding-top: $unit500;
+    font-size: 0.85em;
   }
   
   .footer-heading {
     @extend h4;
     margin-top: $unit400;
-    margin-bottom: $unit100 / 2;
+    margin-bottom: calc($unit100 / 2);
     
     @media all and (min-width: $screen-lg) {
       margin-top: $unit500;
@@ -46,7 +51,7 @@
       padding-left: 0;
       
       +li {
-        padding-left: $unit100 / 2;
+        padding-left: calc($unit100 / 2);
       }
     }
   }
@@ -89,7 +94,7 @@
     position: relative;
     display: block;
     margin-top: $unit100;
-
+    
     text-align: right;
     
     @media all and (min-width: $screen-md) {

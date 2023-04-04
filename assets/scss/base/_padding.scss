@@ -13,18 +13,8 @@
     padding-right: $unit200;
   }
 
-  @media all and (min-width: $screen-md) {
+  @media all and (min-width: $screen-lg) {
     padding-left: $unit300;
     padding-right: $unit300;
-  }
-
-  @media all and (min-width: $screen-lg) {
-    padding-left: $unit400;
-    padding-right: $unit400;
-  }
-
-  @media all and (min-width: $screen-xl) {
-    padding-left: $unit500;
-    padding-right: $unit500;
   }
 }

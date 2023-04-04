@@ -21,13 +21,6 @@
   
   @media all and (min-width: $screen-md) {
     z-index: 1000;
-    padding-top: $unit300;
-    padding-bottom: $unit300;
-  }
-  
-  @media all and (min-width: $screen-lg) {
-    padding-top: $unit400;
-    padding-bottom: $unit400;
   }
   
   .site-title,
@@ -36,6 +29,10 @@
     
     @media all and (min-width: $screen-sm) {
       font-size: 0.95em;
+    }
+    
+    @media all and (min-width: $screen-lg) {
+      font-size: 0.85em;
     }
   }
   

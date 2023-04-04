@@ -35,7 +35,7 @@
       }
       
       + p {
-        margin-top: $unit100 / 2;
+        margin-top: calc($unit100 / 2);
       }
       
     }
