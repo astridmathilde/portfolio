@@ -44,7 +44,7 @@
 
         .entry-title {
           margin-top: 0;
-          margin-bottom: $unit100 / 2;
+          margin-bottom: calc($unit100 / 2);
           text-decoration: underline;
           text-decoration-color: transparent;
           -webkit-transition: all $duration-fast $ease;

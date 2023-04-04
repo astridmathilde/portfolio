@@ -119,18 +119,9 @@
   }
   
   @media all and (min-width: $screen-md) {
-    top: $unit300;
+    top: $unit200;
     right: $unit300;
     padding: 0;
-  }
-  
-  @media all and (min-width: $screen-lg) {
-    top: $unit400;
-    right: $unit400;
-  }
-  
-  @media all and (min-width: $screen-xl) {
-    right: $unit500;
   }
   
   /* Menu content */

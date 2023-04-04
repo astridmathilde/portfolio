@@ -4,7 +4,7 @@
   
   .entry-header {
     h2 {
-      margin-bottom: $unit100 / 2;
+      margin-bottom: calc($unit100 / 2);
       
       @media all and (min-width: $screen-sm) {
         margin-bottom: $unit100;

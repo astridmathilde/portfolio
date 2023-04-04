@@ -14,7 +14,7 @@
   @media all and (min-width: $screen-md) {
     margin-top: $unit600;
     padding-top: $unit400;
-    padding-bottom: $unit400;
+    padding-bottom: $unit300;
   }
   
   @media all and (min-width: $screen-lg) {
@@ -24,7 +24,7 @@
   .footer-heading {
     @extend h4;
     margin-top: $unit400;
-    margin-bottom: $unit100 / 2;
+    margin-bottom: calc($unit100 / 2);
     
     @media all and (min-width: $screen-lg) {
       margin-top: $unit500;
@@ -46,7 +46,7 @@
       padding-left: 0;
       
       +li {
-        padding-left: $unit100 / 2;
+        padding-left: calc($unit100 / 2);
       }
     }
   }
