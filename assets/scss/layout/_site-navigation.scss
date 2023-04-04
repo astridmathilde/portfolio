@@ -98,6 +98,7 @@
   z-index: 1000;
   position: fixed;
   @extend .site-padding;
+  font-size: 0.9em;
   
   @media all and (max-width: $screen-md) {
     display: none;
@@ -112,10 +113,6 @@
     padding-top: $unit200;
     padding-bottom: $unit200;
     line-height: 1.6;
-  }
-  
-  @media all and (min-width: $screen-sm) {
-    font-size: 0.95em;
   }
   
   @media all and (min-width: $screen-lg) {
