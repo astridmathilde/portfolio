@@ -11,7 +11,7 @@ h5,
 h6 {
   font-weight: 400;
   line-height: 155%;
-
+  
   +p,
   +ul {
     margin-top: 0;
@@ -23,11 +23,11 @@ h4,
 h5,
 h6 {
   margin-top: $unit400;
-
+  
   @media all and (min-width: $screen-md) {
     margin-top: $unit500;
   }
-
+  
   @media all and (min-width: $screen-lg) {
     margin-top: $unit500;
   }
@@ -37,7 +37,7 @@ h4,
 h5,
 h6 {
   margin-bottom: calc($unit100 / 2);
-
+  
   @media all and (min-width: $screen-md) {
     margin-bottom: $unit100;
   }
@@ -53,20 +53,28 @@ h2 {
 }
 
 .display {
-  font-size: 1.5em;
+  font-size: 1.45em;
+  
+  @media all and (min-width: $screen-md) {
+    font-family: "Inter Display", system-ui, sans-serif;
+    font-feature-settings: "cpsp", "cv05", "cv10", "cv11";
+    font-size: 1.6em;
+  }
 }
 
 h2 {
   margin-bottom: $unit100;
-
+  
   @media all and (min-width: $screen-md) {
+    font-family: "Inter Display", system-ui, sans-serif;
+    font-feature-settings: "cpsp", "cv05", "cv10", "cv11";
     margin-bottom: $unit100;
   }
 }
 
-h3 {
+h3 {  
   margin-bottom: $unit100;
-
+  
   @media all and (min-width: $screen-md) {
     margin-bottom: $unit100;
   }
@@ -76,7 +84,7 @@ p,
 ul,
 ol {
   margin-top: $unit100;
-
+  
   @media all and (min-width: $screen-md) {
     margin-top: $unit200;
   }
@@ -85,7 +93,7 @@ ol {
 figure,
 video {
   margin-top: $unit200;
-
+  
   @media all and (min-width: $screen-md) {
     margin-top: $grid-gutter-row;
   }
@@ -99,31 +107,26 @@ figcaption {
 
 ul {
   padding-left: $unit300;
-
+  
   @media all and (min-width: $screen-md) {
     padding-left: $unit300 + $unit100;
   }
-
+  
   li {
     padding-left: calc($unit100 / 2);
-
+    
     @media all and (min-width: $screen-md) {
       padding-left: $unit100;
     }
-
+    
     +li {
       padding-top: calc($unit100 / 2);
-
+      
       @media all and (min-width: $screen-md) {
         padding-top: $unit100;
       }
     }
   }
-}
-
-strong,
-b {
-  font-weight: 600;
 }
 
 .display {

@@ -3,6 +3,7 @@ on:
   pull_request:
     branches:
       - production
+      - dev
     paths:
       - "**.jpg"
       - "**.jpeg"
