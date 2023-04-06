@@ -115,10 +115,6 @@
     line-height: 1.6;
   }
   
-  @media all and (min-width: $screen-lg) {
-    font-size: 0.85em;
-  }
-  
   @media all and (min-width: $screen-md) {
     top: $unit200;
     right: $unit200;

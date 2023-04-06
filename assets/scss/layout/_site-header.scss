@@ -29,10 +29,6 @@
   .site-menu-toggle {
     font-size: 0.9em;
     font-weight: 400;
-    
-    @media all and (min-width: $screen-lg) {
-      font-size: 0.85em;
-    }
   }
   
   .site-title {
