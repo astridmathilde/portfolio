@@ -2,7 +2,7 @@ a {
   font-size: inherit;
   font-weight: inherit;
   text-decoration: underline;
-  text-decoration-thickness: 1.5px;
+  text-decoration-thickness: from-font;
   text-decoration-skip: objects;
   text-decoration-skip-ink: auto;
   text-decoration-color: $color-link;
