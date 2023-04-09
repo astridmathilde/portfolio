@@ -2,6 +2,7 @@
  * Script to compress images before commiting file
  */
 
+const fs = require("fs");
 const sharp = require('sharp');
 
 const minifyFile = filename => {

@@ -4,7 +4,7 @@
   "description": "Pre commit script to compress images",
   "main": "index.js",
   "devDependencies": {
-    "husky": "^8.0.3",
+    "husky": "^8.0.0",
     "lint-staged": "^13.2.1"
   },
   "scripts": {
@@ -15,7 +15,7 @@
   },
   "lint-staged": {
     "*.{png,jpeg,jpg,gif,svg}": [
-      "node ./compress-images.js"
+      "node ./assets/js/compress-images.js"
     ]
   }
 }
