@@ -13,7 +13,7 @@
   },
   "lint-staged": {
     "*.{png,jpeg,jpg,gif,svg}": [
-      "node ./assets/js/compress-image.js"
+      "node ./compress-image.js"
     ]
   }
 }
