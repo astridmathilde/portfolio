@@ -1,2 +1,7 @@
 **.DS_store
 node_modules
+.husky
+assets/scss
+assets/js/compress-images
+package-lock.json
+package.json
