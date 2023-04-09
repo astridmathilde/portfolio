@@ -7,9 +7,6 @@
     "husky": "^8.0.0",
     "lint-staged": "^13.2.1"
   },
-  "scripts": {
-    "prepare": "husky install"
-  },
   "dependencies": {
     "sharp": "^0.32.0"
   },
