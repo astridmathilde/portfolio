@@ -184,7 +184,6 @@
       
       &#list-pages {
         @media all and (max-width: $screen-md) {
-          .about,
           .projects {
             display: none;
           }
@@ -224,12 +223,19 @@
         }
       }
       
-      .social-profiles {
-        margin-top: 0.4rem;
-        
+      .social-profiles,
+      .other-links {
         @media all and (max-width: $screen-md) {
           font-size: 1em;
         }
+      }
+      
+      .social-profiles {
+        margin-top: 0.4rem;
+      }
+
+      .other-links {
+        margin-top: 2.5em;
       }
     }
   }
