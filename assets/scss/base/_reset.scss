@@ -40,3 +40,10 @@ textarea,
 select {
   font: inherit;
 }
+
+button {
+  appearance: none;
+  border: none;
+  background: none;
+  padding: 0;
+}

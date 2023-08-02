@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   
-  @media all and (min-width: 1010px) {
+  @media all and (min-width: $screen-md) {
     flex-wrap: nowrap;
   }
   
@@ -19,7 +19,7 @@
     word-break: break-word;
     overflow-wrap: break-word;
     
-    @media all and (max-width: 1009px) {
+    @media all and (max-width: $screen-md) {
       flex-basis: 100% !important;
       
       &.has-image {
@@ -27,7 +27,7 @@
       }
     }
     
-    @media all and (min-width: 1010px) {
+    @media all and (min-width: $screen-md) {
       flex-basis: 0;
       flex-grow: 1;
       

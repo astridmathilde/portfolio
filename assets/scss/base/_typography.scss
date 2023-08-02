@@ -53,7 +53,11 @@ h2 {
 }
 
 .display {
-  font-size: 1.45em;
+  font-size: 1.3em;
+
+  @media all and (min-width: $screen-sm) {
+    //font-size: 1.45em;
+  }
   
   @media all and (min-width: $screen-md) {
     font-family: "Inter Display", system-ui, sans-serif;

@@ -8,15 +8,18 @@
   @extend .site-padding;
   
   section + section {
-    margin-top: $unit600;
+    margin-top: $unit500;
+
+    @media all and (min-width: $screen-sm) {
+        margin-top: $unit600;
+      }
     
     @media all and (min-width: $screen-md) {
       margin-top: $unit700;
     }
     
-    
     @media all and (min-width: $screen-lg) {
-      margin-top: $unit800;
+      margin-top: $unit700 + $unit300;
     }
   }
 }

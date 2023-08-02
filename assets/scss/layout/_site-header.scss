@@ -53,13 +53,29 @@
     grid-area: menu;
     text-align: right;
     
-    a {
-      text-decoration: none;
-      transition: none;
+    button {
+      appearance: none;
+      border-radius: 6px;
+      border: 1px solid $color-text;
+      padding: 1px 6px;
     }
     
-    span[role="img"] {
-      padding-right: 0.4rem;
+    &.open {
+      z-index: 1000;
+      position: fixed;
+      right: $unit100;
+
+      @media all and (min-width: $screen-sm) {
+        right: $unit200;
+      }
+      
+      span[role="img"] {
+        padding-right: 0.2rem;
+      }
+      
+      button {
+        background: $color-background;
+      }
     }
     
     @media all and (min-width: $screen-md) {

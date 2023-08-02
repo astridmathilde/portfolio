@@ -15,11 +15,11 @@ body {
   scroll-behavior: smooth;
 
 
-  @media all and (min-width: $screen-md) {
+  @media all and (min-width: $screen-lg) {
     font-size: 18px;
   }
 
-  @media all and (min-width: $screen-lg) {
+  @media all and (min-width: $screen-xl) {
     font-size: 20px;
   }
 }

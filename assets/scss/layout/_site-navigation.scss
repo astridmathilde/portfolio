@@ -19,11 +19,6 @@
       -webkit-animation: slideLeft $duration-normal $ease-in-out 0.1s forwards;
       -moz-animation: slideLeft $duration-normal $ease-in-out 0.1s forwards;
     }
-    
-    .site-menu-toggle span[role="img"] {
-      padding-left: 0.4rem;
-      padding-right: 0;
-    }
   }
 }
 
@@ -110,9 +105,19 @@
     width: 100%;
     height: 100%;
     
-    padding-top: $unit200;
+    padding-top: $unit100;
     padding-bottom: $unit200;
     line-height: 1.6;
+    
+    .site-menu-toggle.close {
+      span[role="img"] {
+        padding-left: 0.2rem;
+      }
+      
+      button {
+        background: $color-background-tinted;
+      }
+    }
   }
   
   @media all and (min-width: $screen-md) {
@@ -130,11 +135,12 @@
     position: relative;
     
     @media all and (max-width: $screen-md) {
-      margin-top: $unit500;
+      margin-top: $unit300;
     }
     
     h3 {
       font-size: 1em;
+      margin-bottom: 0.5em;
     }
     
     ul {
@@ -211,7 +217,7 @@
     
     /* Contact */
     .menu-contact {
-      margin-top: $unit700;
+      margin-top: $unit600;
       
       @media all and (min-width: $screen-md) {
         display: none;
@@ -233,7 +239,7 @@
       .social-profiles {
         margin-top: 0.4rem;
       }
-
+      
       .other-links {
         margin-top: 2.5em;
       }

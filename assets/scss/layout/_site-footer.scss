@@ -10,11 +10,12 @@
   padding-top: $unit300;
   padding-bottom: $unit100;
   @extend .site-padding;
+  font-size: 0.9em;
   
   @media all and (min-width: $screen-sm) {
-    font-size: 0.95em;
+    padding-bottom: $unit200;
   }
-  
+
   @media all and (min-width: $screen-md) {
     margin-top: $unit600;
     padding-top: $unit400;
