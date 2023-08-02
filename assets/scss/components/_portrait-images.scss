@@ -1,0 +1,65 @@
+  .portrait-images {
+    &.two-columns {
+      @media all and (min-width: $screen-sm) {
+        display: flex;
+
+        figure {
+          max-width: 50%;
+          margin-top: 0;
+
+          &:nth-child(1) {
+            margin-right: calc($unit200 / 2);
+
+            @media all and (min-width: $screen-md) {
+              margin-right: calc($unit400 / 2);
+            }
+          }
+
+          &:nth-child(2) {
+            margin-left: calc($unit200 / 2);
+
+            @media all and (min-width: $screen-md) {
+              margin-left: calc($unit400 / 2);
+            }
+          }
+        }
+      }
+    }
+
+    &.three-columns {
+      @media all and (min-width: $screen-md) {
+        display: flex;
+
+        figure {
+          max-width: 33.33%;
+          margin-top: 0;
+
+          &:nth-child(1) {
+            margin-right: calc($unit400 / 2);
+          }
+
+          &:nth-child(2) {
+            margin-left: calc($unit400 / 2);
+            margin-right: calc($unit400 / 2);
+          }
+
+          &:nth-child(3) {
+            margin-left: calc($unit400 / 2);
+          }
+        }
+      }
+    }
+
+    +.portrait-images {
+      margin-top: 0;
+
+      figure {
+        margin-top: $unit200;
+
+        @media all and (min-width: $screen-md) {
+          margin-top: $unit400;
+        }
+      }
+    }
+
+  }

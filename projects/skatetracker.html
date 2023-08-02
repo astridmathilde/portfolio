@@ -5,11 +5,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preload" as="font" type="font/woff2" href="assets/fonts/Inter-Regular.woff2">
-  <link rel="preload" as="font" type="font/woff2" href="assets/fonts/Inter-Display.woff2">
+  <link rel="preload" as="font" type="font/woff2" href="../assets/fonts/Inter-Regular.woff2">
+  <link rel="preload" as="font" type="font/woff2" href="../assets/fonts/Inter-Display.woff2">
   <link rel="stylesheet" href="../assets/css/fonts.css" />
   <link rel="stylesheet" href="../assets/css/style.css" />
-  <link rel="stylesheet" href="../assets/css/entry.css" />
   <link rel="stylesheet" href="../assets/css/project.css" />
   <!-- Start SEO -->
   <meta name="title" content="An app for skaters – Astrid Mathilde Boberg">
@@ -20,30 +19,30 @@
   <!-- End SEO -->
   <title>An app for skaters – Astrid Mathilde Boberg</title>
   <link rel="icon"
-    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦄</text></svg>">
+  href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦄</text></svg>">
 </head>
 
 <body class="single-project">
-
+  
   <!-- SITE HEADER-->
   <header id="site-header">
     <h1 class="site-title">
       <a href="/" rel="home">Astrid Mathilde Boberg</a>
     </h1>
-
+    
     <!-- MENU TOGGLE LINK -->
     <div class="site-menu-toggle open">
       <h2 class="screen-reader-text">Main menu</h2>
       <a onclick="toggleMenu()" href="#" role="button" aria-label="Open main menu"><span role="img"
-          aria-hidden="true">👈</span>
+        aria-hidden="true">👈</span>
         <span class="label">Menu</span></a>
-    </div>
-    <!-- .site-menu-toggle -->
-
-    <!-- MENU CONTENT-->
-    <div id="site-navigation">
-      <div class="site-menu-toggle close">
-        <a onclick="toggleMenu()" href="#" class="toggle-menu" role="button" aria-label="Close menu"><span
+      </div>
+      <!-- .site-menu-toggle -->
+      
+      <!-- MENU CONTENT-->
+      <div id="site-navigation">
+        <div class="site-menu-toggle close">
+          <a onclick="toggleMenu()" href="#" class="toggle-menu" role="button" aria-label="Close menu"><span
             class="label">Close</span>
             <span role="img" aria-hidden="true">👉</span></a>
           </div>
@@ -56,9 +55,8 @@
               <nav id="list-pages">
                 <ul>
                   <li class="index"><a href="/">Index</a></li>
+                  <li class="about"><a href="/about.html">About me</a></li>
                   <li class="projects"><a href="/#projects">Projects</a></li>
-                  <li class="about"><a href="/#about">About</a></li>
-                  <li class="cv"><a href="/resumee.html">CV</a></li>
                 </ul>
               </nav> <!-- #list-pages-->
             </section> <!-- .menu-pages -->
@@ -79,106 +77,111 @@
             <section class="menu-contact">
               <h3>Say hi</h3>
               <p><span class="screen-reader-text">Email: </span><a href="mailto:heia&commat;astridboberg&period;no">heia&commat;astridboberg&period;no</a></p>
-                
-                <h3>Links</h3>
-                <ul class="social-profiles">
-                  <li><a href="https://instagram.com/astrid.aho" rel="nofollow noreferrer" target="_blank">Instagram</a></li>
-                  <li><a href="https://www.linkedin.com/in/astridboberg/" target="_blank" rel="noreferrer nofollow">LinkedIn</a></li>
-                  <li><a href="https://github.com/astridboberg" rel="nofollow noreferrer" target="_blank">Github</a></li>
-                </ul>
-              </section>
-              <!-- .menu-contact -->
-            </div>
-            <!-- .site-menu-content -->
-          </div>
-          <!-- #site-navigation -->
-        </header>
-        <!-- #site-header-->
-        
-        <!-- SITE CONTENT -->
-        <main id="site-content">
-          <article id="this-is-the-internet" class="project">
-            
-            <header class="entry-header">
-              <h2>An app for skaters</h2>
-            </header> <!-- .entry-header -->
-            
-            <figure class="entry-thumbnail">
-              <img src="../assets/img/projects/skatetracker/skatetracker-mockup-revised-2048x1365.jpg"
-              alt="An app for skaters looking for skating spots & routes" width="2048" height="1365" />
-            </figure> <!-- .entry-thumbnail -->
-            
-            <div class="container">
               
-              <div class="entry-meta">
-                <ul>
-                  <li><span class="title">Type of project: </span>Academic project</li>
-                  
-                  <li><span class="title">Location: </span>The Oslo School of Architecture and Design</li>
-                  
-                  <li><span class="title">Time frame: </span>February 1-18, 2022</li>
-                  
-                  <li><span class="title">Tools: </span>Figma</li>
-                </ul>
-              </div> <!-- .entry-meta-->
-              
-              <div class="entry-content">
-                <p>The app was done in 13 days as part of the introduction to screen based interactions, one of the modules in the course “Exploring design through interactions”. The brief was to design a digital service that explores different ways of non-commercial sharing.</p>
-                
-                <p>Each one of us was delivered an object, and mine was a skateboard. This resulted in the app Skatetracker, where skaters can share and find new skating spots and routes. The app includes an overview of locations to avoid due to traffic, road damage or high bust risk. The users can add danger warnings for others to find on the map. This creates a nice and safe experience for beginners, while also adding more challenges for the pros.</p>
-                
-                <video controls loop muted src="../assets/video/skatetracker/skatetracker-revised-filter.mp4" controls=""></video>
-                
-                <video controls loop muted src="../assets/video/skatetracker/skatetracker-revised-spot.mp4"></video>
-                
-              </div> <!-- .entry-content -->
-              
-            </div> <!-- .container -->
-            
-          </article> <!-- #skatetracker-->
-        </main> <!-- #site-content-->
-        
-        <!-- SITE FOOTER -->
-        <footer id="site-footer">
-          <h2 class="screen-reader-text">Links and contact info</h2>
-        
-          <!-- Contact information -->
-          <h3 class="footer-heading">Say hi</h3>
-          <p>
-            <span class="screen-reader-text">Email:</span>
-          <a href="mailto:heia&commat;astridboberg&period;no">heia&commat;astridboberg&period;no</a>
-          </p>
-        
-          <!-- Footer menu -->
-          <h3 class="footer-heading">Links</h3>
-          <nav id="footer-menu">
-            <ul>
-              <li>
-                <a href="https://instagram.com/astrid.aho" target="_blank" rel="noreferrer nofollow">Instagram</a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/in/astridboberg/" target="_blank"
-                rel="noreferrer nofollow">LinkedIn</a>
-              </li>
-              <li>
-                <a href="https://github.com/astridboberg" target="_blank" rel="noreferrer nofollow">Github</a>
-              </li>
-            </ul>
-          </nav>
-          <!-- #footer-menu -->
-          
-          <!-- Byline -->
-          <ul id="footer-byline" class="has-small-font-size">
-            <li><a href="../about-the-website.html">About the website 👉</a></li>
-          </ul>
-          <!-- #footer-byline-->
+              <h3>Links</h3>
+              <ul class="social-profiles">
+                <li><a href="https://instagram.com/astrid.aho" rel="nofollow noreferrer" target="_blank">Instagram</a></li>
+                <li><a href="https://www.linkedin.com/in/astridboberg/" target="_blank" rel="noreferrer nofollow">LinkedIn</a></li>
+                <li><a href="https://github.com/astridboberg" rel="nofollow noreferrer" target="_blank">Github</a></li>
+              </ul>
 
-          <!-- Back to the top -->
-          <a href="#" id="to-the-top" aria-label="Back to the top">Up <span role="img">🚀</span></a>
-        </footer>
-        <!-- #site-footer-->
-        
-        <script src="../assets/js/open-menu.js"></script>
-      </body>
+              <ul class="other-links">
+                <li><a href="/cv.html">My resumee 📝</a></li>
+                <li><a href="/about-the-website.html">About the website ⚙️</a></li>
+              </ul>
+            </section>
+            <!-- .menu-contact -->
+          </div>
+          <!-- .site-menu-content -->
+        </div>
+        <!-- #site-navigation -->
+      </header>
+      <!-- #site-header-->
       
-      </html>
+      <!-- SITE CONTENT -->
+      <main id="site-content">
+        <article id="this-is-the-internet" class="project">
+          
+          <header class="entry-header">
+            <h2>An app for skaters</h2>
+          </header> <!-- .entry-header -->
+          
+          <figure class="entry-thumbnail">
+            <img src="../assets/img/projects/skatetracker/skatetracker-mockup-revised-2048x1365.jpg"
+            alt="An app for skaters looking for skating spots & routes" width="2048" height="1365" />
+          </figure> <!-- .entry-thumbnail -->
+          
+          <div class="container">
+            
+            <div class="entry-meta">
+              <ul>
+                <li><span class="title">Type of project: </span>Academic project</li>
+                
+                <li><span class="title">Location: </span>The Oslo School of Architecture and Design</li>
+                
+                <li><span class="title">Time frame: </span>February 1-18, 2022</li>
+                
+                <li><span class="title">Tools: </span>Figma</li>
+              </ul>
+            </div> <!-- .entry-meta-->
+            
+            <div class="entry-content">
+              <p>The app was done in 13 days as part of the introduction to screen based interactions, one of the modules in the course “Exploring design through interactions”. The brief was to design a digital service that explores different ways of non-commercial sharing.</p>
+              
+              <p>Each one of us was delivered an object, and mine was a skateboard. This resulted in the app Skatetracker, where skaters can share and find new skating spots and routes. The app includes an overview of locations to avoid due to traffic, road damage or high bust risk. The users can add danger warnings for others to find on the map. This creates a nice and safe experience for beginners, while also adding more challenges for the pros.</p>
+              
+              <video controls loop muted src="../assets/video/skatetracker/skatetracker-revised-filter.mp4" controls=""></video>
+              
+              <video controls loop muted src="../assets/video/skatetracker/skatetracker-revised-spot.mp4"></video>
+              
+            </div> <!-- .entry-content -->
+            
+          </div> <!-- .container -->
+          
+        </article> <!-- #skatetracker-->
+      </main> <!-- #site-content-->
+      
+      <!-- SITE FOOTER -->
+      <footer id="site-footer">
+        <h2 class="screen-reader-text">Links and contact info</h2>
+        
+        <!-- Contact information -->
+        <h3 class="footer-heading">Say hi</h3>
+        <p>
+          <span class="screen-reader-text">Email:</span>
+          <a href="mailto:heia&commat;astridboberg&period;no">heia&commat;astridboberg&period;no</a>
+        </p>
+        
+        <!-- Footer menu -->
+        <h3 class="footer-heading">Links</h3>
+        <nav id="footer-menu">
+          <ul>
+            <li>
+              <a href="https://instagram.com/astrid.aho" target="_blank" rel="noreferrer nofollow">Instagram</a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/astridboberg/" target="_blank"
+              rel="noreferrer nofollow">LinkedIn</a>
+            </li>
+            <li>
+              <a href="https://github.com/astridboberg" target="_blank" rel="noreferrer nofollow">Github</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- #footer-menu -->
+        
+        <!-- Byline -->
+        <ul id="footer-byline" class="has-small-font-size">
+          <li><a href="/cv.html">My resumee 📝</a></li>
+          <li><a href="/about-the-website.html">About the website ⚙️</a></li>
+        </ul> <!-- #footer-byline-->
+        
+        <!-- Back to the top -->
+        <a href="#" id="to-the-top" aria-label="Back to the top">Up <span role="img">🚀</span></a>
+      </footer>
+      <!-- #site-footer-->
+      
+      <script src="../assets/js/open-menu.js"></script>
+    </body>
+    
+    </html>
