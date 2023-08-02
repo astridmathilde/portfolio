@@ -3,8 +3,12 @@
 @import "layout/entry-header";
 @import "layout/entry-content";
 
+#site-content {
+  max-width: 2560px;
+  margin: 0 auto;
+}
+
 .single-project {
-  
   .entry-header {
     h2 {
       margin-bottom: calc($unit100 / 2);
@@ -92,7 +96,7 @@
       @media all and (min-width: 873px) {
         margin: 0;
       }
-
+      
       > figure:first-child,
       > p:first-child {
         margin-top: 0;
