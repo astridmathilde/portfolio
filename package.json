@@ -1,22 +1,13 @@
 {
-  "name": "image-compression",
-  "version": "1.0.0",
-  "description": "Pre commit script to compress images",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "husky install"
-  },
-  "devDependencies": {
-    "husky": "^8.0.0",
-    "lint-staged": "^13.2.1"
+    "dev": "next dev"
   },
   "dependencies": {
-    "sharp": "^0.32.0"
+    "next": "^13.5.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
-  "lint-staged": {
-    "*.{png,jpeg,jpg,gif,svg}": [
-      "node ./assets/js/compress-images.js"
-    ]
+  "devDependencies": {
+    "sass": "^1.69.4"
   }
 }
