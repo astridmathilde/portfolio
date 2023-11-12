@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import styles from '../styles/components/layout.module.css';
-import utils from '../styles/utils.module.css';
+import styles from './layout.module.css';
+import utils from '../../styles/utils.module.css';
 
 export const siteTitle = 'Astrid Mathilde Boberg';
 
@@ -10,7 +10,7 @@ export default function Layout({ children }) {
     <>
     <Head>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦄</text></svg>" />
-    <meta name="description" content="Heia! I am from Northern Norway and I have always been passionate about design and technology. Currently I am a design student at The Oslo School of Architecture and Design while working with OpenBridge an open-source design system for better and safer user interfaces on ships, helping to reduce future carbon emissions in the ocean industry." />
+    <meta name="description" content="Heia! I am from Northern Norway and I have always been passionate about design and coding. Currently I am a design student at The Oslo School of Architecture and Design while working with OpenBridge an open-source design system for better and safer user interfaces on ships, helping to reduce future carbon emissions in the ocean industry." />
     <meta name="og:title" content={siteTitle} />
     </Head>
     <header id={styles.site_header}>

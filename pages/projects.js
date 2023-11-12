@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import Layout, { siteTitle } from '../components/layout';
+import Layout, { siteTitle } from '../src/components/layout/layout';
 
 export default function projects() {
   const projects = ['Project 1', 'Project 2', 'Project 3', 'Project 4'];
