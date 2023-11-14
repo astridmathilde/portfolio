@@ -1,16 +1,7 @@
 import Image from 'next/image';
-import styles from './image.module.css';
+import styles from './image.module.scss';
 
-export default function BlockImage() {
-  const meta = {
-    url: '/images/astrid-og-theia.jpg',
-    width: 2268,
-    height: 1814,
-    alt: 'Placeholder',
-    caption: 'Placeholder',
-    
-  }
-  
+export default function BlockImage(meta) {
   return (
     <>
     <figure className={styles.image}>

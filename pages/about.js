@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Link from 'next/link';
 import Layout, { siteTitle } from '../src/components/layout/layout';
 import BlockImage from '../src/components/image/image';
 
@@ -26,17 +27,18 @@ export default function about() {
     new landing page for <a href="https://www.becour.com" target="_blank" rel="external">Marbly</a>, a platform that makes
     it easier for companies to source renewable energy.</p>
     
-    <p>As a child I enjoyed taking photos (mostly <a href="equine-photos.html" title="Take a look!">horses</a>), which
+    <p>As a child I enjoyed taking photos, which
     sparked my interest for design and
-    technology later on. I learned to code when I was 10, and at 19 I started my first job as a web designer/developer,
+    technology later on. I learned to code when I was 10, and at 19 I started my first job as a web designer/developeçr,
     after finishing my craft certificate in digital media design. I worked in Tromsø for a couple of years, before I
-    decided to do a master's degree in interaction design, and moved to Oslo to become a full-time design student. If you
-    want to read more about my career, <a href="cv.html">take a look at my resumee</a>!</p>
+    decided to do a master's degree in interaction design, and moved to Oslo to become a full-time design student. If you want to read more about my career, <Link href="./resumee">take a look at my resumee</Link> 🔎</p>
     
     <p>When I am not at school working on design projects or designing components in Figma, you can probably find me in the stable, outside hiking in the forest, at a café
     sipping oat latte and writing something in my Moleskine, or maybe at
     a concert somewhere headbanging to a rock or metal band.</p>
-    <BlockImage />
+    
+    <BlockImage url="/images/astrid-og-theia.jpg" width="2268" height="1814" alt="Astrid is hugging her horse, Theia" caption="I used to have my own horse, Theia <3" />
+  
     </Layout>
     );
   }
