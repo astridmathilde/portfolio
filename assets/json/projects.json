@@ -1,0 +1,26 @@
+[
+  {
+    "title": "First project",
+    "slug": "first-projects",
+    "url": "projects/first-project",
+    "img_url": "/images/projects/bams/thumbnail.jpg",
+    "img_width": 2048,
+    "img_height": 1536
+  }, 
+  {
+    "title": "Second project",
+    "slug": "second-projects",
+    "url": "projects/second-project",
+    "img_url": "/images/projects/sense/thumbnail.jpg",
+    "img_width": 1536,
+    "img_height": 2048
+  },
+  {
+    "title": "Third project",
+    "slug": "third-projects",
+    "url": "third/second-project",
+    "img_url": "/images/projects/gamle-munch/thumbnail.jpg",
+    "img_width": 2048,
+    "img_height": 1536
+  }
+]
