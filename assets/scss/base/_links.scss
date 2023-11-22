@@ -1,0 +1,20 @@
+a {
+  font-size: inherit;
+  font-weight: inherit;
+  text-decoration: underline;
+  text-decoration-thickness: from-font;
+  text-decoration-skip: objects;
+  text-decoration-skip-ink: auto;
+  text-decoration-color: $color-link;
+  text-underline-offset: 1px;
+  color: inherit;
+
+  @media all and (min-width: $screen-md) {
+    text-decoration-thickness: 1.5px;
+  }
+
+  &:hover,
+  &:focus {
+    text-decoration-color: darken($color-link, 20);
+  }
+}

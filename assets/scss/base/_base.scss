@@ -1,0 +1,25 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%
+}
+
+body {
+  background: $color-background;
+  font-family: "Inter", system-ui, sans-serif;
+  font-feature-settings: "ss01", "cv05", "cv10", "cv11";
+  line-height: 1.3;
+  color: $color-text;
+  -webkit-font-smoothing: antialiased;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

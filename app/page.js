@@ -1,6 +1,6 @@
 import { promises as fs } from 'fs';
 import { siteTitle } from "./layout";
-import ListProjects from "./list-projects";
+import utils from '../assets/scss/utils.module.scss';
 
 export const metadata = {
   title: siteTitle,
@@ -18,9 +18,7 @@ export default async function Index() {
 
   return (
     <>
-    <p>Heia! I am from Northern Norway and I have always been passionate about design and coding. Currently I am a third year design student at The Oslo School of Architecture and Design while working with OpenBridge, an open-source design system for better and safer user interfaces on ships.</p>
-
-    <ListProjects projects={featuredProjects} />
+    <p className={utils.display}>Heia! I am from Northern Norway and I have always been passionate about design and coding. Currently I am a third year design student at The Oslo School of Architecture and Design while working with OpenBridge, an open-source design system for better and safer user interfaces on ships.</p>
     </>
     );
   }

@@ -1,7 +1,7 @@
 'use client';
 
 import Link from "next/link";
-import BlockImage from "../components/image/image";
+import BlockImage from "../components/image";
 
 export default function ListProjects( {projects} ) {
   return (

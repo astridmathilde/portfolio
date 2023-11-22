@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import styles from './image.module.scss';
+import styles from '../assets/scss/components/image.module.scss';
 
 export default function BlockImage(meta) {
   return (
