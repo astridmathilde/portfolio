@@ -1,3 +1,25 @@
-@import "layout/site-header";
-@import "layout/site-content";
-@import "layout/site-footer";
+@import "layout/wrapper";
+@import "layout/header";
+@import "layout/menu";
+@import "layout/content";
+@import "layout/entry";
+@import "layout/footer";
+
+#header,
+#footer {
+  position: fixed;
+}
+  
+.menu1,
+.contact {
+  font-size: 1.25em;
+
+  li {
+    display: inline-block;
+    padding: 0;
+
+    + li {
+      padding-left: 1em;
+    }
+  }
+}

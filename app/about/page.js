@@ -1,6 +1,18 @@
-    import Link from "next/link";
+    import localFont from "next/font/local";
     import { siteTitle } from "../layout";
-    import BlockImage from "../../components/image/image";
+    import BlockImage from "../../components/image";
+    import BlockIcon from "../../components/icon";
+    import profilePicture from "../../assets/img/astrid-og-theia.jpg";
+    
+    const interDisplay = localFont({
+      src: [
+        {
+          path: '../../assets/fonts/Inter-Display.woff2',
+          weight: '400',
+          style: 'normal',
+        }
+      ]
+    })
     
     const pageTitle = 'About me';
     
@@ -12,7 +24,7 @@
     export default function Index() {
       return (
         <>
-        <h2>{ pageTitle }</h2>
+        <h2 className={interDisplay.className}>Heia, I'm Astrid <BlockIcon>👋</BlockIcon></h2>
         <p>I am from Kvænangen/Skjervøy in Northern Norway, recently turned 25, and right now I am in my third year of the five
         year master's
         programme in design at <a href="https://aho.no/" target="_blank" rel="external">The Oslo School of
@@ -32,13 +44,13 @@
         sparked my interest for design and
         technology later on. I learned to code when I was 10, and at 19 I started my first job as a web designer/developeçr,
         after finishing my craft certificate in digital media design. I worked in Tromsø for a couple of years, before I
-        decided to do a master's degree in interaction design, and moved to Oslo to become a full-time design student. If you want to read more about my career, <Link href="./resumee">take a look at my resumee</Link> 🔎</p>
+        decided to do a master's degree in interaction design, and moved to Oslo to become a full-time design student. If you want to read more about my career, <a onclick="window.open('./resumee','targetWindow', toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=no,width=601,height=720'); return false;" draggable="true" data-href="./resumee" href="./resumee">take a look at my resumee</a> <BlockIcon>🔎</BlockIcon></p>
         
         <p>When I am not at school working on design projects or designing components in Figma, you can probably find me in the stable, outside hiking in the forest, at a café
         sipping oat latte and writing something in my Moleskine, or maybe at
         a concert somewhere headbanging to a rock or metal band.</p>
         
-        <BlockImage url="/assets/img/astrid-og-theia.jpg" width="2268" height="1814" alt="Astrid is hugging her horse, Theia" caption="I used to have my own horse, Theia <3" />
+        <BlockImage url={profilePicture} width="2268" height="1814" alt="Astrid is hugging her horse, Theia" caption="I used to have my own horse, Theia <3" />
         </>
         );
       }

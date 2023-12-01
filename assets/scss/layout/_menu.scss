@@ -1,0 +1,20 @@
+.menu1 {
+  //display: none;
+}
+
+.menu2 {
+  position: relative;
+  //font-family: "Inter Display";
+  font-size: 2em;
+ // text-align: right;
+  
+  a {
+    //text-decoration: none;
+
+    &:hover,
+    &:focus {
+    //  text-decoration: underline;
+     // color: inherit;
+    }
+  }
+}

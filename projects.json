@@ -1,0 +1,35 @@
+[
+    {
+    "title": "Mensn",
+    "slug": "mensn",
+    "url": "projects/mensn",
+    "img_url": "http://localhost:3004/assets/img/projects/mensn/thumbnail.jpg",
+    "img_width": 2048,
+    "img_height": 1536
+  }, 
+  {
+    "title": "First project",
+    "slug": "bams",
+    "url": "projects/bams",
+    "img_url": "http://localhost:3004/assets/img/projects/bams/thumbnail.jpg",
+    "img_width": 2048,
+    "img_height": 1536
+  }, 
+
+  {
+    "title": "Second project",
+    "slug": "sense",
+    "url": "projects/sense",
+    "img_url": "http://localhost:3004/assets/img/projects/sense/thumbnail.jpg",
+    "img_width": 1536,
+    "img_height": 2048
+  },
+  {
+    "title": "Third project",
+    "slug": "gamlemunch",
+    "url": "third/gamlemunch",
+    "img_url": "http://localhost:3004/assets/img/projects/gamle-munch/thumbnail.jpg",
+    "img_width": 2048,
+    "img_height": 1536
+  }
+]

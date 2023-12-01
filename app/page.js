@@ -1,24 +1,39 @@
-import { promises as fs } from 'fs';
+import localFont from 'next/font/local';
+import Link from 'next/link';
 import { siteTitle } from "./layout";
+import styles from '../assets/scss/layout.module.scss';
 import utils from '../assets/scss/utils.module.scss';
+import BlockIcon from "../components/icon";
+
+const interDisplay = localFont({
+  src: [
+    {
+      path: '../assets/fonts/Inter-Display.woff2',
+      weight: '400',
+      style: 'normal',
+    }
+  ]
+})
+
 
 export const metadata = {
   title: siteTitle,
   description: 'Heia! I am from Northern Norway and I have always been passionate about design and coding.',
 }
 
-async function getProjects() {
-  const file = await fs.readFile(process.cwd() + '/assets/json/projects.json', 'utf8');
-  const data = JSON.parse(file)
-  return data;
-}
-
-export default async function Index() {
-  const featuredProjects = await getProjects();
+export default function Index() {
+  const arrowIcon = "-->";
 
   return (
     <>
-    <p className={utils.display}>Heia! I am from Northern Norway and I have always been passionate about design and coding. Currently I am a third year design student at The Oslo School of Architecture and Design while working with OpenBridge, an open-source design system for better and safer user interfaces on ships.</p>
+    <p className={utils.display + " " + interDisplay.className}>Heia! I am a designer and developer from Northern Norway <BlockIcon>🏔️</BlockIcon>, currently doing a master's degree in design at <a href="https://aho.no" target="_blank" rel="external">The Oslo School of Architecture and Design</a>, while working with <a href="https://seam.no" target="_blank" rel="external">SEAM</a> and <a href="https://aho.no" target="_blank" rel="external">OpenBridge</a>. I want to design digital products and services that matters, focusing on ethics and sustainability <BlockIcon>🌍</BlockIcon>.</p>
+
+    <nav className={styles.menu2  + " " + interDisplay.className}>
+      <ul>
+        <li><Link href="/projects">See projects</Link> <span role="img" className={utils.icon}>{arrowIcon}</span></li>
+        <li><Link href="/about">Read bio</Link> {arrowIcon}</li>
+      </ul>
+    </nav>
     </>
     );
   }

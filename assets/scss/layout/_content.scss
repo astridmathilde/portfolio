@@ -1,0 +1,8 @@
+#content {
+  margin-top: 1.5em;
+  margin-bottom: 3em;
+
+  @media all and (min-width: $screen-lg) {
+    margin-top: 0;
+  }
+}

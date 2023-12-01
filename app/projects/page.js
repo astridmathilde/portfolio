@@ -1,6 +1,7 @@
 import { promises as fs } from 'fs';
 import { siteTitle } from "../layout";
-import ListProjects from "../list-projects";
+import ListProjects from "../../components/list-projects";
+import utils from "../../assets/scss/utils.module.scss";
 
 const pageTitle = 'Projects';
 
@@ -10,8 +11,8 @@ export const metadata = {
 }
 
 async function getProjects() {
-  const file = await fs.readFile(process.cwd() + '/assets/json/projects.json', 'utf8');
-  const data = JSON.parse(file)
+  const file = await fs.readFile(process.cwd() + '/projects.json');
+  const data = JSON.parse(file);
   return data;
 }
 
@@ -20,7 +21,7 @@ export default async function Projects() {
 
   return (
     <>
-    <h2>{ pageTitle }</h2>
+    <h2 className={utils.screen_reader_text}>{ pageTitle }</h2>
     <ListProjects projects={allProjects}/>
     </>
     );
