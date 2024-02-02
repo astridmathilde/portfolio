@@ -1,7 +1,30 @@
 **.DS_store
 node_modules
-.husky
-assets/scss
-assets/js/compress-images
-package-lock.json
-package.json
+.next
+# next-video
+videos/*
+!videos/*.json
+!videos/*.js
+!videos/*.ts
+public/_next-video
+
+# next-video
+assets/videos/*
+!assets/videos/*.json
+!assets/videos/*.js
+!assets/videos/*.ts
+public/_next-video
+
+# next-video
+assets/videos/*
+!assets/videos/*.json
+!assets/videos/*.js
+!assets/videos/*.ts
+public/_next-video
+
+# next-video
+assets/videos/*
+!assets/videos/*.json
+!assets/videos/*.js
+!assets/videos/*.ts
+public/_next-video

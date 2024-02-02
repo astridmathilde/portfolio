@@ -1,0 +1,23 @@
+@import "base/variables";
+
+.lead {
+  font-size: 1.4em;
+  
+    @media all and (min-width: $screen-md) {
+      font-size: 1.953em;
+    }
+}
+
+.screen_reader_text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  word-wrap: normal !important;
+}

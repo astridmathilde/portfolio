@@ -1,0 +1,7 @@
+#content {
+  margin-bottom: 4em;
+  
+  @media all and (min-width: $screen-lg) {
+    margin-bottom: 1em;
+  }
+}
