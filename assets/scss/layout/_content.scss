@@ -1,7 +1,3 @@
 #content {
-  margin-bottom: 4em;
-  
-  @media all and (min-width: $screen-lg) {
-    margin-bottom: 1em;
-  }
+  min-height: calc(100vh - (20px + 1em + 1em));
 }
