@@ -1,0 +1,64 @@
+// Spacing
+$unit100: 1em;
+$unit200: 1.5em;
+$unit300: 2em;
+$unit400: 2.5em;
+$unit500: 4em;
+$unit600: 6em;
+$unit700: 7.5em;
+$unit800: 11.5em;
+$unit900: 14em;
+
+// Breakpoints
+$screen-xs: 320px;
+$screen-sm: 500px;
+$screen-md: 768px;
+$screen-lg: 1200px;
+$screen-xl: 2000px;
+
+// Containers
+$container-site: 100%;
+$container-content: 1600px;
+$container-text: 70ch;
+
+// Grid
+$grid-gutter-row: $unit400;
+$grid-gutter-column: $unit400;
+
+// Colors
+$color-background: #F1EFF7;
+$color-text: #241438;
+$color-link: darken($color-background, 20);
+$color-link-hover: darken($color-background, 50);
+
+// Transitions
+$duration-fast: 0.2s;
+$duration-normal: 0.4s;
+$duration-slow: 0.6s;
+
+$ease: cubic-bezier(0.29, 0, 0.28, 1); // https://cubic-bezier.com/#.29,0,.28,1
+$ease-in: cubic-bezier(0.41,
+    0.03,
+    1,
+    1); // https://cubic-bezier.com/#.41,.03,1,1
+$ease-out: cubic-bezier(0,
+    0.08,
+    0.47,
+    1); // https://cubic-bezier.com/#0,.08,.47,1
+$ease-in-out: cubic-bezier(0.45,
+    0,
+    0.55,
+    1); // https://cubic-bezier.com/#.45,0,.55,1
+
+// Animation
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+
+  100% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+}
