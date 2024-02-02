@@ -1,8 +1,7 @@
 @import "../base/variables";
 
 .display {
-  min-height: 80vh;
-  margin-top: 0em;
+  margin: 0em;
   font-size: 2.052em;
 
   @media all and (min-width: $screen-md) {
