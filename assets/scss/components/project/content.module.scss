@@ -1,9 +1,0 @@
-@import "../../base/variables";
-
-.content {
-  margin-top: 2em;
-
-  @media all and (min-width: $screen-md) {
-    margin-top: 2.5em;
-  }
-}
