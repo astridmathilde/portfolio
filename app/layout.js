@@ -39,7 +39,7 @@ export default function Layout({ children } ) {
     <header id={styles.header}>
     <h1 className={utils.screen_reader_text}>{siteTitle}</h1>
     <h2 className={utils.screen_reader_text}>Menu</h2>
-    <nav className={styles.menu1}>
+    <nav className={styles.menu}>
     <ul className={interDisplay.className}>
     <li><Link href="/">Index</Link></li>
     <li><Link href="/projects">Projects</Link></li>

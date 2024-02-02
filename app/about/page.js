@@ -1,18 +1,8 @@
-    import localFont from "next/font/local";
     import { siteTitle } from "../layout";
+    import Title from "../../components/title"; 
     import BlockImage from "../../components/image";
     import BlockIcon from "../../components/icon";
     import profilePicture from "../../assets/img/astrid-og-theia.jpg";
-    
-    const interDisplay = localFont({
-      src: [
-        {
-          path: '../../assets/fonts/Inter-Display.woff2',
-          weight: '400',
-          style: 'normal',
-        }
-      ]
-    })
     
     const pageTitle = 'About me';
     
@@ -24,7 +14,7 @@
     export default function Index() {
       return (
         <>
-        <h2 className={interDisplay.className}>Heia, I'm Astrid <BlockIcon>👋</BlockIcon></h2>
+        <Title>Heia, I'm Astrid <BlockIcon>👋</BlockIcon></Title>
         <p>I am from Kvænangen/Skjervøy in Northern Norway, recently turned 25, and right now I am in my third year of the five
         year master's
         programme in design at <a href="https://aho.no/" target="_blank" rel="external">The Oslo School of

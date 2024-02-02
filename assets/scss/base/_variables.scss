@@ -27,9 +27,9 @@ $grid-gutter-column: $unit400;
 
 // Colors
 $color-background: #F1EFF7;
-$color-background-light: #EAE3F1;
 $color-text: #241438;
-$color-link: #B7A1D1;
+$color-link: darken($color-background, 20);
+$color-link-hover: darken($color-background, 50);
 
 // Transitions
 $duration-fast: 0.2s;

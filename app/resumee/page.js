@@ -1,4 +1,6 @@
   import { siteTitle } from "../layout";
+  import Title from "../../components/title";
+  import BlockIcon from "../../components/display";
   
   const pageTitle = 'My resumee';
   
@@ -10,8 +12,8 @@
   export default function Resumee() {
     return (
       <>
-      <h2>{ pageTitle }</h2>
-      <h3>🎓 Education</h3>
+      <Title>{pageTitle}</Title>
+      <h3><BlockIcon>🎓</BlockIcon> Education</h3>
       <h4>Master of Design (5 years), The Oslo School of Architecture and
       Design</h4>
       <p>August 2021–</p>
@@ -22,7 +24,7 @@
       <h4>Media and Communication, Bardufoss videregående skole</h4>
       <p>August 2014–July 2016</p>
       
-      <h3>💼 Experience</h3>
+      <h3><BlockIcon>💼</BlockIcon> Experience</h3>
       <h4>Student Assistant, Ocean Industries Concept Lab (part-time)</h4>
       <p>August 2023–</p>
       
@@ -51,7 +53,7 @@
       <p>March 2016–July 2016</p>
       
       
-      <h3>✏️ Design skills</h3>
+      <h3><BlockIcon>✏️</BlockIcon> Design skills</h3>
       <ul>
       <li>User Research</li>
       <li>Service Mapping</li>
@@ -61,7 +63,7 @@
       <li>User Testing</li>
       </ul>
       
-      <h3>👩🏻‍💻 Coding skills</h3>
+      <h3><BlockIcon>ç</BlockIcon> Coding skills</h3>
       <ul>
       <li>HTML5</li>
       <li>CSS3/SCSS</li>
@@ -73,7 +75,7 @@
       <li>Sanity</li>
       </ul>
       
-      <h3>💻 Software</h3>
+      <h3><BlockIcon>💻</BlockIcon> Software</h3>
       <ul>
       <li>Adobe Creative Cloud</li>
       <li>Figma</li>
@@ -81,7 +83,7 @@
       <li>Blender</li>
       </ul>
       
-      <h3>🏆 Achievements</h3>
+      <h3><BlockIcon>🏆</BlockIcon> Achievements</h3>
       <h4>Prize for sustainability, AHO WORKS AWARDS (2022)</h4>
       <p>As a board member of the student organization KAHOS.</p>
       

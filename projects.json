@@ -1,35 +1,57 @@
 [
-    {
-    "title": "Mensn",
+  {
+    "id": 4,
+    "title": "Helping young girls understand their own menstrual cycle",
     "slug": "mensn",
-    "url": "projects/mensn",
-    "img_url": "http://localhost:3004/assets/img/projects/mensn/thumbnail.jpg",
-    "img_width": 2048,
-    "img_height": 1536
+    "location": {
+      "name": "Oslo School of Architecture and Design",
+      "url": "https://aho.no"
+    },
+    "time": "November 2023 (4 days)",
+    "tools": ["Figma", "The Core Model"]
   }, 
   {
-    "title": "First project",
+    "id": 3,
+    "title": "Creating instant situational awareness for ship operators",
     "slug": "bams",
-    "url": "projects/bams",
-    "img_url": "http://localhost:3004/assets/img/projects/bams/thumbnail.jpg",
-    "img_width": 2048,
-    "img_height": 1536
+    "stakeholder": {
+      "name": "SEAM",
+      "url": "https://seam.no"
+    },
+    "location": {
+      "name": "Ocean Industries Concept Lab",
+      "url": "https://oicl.no"
+    },
+    "contributors": ["Erikka Marie Sørensen"],
+    "time": "Juni–August 2023 (2 months)",
+    "tools": ["Figma"]
   }, 
-
   {
-    "title": "Second project",
-    "slug": "sense",
-    "url": "projects/sense",
-    "img_url": "http://localhost:3004/assets/img/projects/sense/thumbnail.jpg",
-    "img_width": 1536,
-    "img_height": 2048
+    "id": 2,
+    "title": "Exploring ways to give an empty museum building back to the community",
+    "slug": "gamlemunch",
+    "stakeholder": {
+      "name": "Gamle Munch",
+      "url": "https://gamlemunch.no"
+    },
+    "location": {
+      "name": "Oslo School of Architecture and Design",
+      "url": "https://aho.no"
+    },
+    "contributors": ["Elias Løfblad", "Dina Bugge"],
+    "time": "August 2023 (4 days)",
+    "tools": ["Figma"]
   },
   {
-    "title": "Third project",
-    "slug": "gamlemunch",
-    "url": "third/gamlemunch",
-    "img_url": "http://localhost:3004/assets/img/projects/gamle-munch/thumbnail.jpg",
-    "img_width": 2048,
-    "img_height": 1536
+    "id": 1,
+    "title": "Raising awareness of what your clothes are made of",
+    "slug": "sense",
+    "location": {
+      "name": "Oslo School of Architecture and Design",
+      "url": "https://aho.no"
+    },
+    "contributors": ["Helene Aspeli"],
+    "time": "Mars 2023 (6 days)",
+    "tools": ["Figma"]
   }
 ]

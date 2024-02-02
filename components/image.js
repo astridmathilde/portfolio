@@ -5,8 +5,14 @@ export default function BlockImage(meta) {
   return (
     <>
     <figure className={styles.image}>
-    <Image src={meta.url} alt={meta.alt} />
-    <figcaption>{meta.caption}</figcaption>
+    <Image src={meta.url} alt={meta.alt} width={meta.width} height={meta.height}/>
+     {meta.caption ? (
+        <figcaption>
+          {meta.caption}
+        </figcaption>
+      ) : (
+        null
+      )}
     </figure>
     </>
     );

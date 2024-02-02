@@ -1,0 +1,16 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  
+  figure {
+    order: -1;
+  }
+  
+  h2 {
+    order: -2;
+  }
+  
+  p {
+    margin-top: 0.1em;
+  }
+}

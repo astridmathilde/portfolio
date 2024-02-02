@@ -1,16 +1,11 @@
-.display {
-  margin-top: 1.5em;
-  //font-family: "Inter Display";
-  font-size: 3.815rem;
-
-  &:first-child {
-    margin-top: 0;
-  }
-}
+@import "base/variables";
 
 .lead {
-  font-size: 2em;
-  //font-family: "Inter Display";
+  font-size: 1.4em;
+  
+    @media all and (min-width: $screen-md) {
+      font-size: 1.953em;
+    }
 }
 
 .screen_reader_text {

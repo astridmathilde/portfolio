@@ -1,16 +1,10 @@
 @import "layout/wrapper";
 @import "layout/header";
-@import "layout/menu";
 @import "layout/content";
 @import "layout/entry";
 @import "layout/footer";
-
-#header,
-#footer {
-  position: fixed;
-}
   
-.menu1,
+.menu,
 .contact {
   font-size: 1.25em;
 
