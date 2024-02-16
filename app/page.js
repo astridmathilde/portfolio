@@ -4,7 +4,6 @@ import BlockIcon from "../components/icon";
 
 export const metadata = {
   title: siteTitle,
-  description: 'Heia! I am from Northern Norway and I have always been passionate about design and coding.',
 }
 
 export default function Index() {
