@@ -3,7 +3,7 @@ import BlockDisplay from "../components/display";
 import BlockIcon from "../components/icon";
 
 export const metadata = {
-  title: siteTitle,
+  title: siteTitle
 }
 
 export default function Index() {
