@@ -3,8 +3,7 @@ import BlockDisplay from "../components/display";
 import BlockIcon from "../components/icon";
 
 export const metadata = {
-  title: siteTitle,
-  description: 'Heia! I am from Northern Norway and I have always been passionate about design and coding.',
+  title: siteTitle
 }
 
 export default function Index() {
