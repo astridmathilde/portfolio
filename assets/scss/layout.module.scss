@@ -3,17 +3,3 @@
 @import "layout/content";
 @import "layout/entry";
 @import "layout/footer";
-  
-.menu,
-.contact {
-  font-size: 1.25em;
-
-  li {
-    display: inline-block;
-    padding: 0;
-
-    + li {
-      padding-left: 1em;
-    }
-  }
-}

@@ -1,0 +1,8 @@
+@import "../base/variables";
+
+.row {
+  @media all and (min-width: $screen-md) {
+  display: flex;
+  justify-content: space-between;
+  }
+}

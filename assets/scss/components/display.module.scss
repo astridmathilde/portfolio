@@ -2,13 +2,4 @@
 
 .display {
   margin: 0em;
-  font-size: 2.052em;
-
-  @media all and (min-width: $screen-md) {
-  font-size: 2.815em;
-  }
-
-  @media all and (min-width: $screen-lg) {
-    font-size: 3em;
-  }
 }

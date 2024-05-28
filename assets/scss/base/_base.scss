@@ -5,7 +5,6 @@
 }
 
 html {
-  //font-family: "Inter", system-ui, sans-serif;
   font-feature-settings: "ss01", "cv05", "cv10", "cv11";
 }
 
@@ -17,6 +16,7 @@ body {
   line-height: 1.4;
   color: $color-text;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
   
   @media all and (min-width: $screen-sm) {
     font-size: 16px;
@@ -40,11 +40,15 @@ figure {
 }
 
 ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  //margin: 0;
+ //padding: 0;
+ //list-style: none;
   
   li + li {
     padding-top: 0.3em;
   }
+}
+
+address {
+  font-style: normal;
 }
