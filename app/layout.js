@@ -2,7 +2,7 @@ import Link from "next/link";
 import localFont from 'next/font/local';
 import '../assets/scss/global.scss';
 import styles from '../assets/scss/layout.module.scss';
-import utils from '../assets/scss/utils.module.scss';
+import Wrapper from './wrapper.js'
 
 const interDisplay = localFont({
   src: [
@@ -16,13 +16,13 @@ const interDisplay = localFont({
 
 export const siteTitle = 'Astrid Mathilde Boberg';
 
-export default function Layout({ children } ) {
+export default function Layout({ children }) {
   return (
     <>
     <html lang="en" className={interDisplay.className}>
-    <body id={styles.wrapper}>
+    <Wrapper>
     <header id={styles.header}>
-    <h1 className={utils.screen_reader_text}>{siteTitle}</h1>
+    <h1><a href="/">{siteTitle}</a></h1>
     </header>
     <main id={styles.content} className={styles.entry}>
     {children}
@@ -31,7 +31,7 @@ export default function Layout({ children } ) {
     <address rel="author">© Astrid Mathilde Boberg</address>
     <Link href="colophon">Colophon</Link>
     </footer>
-    </body>
+    </Wrapper>
     </html>
     </>
     );

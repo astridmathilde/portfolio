@@ -4,10 +4,10 @@
   position: fixed;
   top: 0.5em;
   right: 1em;
-
+  
   a {
     text-decoration-color: transparent;
-
+    
     &:hover,
     &:focus {
       text-decoration-color: $color-link-hover;

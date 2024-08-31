@@ -1,5 +1,5 @@
-    import { siteTitle } from "./layout";
-    
+    import { siteTitle } from './layout';
+
     const pageTitle = 'Something bad happened!';
     
     export const metadata = {
@@ -11,7 +11,7 @@
       return (
         <>
         <h2>{ pageTitle }</h2>
-        <p>Maybe go back?</p>
+        <p><a href="/">Maybe go back?</a></p>
         </>
         );
       }
