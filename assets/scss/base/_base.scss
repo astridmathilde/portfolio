@@ -12,31 +12,30 @@ html {
 body {
   background: $color-background;
   margin: 0;
-  font-size: 12px;
+  font-size: 16px;
   line-height: 1.4;
   color: $color-text;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
   
-  @media all and (min-width: $screen-sm) {
-    font-size: 16px;
-  }
-  
   @media all and (min-width: $screen-md) {
-    font-size: 16px;
-  }
-  
-  @media all and (min-width: $screen-lg) {
     font-size: 20px;
   }
   
-  @media all and (min-width: $screen-xl) {
+  @media all and (min-width: $screen-lg) {
     font-size: 24px;
   }
-
+  
+  @media all and (min-width: $screen-xl) {
+    font-size: 28px;
+  }
+  
   &.home {
-    h1 {
-      display: none;
+    h1,
+    nav {
+      /*height: 0;
+      opacity: 0;
+      filter: alpha(opacity=100);*/
     }
   }
 }
@@ -46,9 +45,6 @@ figure {
 }
 
 ul {
-  //margin: 0;
- //padding: 0;
- //list-style: none;
   
   li + li {
     padding-top: 0.3em;
@@ -57,18 +53,4 @@ ul {
 
 address {
   font-style: normal;
-}
-
-.screen_reader_text {
-  border: 0;
-  clip: rect(1px, 1px, 1px, 1px);
-  -webkit-clip-path: inset(50%);
-  clip-path: inset(50%);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-  word-wrap: normal !important;
 }

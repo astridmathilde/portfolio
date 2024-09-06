@@ -22,7 +22,13 @@ export default function Layout({ children }) {
     <html lang="en" className={interDisplay.className}>
     <Wrapper>
     <header id={styles.header}>
-    <h1><a href="/">{siteTitle}</a></h1>
+    <h1 className={styles.site_title}><a href="/">{siteTitle}</a></h1>
+    <nav className={styles.site_navigation}>
+      <ul>
+        <li key="work"><Link href="/">Work</Link></li>
+        <li key="resumee"><Link href="resumee">Resumee</Link></li>
+      </ul>
+    </nav>
     </header>
     <main id={styles.content} className={styles.entry}>
     {children}

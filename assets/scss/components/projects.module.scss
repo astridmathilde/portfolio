@@ -1,59 +1,97 @@
 @import "../base/variables";
 
-.projects {
-  margin-top: $unit400;
-  margin-bottom: $unit400;
-
-.project {
-  text-decoration: none;
-
-  + .project {
+.projects {  
+  display: grid;
+  position: relative;
+  grid-gap: 1em;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: $spacing;
+  
+  @media all and (max-width: $screen-lg) {
+    left: calc(50% - 1em);
+    right: 50%;
+    overflow-x: scroll;
+    scroll-snap-type: x proximity;
+    grid-auto-columns: -webkit-calc(50% - 40px);
+    grid-auto-columns: calc(50% - 40px);
+    grid-auto-flow: column;
+    grid-template-columns: 1em;
+    grid-template-rows: minmax(150px, 1fr);
+    width: calc(100vw + 1em);
+    margin-left: -50vw;
+    margin-right: -50vw;
+    padding: 0 1em 0 0;
+    
+    &:before {
+      content: "";
+    }
+  }
+  
+  
+  .project {
     display: block;
-    margin-top: $unit200;
-  }
-  
-  article {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  &:hover,
-  &:focus {
-    .title {
-      text-decoration: underline;
-      text-decoration-color: $color-link-hover;
-    }
-  }
-  
-  figure {
-    order: -1;
-  }
-  
-  header {
-    display: flex;
-    flex-direction: column;
+    text-decoration: none;
     
-    .title {
-      margin-top: calc($unit100 / 2);
-      font-size: 1em;
+    article {
+      display: flex;
+      flex-direction: column;
     }
     
-    .meta {
-      margin: 0;
-      padding: 0;
-      font-size: 0.8em;
+    &:hover,
+    &:focus {
+      .title {
+        text-decoration: underline;
+        text-decoration-color: $color-link-hover;
+      }
+    }
+    
+    figure {
+      order: -1;
       
-      li {
-        display: inline-block;
-        padding: 0;
+      img {
+        width: 100%;
+        height: calc(50vw * 0.6);
+        object-fit: cover;
         
-        + li:before {
-          content: "/";
-          padding: 0 0.25em;
+        @media all and (min-width: $screen-lg) {
+          height: calc(50vw * 0.4);
+        }
+        
+        @media all and (min-width: $screen-xl) {
+          height: calc(50vw * 0.3);
         }
       }
     }
+    
+    header {
+      display: flex;
+      flex-direction: column;
+      
+      .title {
+        margin-top: 0.2em;
+        margin-bottom: 0;
+        font-size: 0.8em;
+      }
+      
+      .meta {
+        order: -1;
+        margin: 0;
+        padding: 0;
+        font-size: 0.7em;
+        opacity: 0.8;
+        filter: alpha(opacity=80);
+        
+        li {
+          display: inline-block;
+          padding: 0;
+          
+          + li:before {
+            content: "/";
+            padding: 0 0.25em;
+          }
+        }
+      }
+    }
+    
   }
-  
-}
 }

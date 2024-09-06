@@ -3,6 +3,8 @@ import { siteTitle } from "./layout";
 import BlockDisplay from "../components/display";
 import BlockIcon from "../components/icon";
 import BlockProjects from "../components/projects";
+import BlockResumee from "../components/resumee";
+import utils from "../assets/scss/utils.module.scss";
 import { experience } from "../data/resumee";
 
 export const metadata = {
@@ -15,19 +17,13 @@ export default function Index() {
     <>
     <BlockDisplay>Heia! <BlockIcon>👋</BlockIcon> I am a designer from Northern Norway <BlockIcon>🏔️</BlockIcon> with a background in web development, currently doing a master's degree in design at The Oslo School of Architecture and Design. I want to design digital products and services that matter, contributing to a more sustainable future. <BlockIcon>🌍</BlockIcon></BlockDisplay>
     
+    <h2 className={utils.screen_reader_text}>This is some of my projects 👇</h2>
     <BlockProjects />
     
     <h2>Recent work experience 👩🏻‍💻</h2>
     {experience.slice(0, 3).map((experience) => (
-      <article key={experience.id}>
-      <header>
-      <h3>{experience.position} @ <a href={experience.location.url}>{experience.location.name}</a></h3>
-      <p dangerouslySetInnerHTML={{ __html: experience.description }} />
-      </header>
-      <p>{experience.time}</p>
-      </article>
+      <BlockResumee id={experience.id} position={experience.position} locationUrl={experience.location.url} locationName={experience.location.name} description={experience.description} time={experience.time} />
       ))}
-      
       
       <h2>Life lately ✨</h2>
       <p>Living with friends in Oslo, currently on my third year at <a href="https://aho.no" target="_blank" rel="external">The Oslo School of Architecture and Design</a> specializing in interaction & service design, but I have taken a break from my studies this year to work full-time. I have started re-reading the entire Harry Potter series,  and I spend a lot of time in the stable, doing yoga or working on various creative projects.</p>

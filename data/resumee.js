@@ -11,7 +11,7 @@ export const experience = [
   },
   {
     "id": 0,
-    "time": "February 2023 ->",
+    "time": "February 2023->",
     "position": "UX Designer",
     "location": {
       "name": "SEAM",

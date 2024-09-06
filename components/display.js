@@ -4,7 +4,9 @@ import styles from '../assets/scss/components/display.module.scss';
 export default function BlockIcon({children}) {
   return (
     <>
-    <p className={styles.display}>{children}</p>
+    <div className={styles.display}>
+    <p>{children}</p>
+    </div>
     </>
   )
 }

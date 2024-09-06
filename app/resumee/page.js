@@ -2,6 +2,7 @@ import { siteTitle } from "../layout";
 import BlockIcon from "../../components/icon";
 import BlockRow from "../../components/row";
 import BlockColumn from "../../components/column";
+import BlockResumee from "../../components/resumee";
 import { experience, education, skills, achievements } from "../../data/resumee";
 
 const pageTitle = 'My resumee';
@@ -11,7 +12,7 @@ export const metadata = {
   description: 'I was born in April 1998 (currently 26 🎉) and I have 6 years experience in web design and coding after working in several design agencies in Harstad, Tromsø and Oslo. In August 2021, I started doing a five year integrated master in design at The Oslo School of Architecture and Design.'
 }
 
-export default function Colophon() {
+export default function Resumee() {
   return (
     <>
     <h2>My resumee <BlockIcon>📄</BlockIcon></h2>
@@ -19,33 +20,21 @@ export default function Colophon() {
     
     <h3>Work experience <BlockIcon>👩🏻‍💻</BlockIcon></h3>
     {experience.map((experience) => (
-      <article key={experience.id}>
-      <header>
-      <h4>{experience.position} @ <a href={experience.location.url}>{experience.location.name}</a></h4>
-      <p dangerouslySetInnerHTML={{ __html: experience.description }} />
-      </header>
-      <p>{experience.time}</p>
-      </article>
+      <BlockResumee key={experience.id} position={experience.position} locationUrl={experience.location.url} locationName={experience.location.name} description={experience.description} time={experience.time} />
       ))}
       
       <h3>Education <BlockIcon>👩🏻‍🎓</BlockIcon></h3>
       {education.map((education) => (
-        <article key={education.id}>
-        <header>
-        <h4>{education.grade} @ <a href={education.location.url}>{education.location.name}</a></h4>
-        <p dangerouslySetInnerHTML={{ __html: education.description }} />
-        </header>
-        <p>{education.time}</p>
-        </article>
+        <BlockResumee id={education.id} position={education.position} locationUrl={education.location.url} locationName={education.location.name} description={education.description} time={education.time} />
         ))}
         
         <BlockRow>
         {skills.map((skills) => (
-          <BlockColumn>
+          <BlockColumn key={skills.title}>
           <h3>{skills.title}</h3>
           <ul>
           {skills.keywords.map((keyword) => (
-            <li>{keyword}</li>
+            <li key={keyword}>{keyword}</li>
             ))}
             </ul>
             </BlockColumn>

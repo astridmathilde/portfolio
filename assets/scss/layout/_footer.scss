@@ -1,4 +1,9 @@
+@import "../base/variables";
+
 #footer {
+  display: flex;
+  justify-content: space-between;
   position: relative;
-  margin-bottom: 0;
+  max-width: $container-content;
+  margin: $spacing auto 0 auto;    
 }

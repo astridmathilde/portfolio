@@ -1,0 +1,7 @@
+.thumbnail {
+  img {
+    width: 100%;
+    height: calc(100vw * 0.5) !important;
+    object-fit: cover;
+  }
+}
