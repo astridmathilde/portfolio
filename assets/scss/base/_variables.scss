@@ -10,12 +10,19 @@ $container-site: 100%;
 $container-content: 1520px;
 $container-text: 70ch;
 $spacing: 3.5em;
+$padding: 2em;
 
-// Colors
+// Light Mode 
 $color-background: #F1EFF7;
 $color-text: #241438;
 $color-link: darken($color-background, 20);
 $color-link-hover: darken($color-background, 50);
+
+// Dark Mode
+$dark-color-background: #0B0611;
+$dark-color-text: #DAD8E0;
+$dark-color-link: darken($dark-color-text, 20);
+$dark-color-link-hover: darken($dark-color-text, 50);
 
 // Transitions
 $duration-fast: 0.2s;

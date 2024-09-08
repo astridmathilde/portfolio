@@ -6,51 +6,53 @@
 
 html {
   font-feature-settings: "ss01", "cv05", "cv10", "cv11";
-}
-
-
-body {
-  background: $color-background;
-  margin: 0;
-  font-size: 16px;
-  line-height: 1.4;
-  color: $color-text;
-  -webkit-font-smoothing: antialiased;
-  overflow-x: hidden;
   
-  @media all and (min-width: $screen-md) {
-    font-size: 20px;
-  }
-  
-  @media all and (min-width: $screen-lg) {
-    font-size: 24px;
-  }
-  
-  @media all and (min-width: $screen-xl) {
-    font-size: 28px;
-  }
-  
-  &.home {
-    h1,
-    nav {
-      /*height: 0;
-      opacity: 0;
-      filter: alpha(opacity=100);*/
+  &.light {
+    body {
+      background: $color-background;
+      color: $color-text;
     }
   }
-}
-
-figure {
-  margin: 0;
-}
-
-ul {
-  
-  li + li {
-    padding-top: 0.3em;
+    
+    &.dark {
+      body {
+        background: $dark-color-background;
+        color: $dark-color-text;
+      }
+    }
   }
-}
-
-address {
-  font-style: normal;
-}
+  
+  body {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.4;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+    
+    @media all and (min-width: $screen-md) {
+      font-size: 20px;
+    }
+    
+    @media all and (min-width: $screen-lg) {
+      font-size: 24px;
+    }
+    
+    @media all and (min-width: $screen-xl) {
+      font-size: 28px;
+    }
+  }
+  
+  figure {
+    margin: 0;
+  }
+  
+  ul {
+    
+    li + li {
+      padding-top: 0.3em;
+    }
+  }
+  
+  address {
+    font-style: normal;
+  }
