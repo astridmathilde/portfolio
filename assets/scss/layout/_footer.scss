@@ -1,27 +1,12 @@
+@import "../base/variables";
+
 #footer {
+  display: flex;
   position: relative;
-  margin-bottom: 0;
-
-  @media all and (min-width: $screen-md) {
-    position: fixed;
-    right: 1em;
-    bottom: 0.5em;
-  }
-
-  a {
-    text-decoration-color: transparent;
-
-    &:hover,
-    &:focus {
-      text-decoration-color: $color-link-hover;
-    }
-  }
+  justify-content: space-between;
+  margin-top: $spacing * 1.5;
   
-  .contact {
-    text-align: right;
-
-    li {
-      display: inline-block;
-    }
+  @media all and (min-width: $screen-md) {
+    font-size: 0.8em;
   }
 }

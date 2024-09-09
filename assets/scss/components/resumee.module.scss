@@ -1,0 +1,16 @@
+@import "../base/variables";
+
+.entry {
+  display: flex;
+  font-size: 0.8em;
+  
+  .header {
+    max-width: $container-text;
+    padding-left: 1.5em;
+  }
+  
+  .time {
+    order: -1;
+    width: 20ch;
+  }
+}

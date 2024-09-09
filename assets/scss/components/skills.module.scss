@@ -1,0 +1,9 @@
+@import "../base/variables";
+
+.container {
+  max-width: $container-text;
+
+  ul {
+    font-size: 0.8em;
+  }
+}

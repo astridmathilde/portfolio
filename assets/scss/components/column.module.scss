@@ -1,0 +1,9 @@
+@import "../base/variables";
+
+.column {
+    + .column {
+      @media all and (min-width: $screen-md) {
+        padding-left: 1em;
+      }
+    }
+  }

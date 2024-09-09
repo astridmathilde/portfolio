@@ -1,3 +1,18 @@
+  @import "../base/variables";
+  
   #wrapper {
-    padding: 1em;
+    max-width: $container-content;
+    margin: 0 auto;
+    padding: $padding;
+    
+    @media all and (min-width: $screen-md) {
+      padding-top: $padding / 1.5;
+      padding-bottom: $padding / 1.5;
+    }
+    
+    @media all and (min-width: $screen-lg) {
+      padding-top: $padding / 2;
+      padding-bottom: $padding / 2;
+    }
   }
+  

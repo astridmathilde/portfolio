@@ -1,0 +1,12 @@
+@import "base/variables";
+
+.projects {
+  display: grid;
+  position: relative;
+  grid-gap: $padding;
+  grid-template-columns: 1fr 1fr;
+
+  @media all and (max-width: $screen-md) {
+    margin-top: $spacing;
+  }
+}

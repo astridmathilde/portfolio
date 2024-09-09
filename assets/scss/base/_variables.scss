@@ -1,35 +1,28 @@
-// Spacing
-$unit100: 1em;
-$unit200: 1.5em;
-$unit300: 2em;
-$unit400: 2.5em;
-$unit500: 4em;
-$unit600: 6em;
-$unit700: 7.5em;
-$unit800: 11.5em;
-$unit900: 14em;
-
 // Breakpoints
-$screen-xs: 320px;
-$screen-sm: 500px;
-$screen-md: 768px;
-$screen-lg: 1200px;
-$screen-xl: 2000px;
+$screen-xs: 400px;
+$screen-sm: 670px;
+$screen-md: 800px;
+$screen-lg: 1320px;
+$screen-xl: 1554px;
 
 // Containers
 $container-site: 100%;
-$container-content: 1600px;
+$container-content: 1520px;
 $container-text: 70ch;
+$spacing: 3.5em;
+$padding: 3.5%;
 
-// Grid
-$grid-gutter-row: $unit400;
-$grid-gutter-column: $unit400;
-
-// Colors
+// Light Mode 
 $color-background: #F1EFF7;
 $color-text: #241438;
 $color-link: darken($color-background, 20);
 $color-link-hover: darken($color-background, 50);
+
+// Dark Mode
+$dark-color-background: #0B0611;
+$dark-color-text: #DAD8E0;
+$dark-color-link: darken($dark-color-text, 40);
+$dark-color-link-hover:  darken($dark-color-text, 10);
 
 // Transitions
 $duration-fast: 0.2s;
