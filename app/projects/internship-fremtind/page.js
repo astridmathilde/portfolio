@@ -6,8 +6,9 @@ import projectNav from "../../../assets/scss/components/project-navigation.modul
 import BlockImage from "../../../components/image";
 import BlockProjects from "../../../components/projects";
 
-const pageTitle = 'Sommerinternship hos Fremtind';
 const projectID = projects[2];
+const pageTitle = projectID.short_title;
+
 
 export const metadata = {
   title: pageTitle + ' – ' + siteTitle
@@ -114,7 +115,7 @@ export default function fremtind() {
     
     <h2>Keep looking 👀</h2>
     <div className={projectNav.container}>
-    {projects.filter(project => project.id != '2').map((project) => (
+    {projects.filter(project => project.id != '2').toReversed().map((project) => (
       <BlockProjects id={project.id} slug={project.slug} title={project.title} category={project.category} location={project.location.name} thumbnail={project.thumbnail} />
     ))}
     </div>

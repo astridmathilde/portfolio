@@ -24,7 +24,7 @@ export default function Colophon() {
     <p>The carbon footprint for this website is 0,09 gram of CO2 per page view.</p>
 
     <h3>Further discovery 🔎</h3>
-    <p>You can <a href="https://github.com/astridmathilde/astridmathilde/" target="_blank" rel="nofollow noreferrer">view the code on Github</a>, <Link href="/about">learn more about me</Link>, or look at <Link href="/projects/bams">one of my projects.</Link></p>
+    <p>You can <a href="https://github.com/astridmathilde/astridmathilde/" target="_blank" rel="nofollow noreferrer">view the code on Github</a>, <Link href="/about">learn more about me</Link>, or look at <Link href="/projects/internship-fremtind">one of my projects.</Link></p>
     </>
     )
   }

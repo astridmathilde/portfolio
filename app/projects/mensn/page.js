@@ -42,52 +42,39 @@ export default function mensn() {
     
     <div className={style.meta}>
     <ul>
-    <li key="project_type"><span className={style.label}>Type of project:</span> {projectID.type}</li>
+    <li key="project_type"><span className={style.label}>Type of project:</span> {projectID.category} ({projectID.type.toLocaleLowerCase()})</li> 
     <li key="project_location"><span className={style.label}>Location:</span> <a href={projectID.location.url}>{projectID.location.name}</a></li>
     <li key="project_time_frame"><span className={style.label}>Time frame:</span> {projectID.time}</li>
     </ul>
     </div>
     
     <div className={style.content}>
-    <p>En digital tjeneste fra Helsedirektoratet som skal hjelpe unge jenter med å forstå mensen bedre, og gi innsikt i hvordan de ulike delene av syklusen påvirker kroppen og hodet.</p>
+    <p>This project was a part of a course about information and data. I ended up designing a digital product provided by The Norwegian Directorate of Health, teaching young girls about the menstrual cycle and how it might affect their mind and body.</p>
     
-    <h3>Problem</h3>
-    <p>Mange jenter bruker egne apper for å logge menssyklus og forstå egen kropp, men problemet med disse appene er at dataen ofte blir lekket eller solgt videre. I tillegg er seksualundervisningen på skolen mangelfull, og mange jenter kjenner ikke kroppen sin godt nok.</p>
+    <p>There is already a number of free apps on the market for tracking your period and learning more about your body. But as with various other apps, these apps are known to collect, retain and sometimes share some of their users' data. By providing a period tracker from The Norwegian Directorate of Health, young girls will learn more about the menstrual cycle and how it affects their mind and body, while their personal data are kept safe.</p>
     
-    <BlockImage url={img_innsikt} alt="Skjermbilder av artikler om mensapper og personvern" />
+    <BlockImage url={img_innsikt} alt="Articles about the privacy issues with period trackers." />
     
-    <h3>Prosess</h3>
-    <p>Konseptet ble til i løpet av en utforskende prosjekmodul der vi arbeidet med datavisualiseringer basert på egne datasett. Jeg valgte å ta utgangspunkt i min egen menstruasjonssyklus, og kombinerte denne dataen med offentlige tilgjengelige data for månefaser, for å undersøke om de fantes sammenhenger. Det mest interessante var likevel da jeg loggførte mine egne "cravings" over flere dager, og oppdaget at jeg nesten alltid fikk lyst på sukker mellom eggløsning og menstruasjon.</p>
+    <p>The course started with a short explorative module where we were making data visualisations based on our own datasets. I collected data about my period, and tried to combine this with other data to look for unexpected connections, like using data for moon phases. It was most interesting when I tracked my cravings for several days, and discovered that I almost always craved sugar during the two weeks before my period.</p>
     
-    <p>Da jeg leste meg opp på de ulike fasene i menstruasjonssyklusene, forstod jeg at dette var helt vanlig. I lutelfasen, ukene mellom eggløsning og menstruasjon, trenger kroppen nemlig mer energi enn vanlig, og om du ikke spiser nok i løpet av dagen, er det helt naturlig at kroppen får lyst på raske karbohydrater.</p>
+    <p>While doing some research about the menstrual cycle, I learned that this is normal. In the luteal phase, which is the weeks between ovulation and menstruation, the body needs more energy, and if you are not eating enough during the day, it is natural for the body to crave fast-acting carbs. I also  discovered that many young adults did not know about this, and never learned about it when they were younger.</p>
     
-    <p>Ved nærmere undersøkelser, innså jeg at dette var noe mange ikke visste om, og hvertfall ikke noe man lærte om på skolen.</p>
+    <BlockImage url={img_datasett} width="1093" alt="Experiments with datasets" caption="The connection between moon phases, cravings, and my own menstrual cycle."/>
     
-    <BlockImage url={img_datasett} width="1093" alt="Skjermbilder av eksperimentering med datasett" caption="Sammenhengen mellom månefaser, cravings og egen menssyklus."/>
+    <BlockImage url={img_prosess_1} width="1093"  alt="Data visualisations displaying the connection between moon phases and my menstrual cycle" caption="A data visualisation displaying the connection between the moon phases and my own menstrual cycle."/>
     
-    <BlockImage url={img_prosess_1}width="1093"  alt="Datavisualisering som viser sammenhengen mellom månefaser og egen menssyklus." caption="Datavisualisering som viser sammenhengen mellom månefaser og egen menssyklus."/>
+    <p>When I designed the interface, I started with using <a href="https://www.thecoremodel.com/" target="_blank" rel="external">The Core Model</a> to discover the most important functions. Based on that, I made a few flow charts and then sketched the wireframes on paper, playing with different layouts. When the flow and layout were ready, I designed the interface in Figma using the brand manual from The Norwegian Directorate of Health.</p>
     
-    <p>Da jeg skulle designe løsningen, startet jeg med å bruke <a href="https://kjernemodellen.no/" target="_blank" rel="external">Kjernemodellen</a>, for å avdekke de viktigste funksjonene. </p>
+    <BlockImage url={img_prosess_2} width="1093" alt="The Core Model" caption="The Core Model" />
     
-    <BlockImage url={img_prosess_2} width="1093" alt="Arbeid med Kjernemodellen" caption="Kjernemodellen" />
+    <BlockImage url={img_prosess_3} width="1093" alt="Flow charts" caption="Flow charts" />
     
-    <p>Basert på <a href="https://kjernemodellen.no/" target="_blank" rel="external">Kjernemodellen</a>, lagde jeg noen kjappe flytdiagrammer over innholdsstrukten.</p>
-    
-    <BlockImage url={img_prosess_3} width="1093" alt="Flytdiagrammer" caption="Flytdiagram" />
-    
-    <p>Deretter tegnet jeg wireframes på papir og lekte meg med ulike oppsett. Når flyten og oppsettet var klart, satte jeg opp alt i Figma.</p>
-    
-    <BlockImage url={img_prosess_4} width="1093" alt="Wireframes på papir" caption="Wireframes på papir"/>
-    
-    <h3 id="result">Løsning</h3>
-    <p>Ved å lage en ny digital tjeneste om mensen i samarbeid med Helsedirektoratet, vil unge jenter få økt kunnskap om egen syklus, samtidig som dataen deres holdes trygg.</p>
+    <BlockImage url={img_prosess_4} width="1093" alt="Wireframes on paper" caption="Wireframes on paper"/>
+
+    <p>The app "Mensn" helps you track your period so that you always know what is going on inside your body. With daily check-ins about your symptoms, you will learn how your current menstrual phase is affecting you, and what you can do to feel better.</p>
     
     <BlockImage url={img_proto_1} width="1093" alt="Prototype" />
-    
-    <BlockImage url={img_proto_2} width="1093" alt="Prototype" />
-    
-    <p>Appen "Mensn" lar deg loggføre mensen og få oversikt over hvor du er i syklusen akkurat nå, med informasjon om hvordan dette påvirker kroppen og hodet. Ved daglige innsjekk får du også mulighet til å loggføre symptomer gjennom hele syklusen, og dermed få økt forståelse for hvordan syklusen din påvirker deg.</p>
-    
+
     <BlockImageRow>
     <BlockImage url={img_resultat_1} alt="Resultat" />
     <BlockImage url={img_resultat_2} alt="Resultat" />
@@ -99,7 +86,7 @@ export default function mensn() {
     
     <h2>Keep looking 👀</h2>
     <div className={projectNav.container}>
-    {projects.filter(project => project.id != '1').map((project) => (
+    {projects.filter(project => project.id != '1').toReversed().map((project) => (
       <BlockProjects id={project.id} slug={project.slug} title={project.title} category={project.category} location={project.location.name} thumbnail={project.thumbnail} />
     ))}
     </div>

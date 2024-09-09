@@ -1,4 +1,14 @@
-.image img {
-  max-width: 100%;
-  height: auto;
+@import "../base/variables";
+
+.image {
+  margin-top: $padding;
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  figcaption {
+    font-size: 0.75em;
+  }
 }
