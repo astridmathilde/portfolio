@@ -17,7 +17,7 @@ export const metadata = {
 export default function Index() {
   return (
     <>
-    <BlockDisplay>Heia! <BlockIcon>👋</BlockIcon> I am a designer from Northern Norway <BlockIcon>🏔️</BlockIcon> with a background in web development, currently doing a master's degree in design at <a href="https://aho.no" target="_blank" rel="external">The Oslo School of Architecture and Design</a>. I want to design digital products that matter, contributing to a more sustainable future. <BlockIcon>🌍</BlockIcon></BlockDisplay>
+    <BlockDisplay>Heia! <BlockIcon>👋</BlockIcon> I am a designer from Northern Norway <BlockIcon>🏔️</BlockIcon> with a background in web development and a passion for sustainability, currently doing a master's degree in design at <a href="https://aho.no" target="_blank" rel="external">The Oslo School of Architecture and Design</a>.</BlockDisplay>
     
     <h2 className={utils.screen_reader_text}>This is some of my projects 👇</h2>
     
@@ -33,11 +33,12 @@ export default function Index() {
     ))}
     
     <h2>Life lately ✨</h2>
-    <p>Living with friends in Oslo, currently on my third year at <a href="https://aho.no" target="_blank" rel="external">The Oslo School of Architecture and Design</a> specializing in interaction & service design, but I have taken a break from my studies this year to work full-time. I have started re-reading the entire Harry Potter series,  and I spend a lot of time in the stable, doing yoga or working on various creative projects.</p>
-    <p className="small">Last updated in February 2024. Inspired by <a href="https://nownownow.com/about" target="_blank" rel="external">Now</a>.</p>
+    <p>Currently on my third year at <a href="https://aho.no" target="_blank" rel="external">The Oslo School of Architecture and Design</a>, specializing in interaction & service design, but I have taken a break from my studies this year to work with <a href="https://www.oicl.no/projects/openzero" target="_blank" rel="external">OpenZero</a> as well as doing some freelance work on websites. I have started re-reading the entire Harry Potter series, and I spend a lot of time in the stable, doing yoga or journalling.</p>
+
+    <p className={utils.small}>Last updated in August 2024. Inspired by <a href="https://nownownow.com/about" target="_blank" rel="external">Now</a>.</p>
     
     <h2>Contact 🤝</h2>
-    <p>My email is <a href="mailto:heia@astridmathilde.no?subject=Heia!">heia@astridmathilde.no</a>, but you can also write to me on <a href="https://instagram.com/astridmathildeb" target="_blank" rel="nofollow noreferrer">Instagram</a> or add me on <a href="https://www.linkedin.com/in/astridmathilde/" target="_blank" rel="nofollow noreferrer">LinkedIn</a>!</p>
+    <p>My email is <a href="mailto:heia@astridmathilde.no?subject=Heia!">heia@astridmathilde.no</a>, but you can also write to me on <a href="https://instagram.com/astridmathildeb" target="_blank" rel="nofollow noreferrer">Instagram</a> or <a href="https://www.linkedin.com/in/astridmathilde/" target="_blank" rel="nofollow noreferrer">add me on LinkedIn</a>!</p>
     
     <h2>Further discovery 🔎</h2>
     <p>You can <Link href="/about">learn more about me</Link>, <a href="https://github.com/astridmathilde/astridmathilde/" target="_blank" rel="nofollow noreferrer">view the code on Github</a> or see what I have done to reduce <Link href="colophon">this site’s carbon emissions</Link>.</p>
