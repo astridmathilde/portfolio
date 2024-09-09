@@ -2,15 +2,15 @@
 
 .entry {
   display: flex;
-  justify-content: space-between;
   font-size: 0.8em;
   
   .header {
-   max-width: $container-text;
-}
+    max-width: $container-text;
+    padding-left: 1.5em;
+  }
   
   .time {
     order: -1;
-    width: 20vw;
+    width: 20ch;
   }
 }

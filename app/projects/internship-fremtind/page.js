@@ -16,6 +16,7 @@ export const metadata = {
 export default function fremtind() {
   return (
     <>
+    <article className={style.project}>
     <header className={style.header}>
     <h2>{projectID.title}</h2>
     </header>
@@ -108,6 +109,7 @@ export default function fremtind() {
       <p></p>
       </div>
       </div>
+      </article>
       </>
       )
     }

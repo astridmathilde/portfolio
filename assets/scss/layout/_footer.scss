@@ -2,8 +2,11 @@
 
 #footer {
   display: flex;
-  justify-content: space-between;
   position: relative;
-  max-width: $container-content;
-  margin: $spacing auto 0 auto;    
+  justify-content: space-between;
+  margin-top: $spacing * 1.5;
+  
+  @media all and (min-width: $screen-md) {
+    font-size: 0.8em;
+  }
 }

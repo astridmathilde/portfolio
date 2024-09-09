@@ -14,27 +14,26 @@ import img_forelesning from "../../../assets/img/projects/kahos/forelesning.jpg"
 import img_poster_1 from "../../../assets/img/projects/kahos/poster-1.jpg";
 import img_poster_2 from "../../../assets/img/projects/kahos/poster-2.jpg";
 
-const pageTitle = 'The student association KAHOS';
+const pageTitle = (projects[0].short_title);
 
 export const metadata = {
   title: pageTitle + ' – ' + siteTitle
 }
 
-
 export default function kahos() {
   return (
     <>
+    <article className={style.project}>
     <header className={style.header}>
     <h2>{projects[0].title}</h2>
     </header>
     
-    <BlockImage url={projects[0].thumbnail} alt={projects[0].title} />
+    <BlockImage class={style.thumbnail} url={projects[0].thumbnail} alt={projects[0].title} />
     
     <div className={style.container}>
-    
     <div className={style.meta}>
     <ul>
-    <li key="project_type"><span className={style.label}>Type of project:</span> {projects[0].type}</li>
+    <li key="project_type"><span className={style.label}>Type of project:</span> {projects[0].category} for a {projects[0].type.toLocaleLowerCase()}</li>
     <li key="project_location"><span className={style.label}>Location:</span> <a href={projects[0].location.url}>{projects[0].location.name}</a></li>
     <li key="project_time_frame"><span className={style.label}>Time frame:</span> {projects[0].time}</li>
     <li key="project_contributors"><span className={style.label}>Contributors:</span>
@@ -72,6 +71,7 @@ export default function kahos() {
       </BlockImageRow>
       </div>
       </div>
+      </article>
       </>
       )
     }

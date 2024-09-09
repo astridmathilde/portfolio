@@ -6,17 +6,17 @@ export const projects = [
   {
     "id": 0,
     "title": "Transforming the education in design and architecture for a more sustainable future",
-    "short_title": "The student organization KAHOS",
+    "short_title": "The student association KAHOS",
     "thumbnail": kahos,
     "slug": "kahos",
-    "type": "Academic project",
+    "type": "Student association",
     "category": "Graphic design",
     "location": {
       "name": "AHO",
       "url": "https://aho.no"
     },
     "time": "November 2022->",
-    "team": ["Eirik Lohne Ruud", "Håkon Skorge", "Rakel Paulsen", "Guro Fløgstad Høvik", "Frida Tørring", "Frans Nygaard", "Per Roppestad Christensen", "Anniken B. Willmann", "Sanna Skeide", "Silje Regine Ekornrud Seim"]
+    "team": ["Eirik Lohne Ruud", "Håkon Skorge", "Rakel Paulsen", "Guro Fløgstad Høvik", "Frida Tørring", "Frans Nygaard", "Per Roppestad Christensen", "Anniken B. Willmann", "Sanna Skeide", "Silje Regine Ekornrud Seim", "Felix Vik"]
   },
   {
     "id": 1,

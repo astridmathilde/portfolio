@@ -1,7 +1,7 @@
 @import "../base/variables";
 
 .row {
-  @media all and (min-width: $screen-md) {
+  @media all and (min-width: $screen-sm) {
   display: flex;
   justify-content: space-between;
   }

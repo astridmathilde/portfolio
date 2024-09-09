@@ -26,12 +26,12 @@ export default function Layout({ children }) {
     <Providers>
     <header id={styles.header}>
     <h1 className={styles.site_title}><a href="/">{siteTitle}</a></h1>
-    <nav className={styles.site_navigation}>
-      <ul>
-        <li key="work"><Link href="/">Work</Link></li>
-        <li key="resumee"><Link href="/about">About</Link></li>
-        <li key="lightswitch"><LightSwitch /></li>
-      </ul>
+    <nav className={styles.navigation}>
+    <ul>
+    <li key="work"><Link href="/">Work</Link></li>
+    <li key="resumee"><Link href="/about">About</Link></li>
+    <li key="lightswitch"><LightSwitch /></li>
+    </ul>
     </nav>
     </header>
     <main id={styles.content} className={styles.entry}>

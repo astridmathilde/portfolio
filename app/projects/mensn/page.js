@@ -25,21 +25,21 @@ export const metadata = {
 export default function mensn() {
   return (
     <>
+    <article className={style.project}>
     <header className={style.header}>
     <h2>{projects[1].title}</h2>
     </header>
     
-    <BlockImage url={projects[1].thumbnail} alt={projects[1].title} />
+    <BlockImage class={style.thumbnail} url={projects[1].thumbnail} alt={projects[1].title} />
     
     <div className={style.container}>
-    
+
     <div className={style.meta}>
     <ul>
     <li key="project_type"><span className={style.label}>Type of project:</span> {projects[1].type}</li>
     <li key="project_location"><span className={style.label}>Location:</span> <a href={projects[1].location.url}>{projects[1].location.name}</a></li>
     <li key="project_time_frame"><span className={style.label}>Time frame:</span> {projects[1].time}</li>
     </ul>
-    <Link href="#result">Hopp til resultat</Link>
     </div>
     
     <div className={style.content}>
@@ -89,6 +89,7 @@ export default function mensn() {
 
     </div>
     </div>
+    </article>
     </>
     )
   }

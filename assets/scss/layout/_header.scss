@@ -3,46 +3,22 @@
 #header {
   display: flex;
   justify-content: space-between;
-  top: 0;
-  left: 0;
-  margin: 0 auto;
-  max-width: $container-content;
+  padding-bottom: $padding;
   
   @media all and (min-width: $screen-md) {
     font-size: 0.8em;
-  }
-  
-  @media all and (min-width: $screen-xl) {
-    margin-bottom: 5em;
   }
   
   .site_title {
     margin: 0;
   }
   
-  .site_navigation {
-    ul {
-      margin: 0;
-      padding: 0;
-      
-      li {
-        display: inline-block;
-        padding: 0;
-        list-style: none;
-        
-        + li {
-          padding-left: 1em;
-        }
-      }
-    }
-  }
-  
   a {
     text-decoration-color: transparent;
-    
+
     &:hover,
     &:focus {
-      text-decoration-color: $color-link-hover;
-    }
+      text-decoration-color: inherit;
   }
+}
 }
