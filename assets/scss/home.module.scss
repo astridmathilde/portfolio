@@ -13,6 +13,7 @@
     scroll-snap-type: x proximity;
     grid-auto-flow: column;
     grid-template-columns: $padding;
+    grid-template-rows: minmax(calc(50vw + $padding), 1fr);
     width: calc(100vw + $padding);
     margin-left: -50vw;
     margin-right: -50vw;

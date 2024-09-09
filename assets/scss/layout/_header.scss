@@ -5,10 +5,10 @@
   justify-content: space-between;
   align-items: center;
   padding-bottom: $padding;
-  font-size: 0.8em;
-
-  @media all and (min-width: $screen-xs) {
-      font-size: 0.9em;
+  font-size: 0.85em;
+  
+  @media all and (min-width: $screen-md) {
+    font-size: 0.8em;
   }
   
   .site_title {
@@ -17,10 +17,10 @@
   
   a {
     text-decoration-color: transparent;
-
+    
     &:hover,
     &:focus {
       text-decoration-color: inherit;
+    }
   }
-}
 }

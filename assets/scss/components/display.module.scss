@@ -5,6 +5,10 @@
   font-size: 1.2em;
   
   @media all and (min-width: $screen-xs) {
+    font-size: 1.5em;
+  }
+  
+  @media all and (min-width: $screen-sm) {
     display: flex;
     flex-direction: column;
     justify-content: center;

@@ -6,11 +6,11 @@ import BlockRow from "../../components/row";
 import BlockColumn from "../../components/column";
 import BlockResumee from "../../components/resumee";
 import BlockImage from "../../components/image";
-import { experience, education, skills, achievements } from "../../data/resumee";
+import { experience, education, skills } from "../../data/resumee";
 
 import portrait from "../../assets/img/about/portrait-astrid-boberg.jpg";
 
-const pageTitle = 'My resumee';
+const pageTitle = 'About me';
 
 export const metadata = {
   title: pageTitle + ' – ' + siteTitle,
@@ -33,31 +33,31 @@ export default function Resumee() {
     <h2>Work experience <BlockIcon>👩🏻‍💻</BlockIcon></h2>
     {experience.map((experience) => (
       <BlockResumee key={experience.id} position={experience.position} locationUrl={experience.location.url} locationName={experience.location.name} description={experience.description} time={experience.time} />
+    ))}
+    
+    <h2>Education <BlockIcon>👩🏻‍🎓</BlockIcon></h2>
+    {education.map((education) => (
+      <BlockResumee id={education.id} position={education.grade} locationUrl={education.location.url} locationName={education.location.name} description={education.description} time={education.time} />
+    ))}
+    
+    <div className={style.container}>
+    <BlockRow>
+    {skills.map((skills) => (
+      <BlockColumn key={skills.title}>
+      <h2>{skills.title}</h2>
+      <ul>
+      {skills.keywords.map((keyword) => (
+        <li key={keyword}>{keyword}</li>
       ))}
-      
-      <h2>Education <BlockIcon>👩🏻‍🎓</BlockIcon></h2>
-      {education.map((education) => (
-        <BlockResumee id={education.id} position={education.position} locationUrl={education.location.url} locationName={education.location.name} description={education.description} time={education.time} />
-        ))}
-        
-        <div className={style.container}>
-        <BlockRow>
-        {skills.map((skills) => (
-          <BlockColumn key={skills.title}>
-          <h2>{skills.title}</h2>
-          <ul>
-          {skills.keywords.map((keyword) => (
-            <li key={keyword}>{keyword}</li>
-            ))}
-            </ul>
-            </BlockColumn>
-            ))}
-            </BlockRow>
-            </div>
-            
-            
-            <h2>Further discovery 🔎</h2>
-            <p>You can see what I have done to reduce <Link href="colophon">this site’s carbon emissions</Link>, look at <Link href="/projects/kahos">one of my projects</Link>, or <a href="https://github.com/astridmathilde/astridmathilde/" target="_blank" rel="nofollow noreferrer">view the code on Github</a>.</p>              
-            </>
-            )
-          }
+      </ul>
+      </BlockColumn>
+    ))}
+    </BlockRow>
+    </div>
+    
+    
+    <h2>Further discovery 🔎</h2>
+    <p>You can see what I have done to reduce <Link href="colophon">this site’s carbon emissions</Link>, look at <Link href="/projects/kahos">one of my projects</Link>, or <a href="https://github.com/astridmathilde/astridmathilde/" target="_blank" rel="nofollow noreferrer">view the code on Github</a>.</p>              
+    </>
+  )
+}

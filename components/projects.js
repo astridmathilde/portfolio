@@ -26,7 +26,7 @@ export default function BlockProjects(project) {
       <li><span className={utils.screen_reader_text}>Location:</span> {project.location}</li>
       </ul>
       </header>
-      <BlockImage className={style.image} url={project.thumbnail} alt={project.title} />
+      <BlockImage className={style.image} url={project.thumbnail} alt={project.title} width="679" height="454"/>
       </article>
       </Link>  
       </>
