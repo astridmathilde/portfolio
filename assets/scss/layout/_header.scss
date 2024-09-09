@@ -3,10 +3,12 @@
 #header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding-bottom: $padding;
-  
-  @media all and (min-width: $screen-md) {
-    font-size: 0.8em;
+  font-size: 0.8em;
+
+  @media all and (min-width: $screen-xs) {
+      font-size: 0.9em;
   }
   
   .site_title {

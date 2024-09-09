@@ -2,11 +2,16 @@
 
 .entry {
   display: flex;
+  align-items: baseline;
   font-size: 0.8em;
   
   .header {
     max-width: $container-text;
     padding-left: 1.5em;
+
+    h3 {
+      margin-top: 0;
+    }
   }
   
   .time {
