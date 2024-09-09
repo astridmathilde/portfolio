@@ -5,8 +5,9 @@
   position: relative;
   justify-content: space-between;
   margin-top: $spacing * 1.5;
+  font-size: 0.8em;
   
-  @media all and (min-width: $screen-md) {
-    font-size: 0.8em;
+  @media all and (min-width: $screen-xs) {
+    font-size: 0.9em;
   }
 }

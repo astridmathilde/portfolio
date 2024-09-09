@@ -30,12 +30,12 @@ export default function Resumee() {
     </BlockColumn>
     </BlockRow>
     
-    <h3>Work experience <BlockIcon>👩🏻‍💻</BlockIcon></h3>
+    <h2>Work experience <BlockIcon>👩🏻‍💻</BlockIcon></h2>
     {experience.map((experience) => (
       <BlockResumee key={experience.id} position={experience.position} locationUrl={experience.location.url} locationName={experience.location.name} description={experience.description} time={experience.time} />
       ))}
       
-      <h3>Education <BlockIcon>👩🏻‍🎓</BlockIcon></h3>
+      <h2>Education <BlockIcon>👩🏻‍🎓</BlockIcon></h2>
       {education.map((education) => (
         <BlockResumee id={education.id} position={education.position} locationUrl={education.location.url} locationName={education.location.name} description={education.description} time={education.time} />
         ))}
@@ -44,7 +44,7 @@ export default function Resumee() {
         <BlockRow>
         {skills.map((skills) => (
           <BlockColumn key={skills.title}>
-          <h3>{skills.title}</h3>
+          <h2>{skills.title}</h2>
           <ul>
           {skills.keywords.map((keyword) => (
             <li key={keyword}>{keyword}</li>
@@ -56,7 +56,7 @@ export default function Resumee() {
             </div>
             
             
-            <h3>Further discovery 🔎</h3>
+            <h2>Further discovery 🔎</h2>
             <p>You can see what I have done to reduce <Link href="colophon">this site’s carbon emissions</Link>, look at <Link href="/projects/kahos">one of my projects</Link>, or <a href="https://github.com/astridmathilde/astridmathilde/" target="_blank" rel="nofollow noreferrer">view the code on Github</a>.</p>              
             </>
             )
