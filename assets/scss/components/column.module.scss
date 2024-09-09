@@ -2,7 +2,7 @@
 
 .column {
     + .column {
-      @media all and (min-width: $screen-md) {
+      @media all and (min-width: $screen-xs) {
         padding-left: 1em;
       }
     }

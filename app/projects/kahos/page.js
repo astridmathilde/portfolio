@@ -2,8 +2,10 @@ import Link from "next/link";
 import { siteTitle } from "../../layout";
 import { projects } from "../../../data/projects";
 import style from "../../../assets/scss/project.module.scss";
+import projectNav from "../../../assets/scss/components/project-navigation.module.scss";
 import BlockImage from "../../../components/image";
 import BlockImageRow from "../../../components/image_row";
+import BlockProjects from "../../../components/projects";
 
 import img_aho from "../../../assets/img/projects/kahos/aho.jpg";
 import img_logo from "../../../assets/img/projects/kahos/logo.jpg";
@@ -28,7 +30,7 @@ export default function kahos() {
     <h2>{projects[0].title}</h2>
     </header>
     
-    <BlockImage class={style.thumbnail} url={projects[0].thumbnail} alt={projects[0].title} />
+    <BlockImage class={style.thumbnail} url={projects[0].thumbnail} alt={projects[0].title} width="1378" height="1008" />
     
     <div className={style.container}>
     <div className={style.meta}>
@@ -40,38 +42,45 @@ export default function kahos() {
     <ul className={style.contributors}>
     {projects[0].team.map((team) => (
       <li key={team} className={style.contributor}>{team}</li>
-      ))}
-      </ul>
-      </li>
-      </ul>
-      </div>
-      
-      <div className={style.content}>
-      <p>The students at <a href="https://aho.no" target="_blank" rel="external">The Oslo School of Architecture and Design</a> did not learn enough about sustainability. As a result, we established <a href="https://www.arkitektur.no/aktuelt/utdanning/krever-mer-kunnskap-om-klima-paa-studiet/" target="_blank" rel="external">the student assocation KAHOS</a>, aiming to transform the education to meet future needs, and strengthen the students’ knowledge about sustainability.</p>
-      
-      <p>From the beginning, I was responsible for graphic design and marketing, and I designed templates for posters and social media, for easier distribution of information about new events happening at the school.</p>
-      
-      <BlockImage url={img_templates} alt={projects[0].title} />
-      
-      <BlockImageRow>
-      <BlockImage url={img_aho} alt={projects[0].title} />
-      <BlockImage url={img_logo} alt={projects[0].title} />
-      </BlockImageRow>
-      
-      <BlockImage url={img_auditorium} alt={projects[0].title} />
-      <BlockImage url={img_posters} alt={projects[0].title} />
-      
-      <p>By inviting speakers, hosting debates and meeting with the school administration, we are <a href="https://www.arkitektur.no/aktuelt/utdanning/krever-mer-kunnskap-om-klima-paa-studiet/" target="_blank" rel="external">pushing the school to make change</a> in their curriculum. This is important considering the large climate emissions caused by the construction industry, and when we know that 80% of a product’s climate emissions are determined in the early design phase. </p>
-      
-      <BlockImage url={img_forelesning} alt={projects[0].title} />
-      
-      <BlockImageRow>
-      <BlockImage url={img_poster_1} alt={projects[0].title} />
-      <BlockImage url={img_poster_2} alt={projects[0].title} />
-      </BlockImageRow>
-      </div>
-      </div>
-      </article>
-      </>
-      )
-    }
+    ))}
+    </ul>
+    </li>
+    </ul>
+    </div>
+    
+    <div className={style.content}>
+    <p>The students at <a href="https://aho.no" target="_blank" rel="external">The Oslo School of Architecture and Design</a> did not learn enough about sustainability. As a result, we established <a href="https://www.arkitektur.no/aktuelt/utdanning/krever-mer-kunnskap-om-klima-paa-studiet/" target="_blank" rel="external">the student assocation KAHOS</a>, aiming to transform the education to meet future needs, and strengthen the students’ knowledge about sustainability.</p>
+    
+    <p>From the beginning, I was responsible for graphic design and marketing, and I designed templates for posters and social media, for easier distribution of information about new events happening at the school.</p>
+    
+    <BlockImage url={img_templates} alt={projects[0].title} />
+    
+    <BlockImageRow>
+    <BlockImage url={img_aho} alt={projects[0].title} />
+    <BlockImage url={img_logo} alt={projects[0].title} />
+    </BlockImageRow>
+    
+    <BlockImage url={img_auditorium} alt={projects[0].title} />
+    <BlockImage url={img_posters} alt={projects[0].title} />
+    
+    <p>By inviting speakers, hosting debates and meeting with the school administration, we are <a href="https://www.arkitektur.no/aktuelt/utdanning/krever-mer-kunnskap-om-klima-paa-studiet/" target="_blank" rel="external">pushing the school to make change</a> in their curriculum. This is important considering the large climate emissions caused by the construction industry, and when we know that 80% of a product’s climate emissions are determined in the early design phase. </p>
+    
+    <BlockImage url={img_forelesning} alt={projects[0].title} />
+    
+    <BlockImageRow>
+    <BlockImage url={img_poster_1} alt={projects[0].title} />
+    <BlockImage url={img_poster_2} alt={projects[0].title} />
+    </BlockImageRow>
+    </div>
+    </div>
+    </article>
+    
+    <h2>Keep looking 👀</h2>
+    <div className={projectNav.container}>
+    {projects.filter(project => project.id != '0').map((project) => (
+      <BlockProjects id={project.id} slug={project.slug} title={project.title} category={project.category} location={project.location.name} thumbnail={project.thumbnail} />
+    ))}
+    </div>
+    </>
+  )
+}
