@@ -4,29 +4,9 @@
   display: grid;
   position: relative;
   grid-gap: $padding;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 
   @media all and (max-width: $screen-md) {
     margin-top: $spacing;
-  }
-  
-  @media all and (max-width: $screen-lg) {
-    left: calc(50% - $padding);
-    right: 50%;
-    overflow-x: scroll;
-    scroll-snap-type: x proximity;
-    grid-auto-columns: -webkit-calc(50% - 100px);
-    grid-auto-columns: calc(50% - 80px);
-    grid-auto-flow: column;
-    grid-template-columns: $padding;
-    grid-template-rows: minmax(150px, 1fr);
-    width: calc(100vw + $padding);
-    margin-left: -50vw;
-    margin-right: -50vw;
-    padding: 0 $padding 0 0;
-    
-    &:before {
-      content: "";
-    }
   }
 }

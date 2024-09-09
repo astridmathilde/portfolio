@@ -10,7 +10,7 @@ import { projects } from "../data/projects";
 import { experience } from "../data/resumee";
 
 export const metadata = {
-  title: siteTitle,
+  title: siteTitle + " – Designer & developer",
   description: 'Heiaaa! I am Astrid, a designer and developer from Northern Norway. I have always been passionate about design and technology, but after working with graphic design, websites and coding for 5 years, I felt the need to do something else. Currently I am doing a master’s degree in design at The Oslo School of Architecture and Design, and I want to help design digital products and services that matter, improving the future for both people and planet.'
 }
 

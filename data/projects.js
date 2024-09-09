@@ -31,20 +31,5 @@ export const projects = [
       "url": "https://aho.no"
     },
     "time": "November 2023 (4 days)"
-  },
-  {
-    "id": 2,
-    "title": "A better way of managing configuration of insurance products in Fremtind",
-    "short_title": "Product Config Manager",
-    "thumbnail": fremtind,
-    "slug": "internship-fremtind",
-    "type": "Summer internship",
-    "category": "Digital product",
-    "location": {
-      "name": "Fremtind Forsikring",
-      "url": "https://fremtind.no"
-    },
-    "time": "14. juni–29. juli 2024",
-    "team": ["Kaja Ronglan (designer)", "Jens Martin Norheim Berget (utvikler)", "Mads Severin Murvold (utvikler)"]
-  },
+  }
 ]
