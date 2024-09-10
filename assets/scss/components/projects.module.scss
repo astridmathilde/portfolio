@@ -13,7 +13,7 @@
   &:focus {
     .title {
       text-decoration: underline;
-      text-decoration-color: $color-link-hover;
+      text-decoration-color: inherit;
     }
   }
   
