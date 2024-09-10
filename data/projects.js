@@ -12,7 +12,7 @@ export const projects = [
     "type": "Student association",
     "category": "Graphic design",
     "location": {
-      "name": "AHO",
+      "name": "Oslo School of Architecture and Design",
       "url": "https://aho.no"
     },
     "time": "November 2022->",
@@ -27,7 +27,7 @@ export const projects = [
     "type": "Academic project",
     "category": "Digital product",
     "location": {
-      "name": "AHO",
+      "name": "Oslo School of Architecture and Design",
       "url": "https://aho.no"
     },
     "time": "November 2023 (4 days)"

@@ -1,0 +1,23 @@
+@import "../base/variables";
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $padding;
+  
+  @media all and (min-width: $screen-xs) {
+    grid-template-columns: 1fr 1fr;
+    
+    img {
+      height: 30vw !important;
+    }
+  }
+  
+  @media all and (min-width: $screen-md) {
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    img {
+      height: 20vw !important;
+    }
+  }
+}

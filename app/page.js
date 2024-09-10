@@ -22,7 +22,7 @@ export default function Index() {
     <h2 className={utils.screen_reader_text}>This is some of my projects 👇</h2>
     
     <div className={style.projects}>
-    {projects.map((project) => (
+    {projects.toReversed().map((project) => (
       <BlockProjects id={project.id} slug={project.slug} title={project.title} category={project.category} location={project.location.name} thumbnail={project.thumbnail} />
     ))}
     </div>
