@@ -23,7 +23,7 @@ export default function fremtind() {
     <h2>{projectID.title}</h2>
     </header>
     
-    <BlockImage class={style.thumbnail} url={projectID.thumbnail} alt={projectID.title} width="1378" height="1008" />
+    <BlockImage class={style.thumbnail} url={projectID.thumbnail} alt={projectID.title} width="1378" height="1008" priority />
     
     <div className={style.container}>
     

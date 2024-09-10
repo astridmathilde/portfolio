@@ -20,13 +20,13 @@ export const metadata = {
 export default function Resumee() {
   return (
     <>
-    <BlockRow  align="center">
+    <BlockRow align="center" height="50vh">
     <BlockColumn>
     <h2>About me</h2>
     <p>I was born in April 1998 (currently 26 <BlockIcon>🎉</BlockIcon>) and I have 6 years experience with digital design and coding after working for design agencies in Harstad, Tromsø and Oslo. In August 2021, I started doing a five year integrated master in design at <a href="https://aho.no" target="_blank" rel="external">The Oslo School of Architecture and Design</a>.</p>
     </BlockColumn>
     <BlockColumn>
-    <BlockImage url={portrait} alt="Astrid Mathilde Boberg" width="600" height="600" />
+    <BlockImage url={portrait} alt="Astrid Mathilde Boberg" width="600" height="600" priority />
     </BlockColumn>
     </BlockRow>
     
