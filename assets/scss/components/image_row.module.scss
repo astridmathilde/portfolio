@@ -2,13 +2,18 @@
 
 .image_row {
   display: grid;
-  height: calc(50vw*1.5);
-  margin-bottom: 0.5em;
+  height: 60vw;
+  margin-top: $padding;
   grid-template-columns: 1fr 1fr;
-  gap: 0.5em;
+  gap: $padding;
+  overflow: hidden;
   
+  figure {
+    margin-top: 0;
+
   img {
     min-height: 100%;
     object-fit: cover;
   }
+}
 }

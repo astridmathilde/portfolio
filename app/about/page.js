@@ -14,19 +14,19 @@ const pageTitle = 'About me';
 
 export const metadata = {
   title: pageTitle + ' – ' + siteTitle,
-  description: 'I was born in April 1998 (currently 26 🎉) and I have 6 years experience in web design and coding after working in several design agencies in Harstad, Tromsø and Oslo. In August 2021, I started doing a five year integrated master in design at The Oslo School of Architecture and Design.'
+  description: 'I was born in April 1998 (currently 26 🎉) and I have 6 years experience in web design and coding after working in design agencies in Harstad, Tromsø and Oslo. In August 2021, I started doing a five year integrated master in design at The Oslo School of Architecture and Design.'
 }
 
 export default function Resumee() {
   return (
     <>
-    <BlockRow>
+    <BlockRow align="center" height="50vh">
     <BlockColumn>
     <h2>About me</h2>
-    <p>I was born in April 1998 (currently 26 <BlockIcon>🎉</BlockIcon>) and I have 6 years experience with digital design and coding after working in several design agencies in Harstad, Tromsø and Oslo. In August 2021, I started doing a five year integrated master in design at <a href="https://aho.no" target="_blank" rel="external">The Oslo School of Architecture and Design</a>.</p>
+    <p>I was born in April 1998 (currently 26 <BlockIcon>🎉</BlockIcon>) and I have 6 years experience with digital design and coding after working for design agencies in Harstad, Tromsø and Oslo. In August 2021, I started doing a five year integrated master in design at <a href="https://aho.no" target="_blank" rel="external">The Oslo School of Architecture and Design</a>.</p>
     </BlockColumn>
     <BlockColumn>
-    <BlockImage url={portrait} alt="Astrid Mathilde Boberg" width="480" height="480" />
+    <BlockImage url={portrait} alt="Astrid Mathilde Boberg" width="600" height="600" priority />
     </BlockColumn>
     </BlockRow>
     
@@ -55,6 +55,8 @@ export default function Resumee() {
     </BlockRow>
     </div>
     
+    <h2>Contact 🤝</h2>
+    <p>My email is <a href="mailto:heia@astridmathilde.no?subject=Heia!">heia@astridmathilde.no</a>, but you can also write to me on <a href="https://instagram.com/astridmathildeb" target="_blank" rel="nofollow noreferrer">Instagram</a> or add me on <a href="https://www.linkedin.com/in/astridmathilde/" target="_blank" rel="nofollow noreferrer">LinkedIn</a>!</p>
     
     <h2>Further discovery 🔎</h2>
     <p>You can see what I have done to reduce <Link href="colophon">this site’s carbon emissions</Link>, look at <Link href="/projects/kahos">one of my projects</Link>, or <a href="https://github.com/astridmathilde/astridmathilde/" target="_blank" rel="nofollow noreferrer">view the code on Github</a>.</p>              

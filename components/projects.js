@@ -23,10 +23,9 @@ export default function BlockProjects(project) {
       <h3 className={style.title + " " + inter.className}>{project.title}</h3>
       <ul className={style.meta + " " + inter.className}>
       <li><span className={utils.screen_reader_text}>Type of project:</span> {project.category}</li>
-      <li><span className={utils.screen_reader_text}>Location:</span> {project.location}</li>
       </ul>
       </header>
-      <BlockImage className={style.image} url={project.thumbnail} alt={project.title} width="679" height="454"/>
+      <BlockImage className={style.image} url={project.thumbnail} alt={project.title} priority/>
       </article>
       </Link>  
       </>

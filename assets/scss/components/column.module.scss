@@ -1,9 +1,17 @@
 @import "../base/variables";
 
 .column {
-    + .column {
-      @media all and (min-width: $screen-md) {
-        padding-left: 1em;
-      }
+  + .column {
+    @media all and (min-width: $screen-sm) {
+      padding-left: $padding;
     }
   }
+  
+  @media all and (min-width: $screen-sm) {
+    h2,
+    h3,
+    h4 {
+      margin-top: 0;
+    }
+  }
+}
