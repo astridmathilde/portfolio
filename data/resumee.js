@@ -120,6 +120,7 @@ export const skills = [
     "title": "Design skills ✏️",
     "keywords":
     [
+      "Accessibility",
       "User Research",
       "Service Mapping",
       "Workshop Facilitation",

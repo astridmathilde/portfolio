@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { siteTitle } from "../../layout";
 import { projects } from "../../../data/projects";
 import style from "../../../assets/scss/project.module.scss";
@@ -6,8 +5,6 @@ import projectNav from "../../../assets/scss/components/project-navigation.modul
 import BlockImage from "../../../components/image";
 import BlockImageRow from "../../../components/image_row";
 import BlockProjects from "../../../components/projects";
-import BlockRow from "../../../components/row";
-import BlockColumn from "../../../components/column";
 
 import img_innsikt from "../../../assets/img/projects/mensn/innsikt.jpg"
 import img_datasett from "../../../assets/img/projects/mensn/datasett.png"

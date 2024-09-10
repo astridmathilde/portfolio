@@ -6,11 +6,11 @@ import BlockRow from "../../components/row";
 import BlockColumn from "../../components/column";
 import BlockResumee from "../../components/resumee";
 import BlockImage from "../../components/image";
-import { experience, education, skills, achievements } from "../../data/resumee";
+import { experience, education, skills } from "../../data/resumee";
 
 import portrait from "../../assets/img/about/portrait-astrid-boberg.jpg";
 
-const pageTitle = 'My resumee';
+const pageTitle = 'About me';
 
 export const metadata = {
   title: pageTitle + ' – ' + siteTitle,
@@ -37,7 +37,7 @@ export default function Resumee() {
     
     <h2>Education <BlockIcon>👩🏻‍🎓</BlockIcon></h2>
     {education.map((education) => (
-      <BlockResumee id={education.id} position={education.position} locationUrl={education.location.url} locationName={education.location.name} description={education.description} time={education.time} />
+      <BlockResumee id={education.id} position={education.grade} locationUrl={education.location.url} locationName={education.location.name} description={education.description} time={education.time} />
     ))}
     
     <div className={style.container}>
