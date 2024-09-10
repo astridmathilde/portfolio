@@ -17,8 +17,8 @@ export const metadata = {
 export default function Index() {
   return (
     <>
-    <BlockDisplay>Heia! <BlockIcon>👋</BlockIcon> I am a designer from Northern Norway <BlockIcon>🏔️</BlockIcon> with a background in web development, currently doing a master's degree in design at <a href="https://aho.no" target="_blank" rel="external">The Oslo School of Architecture and Design</a>. I want to design digital products that matter, contributing to a more sustainable future. <BlockIcon>🌍</BlockIcon></BlockDisplay>
-    
+    <BlockDisplay>Heia! <BlockIcon>👋</BlockIcon> I am a designer from Northern Norway <BlockIcon>🏔️</BlockIcon> with a background in web development and a passion for sustainability, currently doing a master's degree in design at <a href="https://aho.no" target="_blank" rel="external">The Oslo School of Architecture and Design</a>.</BlockDisplay>
+
     <h2 className={utils.screen_reader_text}>This is some of my projects 👇</h2>
     
     <div className={style.projects}>

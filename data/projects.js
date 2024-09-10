@@ -15,7 +15,7 @@ export const projects = [
       "name": "Oslo School of Architecture and Design",
       "url": "https://aho.no"
     },
-    "time": "November 2022->",
+    "time": "November 2022–January 2024",
     "team": ["Eirik Lohne Ruud", "Håkon Skorge", "Rakel Paulsen", "Guro Fløgstad Høvik", "Frida Tørring", "Frans Nygaard", "Per Roppestad Christensen", "Anniken B. Willmann", "Sanna Skeide", "Silje Regine Ekornrud Seim", "Felix Vik"]
   },
   {
