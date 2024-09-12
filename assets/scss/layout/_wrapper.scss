@@ -3,7 +3,7 @@
   #wrapper {
     max-width: $container-content;
     margin: 0 auto;
-    padding: $padding;
+    padding: calc($padding / 2) $padding $padding $padding;
     
     @media all and (min-width: $screen-md) {
       padding-top: $padding / 1.5;

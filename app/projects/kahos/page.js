@@ -30,7 +30,7 @@ export default function kahos() {
     <h2>{projects[0].title}</h2>
     </header>
     
-    <BlockImage class={style.thumbnail} url={projects[0].thumbnail} alt={projects[0].title} priority/>
+    <BlockImage class={style.thumbnail} url={projects[0].thumbnail} alt={projects[0].title} priority="true" />
     
     <div className={style.container}>
     <div className={style.meta}>
@@ -60,7 +60,7 @@ export default function kahos() {
     <BlockImage url={img_logo} alt={projects[0].title} />
     </BlockImageRow>
     
-    <BlockImage url={img_auditorium} alt={projects[0].title} />
+    <BlockImage url={img_auditorium} alt={projects[0].title} caption="The logo is designed by Felix Vik" />
     <BlockImage url={img_posters} alt={projects[0].title} />
     
     <p>By inviting speakers, hosting debates and meeting with the school administration, we are <a href="https://www.arkitektur.no/aktuelt/utdanning/krever-mer-kunnskap-om-klima-paa-studiet/" target="_blank" rel="external">pushing the school to make change</a> in their curriculum. This is important considering the large climate emissions caused by the construction industry, and when we know that 80% of a product’s climate emissions are determined in the early design phase. </p>

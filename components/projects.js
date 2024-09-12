@@ -15,6 +15,7 @@ const inter = localFont({
 })
 
 export default function BlockProjects(project) {
+
   return (
     <>
       <Link className={style.project} key={project.id} href={"/projects/" + project.slug}>
@@ -25,7 +26,7 @@ export default function BlockProjects(project) {
       <li><span className={utils.screen_reader_text}>Type of project:</span> {project.category}</li>
       </ul>
       </header>
-      <BlockImage className={style.image} url={project.thumbnail} alt={project.title} priority/>
+      <BlockImage className={style.image} url={project.thumbnail} alt={project.title} priority={project.priority} />
       </article>
       </Link>  
       </>

@@ -12,7 +12,18 @@
       
       +li,
       +ul {
-        padding-left: 1em;
+        @media all and (min-width: $screen-sm) {
+          padding-left: 1em;
+        }
+      }
+    }
+    
+    a {
+      @media all and (max-width: $screen-md) {
+        display: inline-flex;
+        align-items: center;
+        width: 48px;
+        height: 48px;
       }
     }
   }

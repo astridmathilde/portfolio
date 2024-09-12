@@ -15,7 +15,7 @@ export const projects = [
       "name": "Oslo School of Architecture and Design",
       "url": "https://aho.no"
     },
-    "time": "November 2022->",
+    "time": "November 2022–January 2024",
     "team": ["Eirik Lohne Ruud", "Håkon Skorge", "Rakel Paulsen", "Guro Fløgstad Høvik", "Frida Tørring", "Frans Nygaard", "Per Roppestad Christensen", "Anniken B. Willmann", "Sanna Skeide", "Silje Regine Ekornrud Seim", "Felix Vik"]
   },
   {
@@ -31,5 +31,21 @@ export const projects = [
       "url": "https://aho.no"
     },
     "time": "November 2023 (4 days)"
-  }
+  },
+  {
+    "id": 2,
+    "title": "A better way of managing the configuration of Fremtind's insurance products",
+    "short_title": "Product Config Manager",
+    "thumbnail": fremtind,
+    "slug": "internship-fremtind",
+    "type": "Summer internship",
+    "category": "Digital product",
+    "location": {
+      "name": "Fremtind Forsikring",
+      "url": "https://fremtind.no"
+    },
+    "time": "June–July 2024 (7 weeks)",
+    "team": ["Kaja Ronglan (designer)", "Jens Martin Norheim Berget (developer)", "Mads Severin Murvold (developer)"],
+    "role": "Design and project management"
+  },
 ]
