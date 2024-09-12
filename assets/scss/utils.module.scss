@@ -1,3 +1,5 @@
+@import "./base/variables";
+
 .screen_reader_text {
   border: 0;
   clip: rect(1px, 1px, 1px, 1px);
@@ -14,4 +16,8 @@
 
 .small {
   font-size: 0.7em;
+}
+
+.large {
+  font-size: 1.8em;
 }
