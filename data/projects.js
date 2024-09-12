@@ -44,7 +44,8 @@ export const projects = [
       "name": "Fremtind Forsikring",
       "url": "https://fremtind.no"
     },
-    "time": "14. juni–29. juli 2024",
-    "team": ["Kaja Ronglan (designer)", "Jens Martin Norheim Berget (utvikler)", "Mads Severin Murvold (utvikler)"]
+    "time": "June–July 2024 (7 weeks)",
+    "team": ["Kaja Ronglan (designer)", "Jens Martin Norheim Berget (developer)", "Mads Severin Murvold (developer)"],
+    "role": "Design and project management"
   },
 ]

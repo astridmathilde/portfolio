@@ -36,7 +36,9 @@
       .label {
         display: block;
         margin-bottom: .4em;
-        font-size: .9em
+        font-size: .9em;
+        opacity: 0.8;
+        filter: alpha(opacity=80);
       }
       
       ul {

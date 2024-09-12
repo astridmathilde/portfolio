@@ -33,7 +33,7 @@ export default function mensn() {
     <h2>{projectID.title}</h2>
     </header>
     
-    <BlockImage class={style.thumbnail} url={projectID.thumbnail} alt={projectID.title} width="1378" height="1008" priority />
+    <BlockImage class={style.thumbnail} url={projectID.thumbnail} alt={projectID.title} width="1378" height="1008" priority="true" />
     
     <div className={style.container}>
     
@@ -48,10 +48,12 @@ export default function mensn() {
     <div className={style.content}>
     <p>This project was a part of a course about information and data. I ended up designing a digital product provided by The Norwegian Directorate of Health, teaching young girls about the menstrual cycle and how it might affect their mind and body.</p>
     
+    <h3>The problem 😐</h3> 
     <p>There is already a number of free apps on the market for tracking your period and learning more about your body. But as with various other apps, these apps are known to collect, retain and sometimes share some of their users' data. By providing a period tracker from The Norwegian Directorate of Health, young girls will learn more about the menstrual cycle and how it affects their mind and body, while their personal data are kept safe.</p>
     
     <BlockImage url={img_innsikt} alt="Articles about the privacy issues with period trackers." />
     
+    <h3>The process 🧐</h3> 
     <p>The course started with a short explorative module where we were making data visualisations based on our own datasets. I collected data about my period, and tried to combine this with other data to look for unexpected connections, like using data for moon phases. It was most interesting when I tracked my cravings for several days, and discovered that I almost always craved sugar during the two weeks before my period.</p>
     
     <p>While doing some research about the menstrual cycle, I learned that this is normal. In the luteal phase, which is the weeks between ovulation and menstruation, the body needs more energy, and if you are not eating enough during the day, it is natural for the body to crave fast-acting carbs. I also  discovered that many young adults did not know about this, and never learned about it when they were younger.</p>
@@ -68,6 +70,7 @@ export default function mensn() {
     
     <BlockImage url={img_prosess_4} width="1093" alt="Wireframes on paper" caption="Wireframes on paper"/>
 
+    <h3>The result ✅</h3> 
     <p>The app "Mensn" helps you track your period so that you always know what is going on inside your body. With daily check-ins about your symptoms, you will learn how your current menstrual phase is affecting you, and what you can do to feel better.</p>
     
     <BlockImage url={img_proto_1} width="1093" alt="Prototype" />

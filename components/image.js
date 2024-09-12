@@ -1,13 +1,13 @@
 import Image from 'next/image';
 import styles from '../assets/scss/components/image.module.scss';
 
-export default function BlockImage(meta, priority) {
+export default function BlockImage(meta) {
   return (
     <>
     <figure className={styles.image + ' ' + meta.class}>
-    <Image src={meta.url} alt={meta.alt} placeholder="blur" />
+    <Image src={meta.url} alt={meta.alt} placeholder={meta.placeholder == 'false' ? 'empty' : 'blur'} priority={meta.priority == 'true' ? true : false} />
      {meta.caption ? (
-        <figcaption>
+        <figcaption> 
           {meta.caption}
         </figcaption>
       ) : (

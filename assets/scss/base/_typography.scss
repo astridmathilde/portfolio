@@ -5,9 +5,9 @@ h3,
 h4,
 h5,
 h6
- {
+{
   max-width: $container-text;
- }
+}
 
 h1,
 h2,
@@ -24,7 +24,21 @@ h6 {
 
 h2,
 h3 {
-  margin-top: $spacing;
   margin-bottom: 1.2em;
 }
 
+h2 {
+  margin-top: $spacing;
+}
+
+h3 {
+  margin-top: $spacing / 1.3;
+}
+
+h4 {
+  margin-top: $spacing / 2;
+  margin-bottom: 0;
+  font-size: 0.9em;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}

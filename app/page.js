@@ -2,8 +2,8 @@ import Link from "next/link";
 import { siteTitle } from "./layout";
 import BlockDisplay from "../components/display";
 import BlockIcon from "../components/icon";
-import BlockProjects from "../components/projects";
 import BlockResumee from "../components/resumee";
+import BlockProjects from "../components/projects";
 import utils from "../assets/scss/utils.module.scss";
 import style from "../assets/scss/home.module.scss";
 import { projects } from "../data/projects";
@@ -23,7 +23,7 @@ export default function Index() {
     
     <div className={style.projects}>
     {projects.toReversed().map((project) => (
-      <BlockProjects id={project.id} slug={project.slug} title={project.title} category={project.category} location={project.location.name} thumbnail={project.thumbnail} />
+      <BlockProjects id={project.id} slug={project.slug} title={project.title} category={project.category} location={project.location.name} thumbnail={project.thumbnail} priority="true" />
     ))}
     </div>
     
