@@ -5,6 +5,7 @@
   position: relative;
   justify-content: space-between;
   margin-top: $spacing * 1.5;
+  margin-bottom: $padding / 4;
   font-size: 0.85em;
   
     @media all and (min-width: $screen-md) {

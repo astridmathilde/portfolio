@@ -20,6 +20,7 @@ import img_proto_2 from "../../../assets/img/projects/mensn/prototype-2.jpg"
 const pageTitle = 'Helping young girls understand their own menstrual cycle';
 
 export const metadata = {
+  metadataBase: new URL('https://astridmathilde.no/projects/mensn'),
   title: pageTitle + ' – ' + siteTitle
 }
 
@@ -87,7 +88,7 @@ export default function mensn() {
     <h2>Keep looking 👀</h2>
     <div className={projectNav.container}>
     {projects.filter(project => project.id != '1').toReversed().map((project) => (
-      <BlockProjects id={project.id} slug={project.slug} title={project.title} category={project.category} location={project.location.name} thumbnail={project.thumbnail} />
+      <BlockProjects id={project.id} slug={project.slug} title={project.title} category={project.category} location={project.location.name} thumbnail={project.thumbnail} sizes="(min-width: 400px) 50vw, (min-width: 900px) 33vw, 100vw" />
     ))}
     </div>
     </>
