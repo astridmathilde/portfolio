@@ -26,7 +26,7 @@ export default function BlockProjects(project) {
       <li><span className={utils.screen_reader_text}>Type of project:</span> {project.category}</li>
       </ul>
       </header>
-      <BlockImage className={style.image} url={project.thumbnail} alt={project.title} priority={project.priority} />
+      <BlockImage className={style.image} url={project.thumbnail} alt={project.title} priority={project.priority} sizes={project.sizes} />
       </article>
       </Link>  
       </>

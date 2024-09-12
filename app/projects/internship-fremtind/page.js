@@ -30,6 +30,7 @@ const pageTitle = projectID.short_title;
 
 
 export const metadata = {
+  metadataBase: new URL('https://astridmathilde.no/projects/internship-fremtid'),
   title: pageTitle + ' – ' + siteTitle
 }
 
@@ -64,15 +65,15 @@ export default function fremtind() {
     </div>
     
     <div className={style.content}>
-    <p>This project is a part of a summer internship where I worked in a multi-disiplinary product team with three other students from <a href="https://www.ntnu.edu/" target="_blank" rel="external" title="Norwegian University of Science and Technology">NTNU</a> and <a href="https://www.uio.no/english/index.html" target="_blank" rel="external" title="University of Oslo">UiO</a>. We designed and developed the web application "Product Config Manager" for managing the configuration of Fremtind's insurance products. The application will be used by product owners, functional architects and developers within <a href="https://fremtind.no" target="_blank" rel="external">Fremtind Forsikring</a>.</p>
+    <p>This project is a part of a summer internship where I worked in a multi-disiplinary product team with three other students from <a href="https://www.ntnu.edu/" target="_blank" rel="external" title="Norwegian University of Science and Technology">NTNU</a> and <a href="https://www.uio.no/english/index.html" target="_blank" rel="external" title="University of Oslo">UiO</a>. We designed and developed the web application <em>Product Config Manager</em> for managing the configuration of Fremtind's insurance products. The application will be used by product owners, functional architects and developers within <a href="https://fremtind.no" target="_blank" rel="external">Fremtind Forsikring</a>.</p>
     
     <p>I was responsible for project management and visual design, while Kaja, my co-designer, was responsible for planning and facilitating design workshops within the product team. Apart from that, we worked closely together throughout the project.</p> 
     
     <h3>The background 🔎</h3>
-    <p>Fremtind is offering a number of insurance products to private customers, and they all have different configurations. Previously, the configurations were "hard coded" into Fremtind's applications, making the data difficult to update. To solve this, Fremtind introduced "Product Config", a database including every insurance product and their properties. Now it was possible for the applications to fetch the product data using API, and changes made in "Product Config" would be automatically synchronized across all the applications.</p>
+    <p>Fremtind is offering a number of insurance products to private customers, and they all have different configurations. Previously, the configurations were "hard coded" into Fremtind's applications, making the data difficult to update. To solve this, Fremtind introduced <em>Product Config</em>, a database including every insurance product and their properties. Now it was possible for the applications to fetch the product data using API, and changes made in "Product Config" would be automatically synchronized across all the applications.</p>
     
     <h3>The problem 😐</h3>
-    <p>While "Product Config" made it easier to update the product data across applications, it was still difficult to view, understand and edit the product configurations. In order to make changes, the product owner had to open the data in a spreadsheet, which consisted of more than a hundred rows and columns, look for the correct cells, edit their values, then send a screenshot of the changes to the system administrator, who would create a SQL statement based on the changes, and run it in the database.</p>
+    <p>While <em>Product Config</em> made it easier to update the product data across applications, it was still difficult to view, understand and edit the product configurations. In order to make changes, the product owner had to open the data in a spreadsheet, which consisted of more than a hundred rows and columns, look for the correct cells, edit their values, then send a screenshot of the changes to the system administrator, who would create a SQL statement based on the changes, and run it in the database.</p>
     
     <p>The process was time consuming, and with a high risk of human error.</p>
     
@@ -142,7 +143,7 @@ export default function fremtind() {
     <h2>Keep looking 👀</h2>
     <div className={projectNav.container}>
     {projects.filter(project => project.id != '2').toReversed().map((project) => (
-      <BlockProjects id={project.id} slug={project.slug} title={project.title} category={project.category} location={project.location.name} thumbnail={project.thumbnail} />
+      <BlockProjects id={project.id} slug={project.slug} title={project.title} category={project.category} location={project.location.name} thumbnail={project.thumbnail} sizes="(min-width: 400px) 50vw, (min-width: 900px) 33vw, 100vw"/>
     ))}
     </div>
     </>

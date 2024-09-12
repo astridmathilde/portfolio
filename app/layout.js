@@ -12,7 +12,13 @@ const interDisplay = localFont({
       path: '../assets/fonts/Inter-Display.woff2',
       weight: '400',
       style: 'normal',
-    }
+    }, 
+    {
+      path: '../assets/fonts/InterDisplay-italic.woff2',
+      weight: '400',
+      style: 'italic',
+    }, 
+
   ]
 })
 

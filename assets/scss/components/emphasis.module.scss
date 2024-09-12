@@ -1,0 +1,10 @@
+@import "../base/variables";
+
+.emphasis {
+  margin-top: $spacing * 0.7;
+  margin-bottom: $spacing * 0.7;
+
+  + p {
+    margin-top: 0;
+  }
+}
