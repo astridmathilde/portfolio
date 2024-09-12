@@ -33,7 +33,7 @@ export default function Index() {
     ))}
     
     <h2>Life lately ✨</h2>
-    <p>Currently on my third year at <a href="https://aho.no" target="_blank" rel="external">The Oslo School of Architecture and Design</a>, specializing in interaction & service design, but I have taken a break from my studies this year to work with <a href="https://www.oicl.no/projects/openzero" target="_blank" rel="external">OpenZero</a> as well as doing some freelance work. I have started re-reading the entire Harry Potter series, and I spend a lot of time in the stable, doing yoga or journalling.</p>
+    <p>Currently on my third year at <a href="https://aho.no" target="_blank" rel="external">The Oslo School of Architecture and Design</a>, specializing in interaction & service design, but I have taken a break from my studies this year to work with <a href="https://www.oicl.no/projects/openzero" target="_blank" rel="external">OpenZero</a> as well as some personal projects. I have started re-reading the entire Harry Potter series, and I spend a lot of time in the stable, doing yoga or journalling.</p>
 
     <p className={utils.small}>Last updated in August 2024. Inspired by <a href="https://nownownow.com/about" target="_blank" rel="external">Now</a>.</p>
     
