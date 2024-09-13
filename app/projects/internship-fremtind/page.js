@@ -130,7 +130,7 @@ export default function fremtind() {
     <BlockImage url={palette} alt="Color palette" caption="The main page in light and dark mode" /> 
     <BlockImage url={compareProducts} alt="Comparing products" caption="Comparing product data" /> 
     
-    <p>Working in a multi-disiplinary product team where we all had different backgrounds, really helped me practice articulating my design decisions. It has been challenging at times, but having a culture of not being afraid to disagree, really helped. We were all honest with each other and we dared to have the difficult discussions. I think that was essential for the quality of our delivery.</p>
+    <p>Working in a multi-disiplinary product team where we all had different backgrounds, helped me practice articulating my design decisions. It was challenging at times, but it helped with a culture of not being afraid to speak our minds. We were all honest with each other and we dared to have the difficult discussions. I think that was essential for the quality of our delivery.</p>
     
       <BlockImage url={functions} alt="Flytdiagram" caption="An overview of the application displaying the pages and functions." /> 
     
