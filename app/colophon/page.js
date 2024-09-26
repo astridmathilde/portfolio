@@ -30,7 +30,7 @@ export default function Colophon() {
     </BlockEmphasis>
     
     <h3>Further discovery 🔎</h3>
-    <p>You can <a href="https://github.com/astridmathilde/astridmathilde/" target="_blank" rel="nofollow noreferrer">view the code on Github</a>, <Link href="/about">learn more about me</Link>, or look at <Link href="/projects/kahos">one of my projects.</Link></p>
+    <p>You can <a href="https://github.com/astridmathilde/portfolio/" target="_blank" rel="nofollow noreferrer">view the code on Github</a>, <Link href="/about">learn more about me</Link>, or look at <Link href="/projects/kahos">one of my projects.</Link></p>
     </>
   )
 }

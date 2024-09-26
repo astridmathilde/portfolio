@@ -60,7 +60,7 @@ export default function Resumee() {
     <p>My email is <a href="mailto:heia@astridmathilde.no?subject=Heia!">heia@astridmathilde.no</a>, but you can also write to me on <a href="https://instagram.com/astridmathildeb" target="_blank" rel="nofollow noreferrer">Instagram</a> or add me on <a href="https://www.linkedin.com/in/astridmathilde/" target="_blank" rel="nofollow noreferrer">LinkedIn</a>!</p>
     
     <h2>Further discovery 🔎</h2>
-    <p>You can see what I have done to reduce <Link href="colophon">this site’s carbon emissions</Link>, look at <Link href="/projects/kahos">one of my projects</Link>, or <a href="https://github.com/astridmathilde/astridmathilde/" target="_blank" rel="nofollow noreferrer">view the code on Github</a>.</p>              
+    <p>You can see what I have done to reduce <Link href="colophon">this site’s carbon emissions</Link>, look at <Link href="/projects/kahos">one of my projects</Link>, or <a href="https://github.com/astridmathilde/portfolio/" target="_blank" rel="nofollow noreferrer">view the code on Github</a>.</p>              
     </>
   )
 }
