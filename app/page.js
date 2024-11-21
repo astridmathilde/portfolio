@@ -12,7 +12,7 @@ import { experience } from "../data/resumee";
 export const metadata = {
   metadataBase: new URL('https://astridmathilde.no'),
   title: siteTitle + " – Designer & developer",
-  description: 'Heiaaa! I am Astrid, a designer and developer from Northern Norway. I have always been passionate about design and technology, but after working with graphic design, websites and coding for 5 years, I felt the need to do something else. Currently I am doing a master’s degree in design at The Oslo School of Architecture and Design, and I want to help design digital products and services that matter, improving the future for both people and planet.'
+  description: 'Heia! I am a designer from Northern Norway with a background in web development and a passion for sustainability, currently doing a masters degree in design at The Oslo School of Architecture and Design.'
 }
 
 export default function Index() {
@@ -34,9 +34,9 @@ export default function Index() {
     ))}
     
     <h2>Life lately ✨</h2>
-    <p>Currently on my third year at <a href="https://aho.no" target="_blank" rel="external">The Oslo School of Architecture and Design</a>, specializing in interaction & service design, but I have taken a break from my studies this year to work with <a href="https://www.oicl.no/projects/openzero" target="_blank" rel="external">OpenZero</a> as well as some personal projects. I have started re-reading the entire Harry Potter series, and I spend a lot of time in the stable, doing yoga or journalling.</p>
-
-    <p className={utils.small}>Last updated in August 2024. Inspired by <a href="https://nownownow.com/about" target="_blank" rel="external">Now</a>.</p>
+    <p>Currently on my third year at <a href="https://aho.no" target="_blank" rel="external">The Oslo School of Architecture and Design</a>, but I have taken a break from my studies this year to work with the research project <a href="https://www.oicl.no/projects/openzero" target="_blank" rel="external">OpenZero</a> and design system <a href="https://www.openbridge.no/" target="_blank" rel="external">OpenBridge</a> , as well as some personal projects and freelance work. I enjoy listening to electronic music and metalcore, doing yoga and going horseback riding, until I fell off and broke my shoulder in October. My focus these days is doing rehabilitation exercises and slowly getting back into shape!</p>
+  
+    <p className={utils.small}>Last updated in November 2024. Inspired by <a href="https://nownownow.com/about" target="_blank" rel="external">Now</a>.</p>
     
     <h2>Contact 🤝</h2>
     <p>My email is <a href="mailto:heia@astridmathilde.no?subject=Heia!">heia@astridmathilde.no</a>, but you can also write to me on <a href="https://instagram.com/astridmathildeb" target="_blank" rel="nofollow noreferrer">Instagram</a> or <a href="https://www.linkedin.com/in/astridmathilde/" target="_blank" rel="nofollow noreferrer">add me on LinkedIn</a>!</p>
