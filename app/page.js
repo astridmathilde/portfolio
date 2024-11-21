@@ -34,7 +34,7 @@ export default function Index() {
     ))}
     
     <h2>Life lately ✨</h2>
-    <p>Currently on my third year at <a href="https://aho.no" target="_blank" rel="external">The Oslo School of Architecture and Design</a>, but I have taken a break from my studies this year to work with the research project <a href="https://www.oicl.no/projects/openzero" target="_blank" rel="external">OpenZero</a> and design system <a href="https://www.openbridge.no/" target="_blank" rel="external">OpenBridge</a> , as well as some personal projects and freelance work. I enjoy listening to electronic music and metalcore, doing yoga and going horseback riding, until I fell off and broke my shoulder in October. My focus these days is doing rehabilitation exercises and slowly getting back into shape!</p>
+    <p>Currently on my third year at <a href="https://aho.no" target="_blank" rel="external">The Oslo School of Architecture and Design</a>, but I have taken a break from my studies this year to work with the research project <a href="https://www.oicl.no/projects/openzero" target="_blank" rel="external">OpenZero</a> and design system <a href="https://www.openbridge.no/" target="_blank" rel="external">OpenBridge</a>, as well as some personal projects and freelance work. I enjoy listening to electronic music and metalcore, doing yoga and going horseback riding, until I fell off and broke my shoulder in October. My focus these days is doing rehabilitation exercises and slowly getting back into shape!</p>
   
     <p className={utils.small}>Last updated in November 2024. Inspired by <a href="https://nownownow.com/about" target="_blank" rel="external">Now</a>.</p>
     
