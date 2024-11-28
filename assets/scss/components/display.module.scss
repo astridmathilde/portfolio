@@ -1,13 +1,14 @@
 @import "../base/variables";
 
 .display {
+  max-width: $container-text;
   margin-top: $spacing;
   font-size: 1.2em;
-  
+
   @media all and (min-width: $screen-xs) {
     font-size: 1.5em;
   }
-  
+
   @media all and (min-width: $screen-sm) {
     display: flex;
     flex-direction: column;
@@ -16,15 +17,15 @@
     min-height: 50vh;
     font-size: 1.5em;
   }
-  
+
   @media all and (min-width: $screen-lg) {
     font-size: 1.7em;
   }
-  
+
   @media all and (min-width: $screen-xl) {
-    min-height: 75vh;
+    min-height: 55vh;
   }
-  
+
   p {
     margin: 0;
   }

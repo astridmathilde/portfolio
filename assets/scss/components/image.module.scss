@@ -6,6 +6,10 @@
   img {
     max-width: 100%;
     height: auto;
+
+    @media all and (min-width: $screen-xl) {
+      min-width: 100%;
+    }
   }
 
   figcaption {

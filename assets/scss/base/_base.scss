@@ -6,15 +6,15 @@
 
 html {
   font-feature-settings: "ss01", "cv05", "cv10", "cv11";
-  
+
   &.light {
     body {
       background: $color-background;
       color: $color-text;
-      
+
       a {
         text-decoration-color: $color-link;
-        
+
         &:hover,
         &:focus {
           text-decoration-color: $color-link-hover;
@@ -22,15 +22,15 @@ html {
       }
     }
   }
-  
+
   &.dark {
     body {
       background: $dark-color-background;
       color: $dark-color-text;
-      
+
       a {
         text-decoration-color: $dark-color-link;
-        
+
         &:hover,
         &:focus {
           text-decoration-color: $dark-color-link-hover;
@@ -47,17 +47,21 @@ body {
   line-height: 1.4;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
-  
+
   @media all and (min-width: $screen-sm) {
     font-size: 20px;
   }
-  
+
   @media all and (min-width: $screen-md) {
     font-size: 24px;
   }
-  
+
   @media all and (min-width: $screen-lg) {
     font-size: 28px;
+  }
+
+  @media all and (min-width: $screen-xl) {
+    font-size: 36px;
   }
 }
 
@@ -74,7 +78,6 @@ figure {
 }
 
 ul {
-  
   li + li {
     padding-top: 0.3em;
   }
