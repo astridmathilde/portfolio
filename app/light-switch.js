@@ -2,7 +2,6 @@
 
 import {useTheme} from "next-themes";
 import { useEffect, useState } from "react";
-import styles from '../assets/scss/layout.module.scss';
 import BlockIcon from "../components/icon.js";
 
 export default function LightSwitch() {

@@ -1,16 +1,26 @@
 export const experience = [
+    {
+    "id": 10,
+    "time": "December 2024 ->",
+    "position": "Product Lead",
+    "location": {
+      "name": "Gemz Technology",
+      "url": "https://gemz.fashion"
+    },
+    "description": "I manage the product development of <a href=\"https://www.gemz.fashion/community/\" rel=\"external\" target=\"_blank\">Gemz</a>, a personalized fashion community helping people gain control over their wardrobe and making it even easier to buy and sell second-hand clothes."
+  },
   {
-    "id": 0,
-    "time": "August 2024->",
+    "id": 9,
+    "time": "August 2024–December 2024",
     "position": "Research Assistant",
     "location": {
       "name": "Ocean Industries Concept Lab",
       "url": "https://oicl.no"
     },
-    "description": "I work with interaction design on the research project <a href=\"https://www.oicl.no/projects/openzero/\" rel=\"external\" target=\"_blank\">OpenZero</a>. We are making design standards for user interfaces that enable ship operators to make energy efficient decisions. Since the <a href=\"https://www.openbridge.no/\" rel=\"external\" target=\"_blank\">OpenBridge</a> design system is already widely used in the global maritime industry, this project will reduce the carbon emissions across the entire industry."
+    "description": "I worked with interaction design on the research project <a href=\"https://www.oicl.no/projects/openzero/\" rel=\"external\" target=\"_blank\">OpenZero</a>, making design standards for user interfaces that enable ship operators to make energy efficient decisions. Also contributed to the new release of the design system <a href=\"https://www.openbridge.no/\" rel=\"external\" target=\"_blank\">OpenBridge</a>."
   },
   {
-    "id": 1,
+    "id": 8,
     "time": "Summer 2024",
     "position": "UX Designer",
     "location": {
@@ -20,7 +30,7 @@ export const experience = [
     "description": "A summer internship where I worked in a multi-disiplinary product team with 3 other interns, designing and developing an internal application for <a href=\"/projects/internship-fremtind\" rel=\"external\" target=\"_blank\">managing the configuration of insurance products</a>."
   },
   {
-    "id": 2,
+    "id": 7,
     "time": "February 2023–June 2024",
     "position": "Student Assistant",
     "location": {
@@ -30,7 +40,7 @@ export const experience = [
     "description": "I contributed with the design and maintenance of <a href=\"https://www.openbridge.no/\" rel=\"external\" target=\"_blank\">OpenBridge</a>, an open-source design system and UI Kit for advanced mairitime workplaces."
   },
     {
-    "id": 3,
+    "id": 6,
     "time": "Summer 2023",
     "position": "UX Designer",
     "location": {
@@ -50,7 +60,7 @@ export const experience = [
     "description": "I worked with social media for <a href=\"https://becour.com/\" rel=\"external\" target=\"_blank\">Becour</a> and helped design a landing page for <a href=\"https://marbly.com/\" rel=\"external\" target=\"_blank\">Marbly</a>, a platform that makes it easier for companies to source renewable energy."
   },
   {
-    "id": 6,
+    "id": 4,
     "time": "October 2021–May 2022",
     "position": "Developer",
     "location": {
@@ -60,7 +70,7 @@ export const experience = [
     "description": "A part-time position alongside my design studies. Together with another developer, I was coding websites and landing pages for companies like <a href=\"https://hagal.com/\" rel=\"external\" target=\"_blank\">Hagal</a> and <a href=\"https://gullruten.no/\" rel=\"external\" target=\"_blank\">Stiftelsen Gullruten</a>."
   },
   {
-    "id": 7,
+    "id": 3,
     "time": "March 2019–October 2021",
     "position": "Designer & Developer",
     "location": {
@@ -70,7 +80,7 @@ export const experience = [
     "description": "I designed and coded websites for companies like <a href=\"https://lolelandskap.no/\" rel=\"external\" target=\"_blank\">Lo:Le Landskap</a>, Barlindhaug Eiendom, Svalbard Bryggeri, and Norinnova. I worked closely with each client, and also had the opportunity to help facilitate design workshops."
   },
   {
-    "id": 8,
+    "id": 2,
     "time": "July 2018–March 2019",
     "position": "Web Developer",
     "location": {
@@ -80,7 +90,7 @@ export const experience = [
     "description": "A temporary position where I stepped in for another web developer and coded websites from scratch using WordPress as a CMS. I learned about usability, accessibility, search engine optimization and security."
   }, 
   {
-    "id": 9,
+    "id": 1,
     "time": "August 2016–July 2018",
     "position": "Apprenticeship in graphic design",
     "location": {
@@ -90,7 +100,7 @@ export const experience = [
     "description": "I worked with websites, prints and ads for companies like Harstad kommune, Consto, Trollfjord Bredbånd and Bil i Nord."
   },
   {
-    "id": 10,
+    "id": 0,
     "time": "March 2016–June 2016",
     "position": "Internship in graphic design",
     "location": {
@@ -117,25 +127,27 @@ export const education = [
 export const skills = [
   {
     "id": 0,
-    "title": "Design skills ✏️",
+    "title": "Skills ✏️",
     "keywords":
     [
       "Accessibility",
-      "User Research",
-      "Service Mapping",
-      "Workshop Facilitation",
-      "Flowcharts",
-      "Wireframing",
-      "Prototyping",
-      "User Testing"
+      "Design Systems",
+      "User Interface Design",
+      "User Experience Design",
+      "Systems Oriented Design",
+      "Service Design",
+      "Product Management",
+      "Product Development",
+      "Front-End Development"
     ]
   },
   {
     "id": 1,
-    "title": "Coding skills ⚙️",
+    "title": "Technology ⚙️",
     "keywords":
     [
-      "HTML5",
+      "PWA",
+      "HTML",
       "SCSS",
       "PHP",
       "JSON",

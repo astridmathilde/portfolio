@@ -38,7 +38,7 @@ export default function Resumee() {
     
     <h2>Education <BlockIcon>👩🏻‍🎓</BlockIcon></h2>
     {education.map((education) => (
-      <BlockResumee id={education.id} position={education.grade} locationUrl={education.location.url} locationName={education.location.name} description={education.description} time={education.time} />
+      <BlockResumee key={education.id} position={education.grade} locationUrl={education.location.url} locationName={education.location.name} description={education.description} time={education.time} />
     ))}
     
     <div className={style.container}>
@@ -47,7 +47,7 @@ export default function Resumee() {
       <BlockColumn key={skills.title}>
       <h2>{skills.title}</h2>
       <ul>
-      {skills.keywords.map((keyword) => (
+      {skills.keywords.sort().map((keyword) => (
         <li key={keyword}>{keyword}</li>
       ))}
       </ul>

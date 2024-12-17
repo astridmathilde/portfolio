@@ -26,8 +26,12 @@ export default function Colophon() {
     
     <BlockEmphasis>
     <p><em>The carbon footprint for this website is 0,09 gram of CO2 per page view.</em></p>
-    <p className={utils.small}>According to <a href="https://www.websitecarbon.com/website/astridmathilde-no/" target="_blank" rel="external noreferrer">websitecarbon.com</a>. Last checked September 2024.</p>
+    <p className={utils.small}>According to <a href="https://www.websitecarbon.com/website/astridmathilde-no/" target="_blank" rel="external noreferrer">websitecarbon.com</a>. Last checked December 16th, 2024.</p>
     </BlockEmphasis>
+
+    <h2>AI usage 🤖</h2>
+    <p>I have not used generative AI for any of the content on this website. This is mostly due to the high energy usage from the Large Language Models (LLMs). Even though some LLMs are running on renewable energy, they still require a lot of resources, which I do not believe is worth it when it comes to dealing with everyday problems. For instance, one single prompt in ChatGPT might require up to 15 times more energy than a Google search*.</p>
+        <p className={utils.small}>* I asked ChatGPT</p>
     
     <h3>Further discovery 🔎</h3>
     <p>You can <a href="https://github.com/astridmathilde/portfolio/" target="_blank" rel="nofollow noreferrer">view the code on Github</a>, <Link href="/about">learn more about me</Link>, or look at <Link href="/projects/kahos">one of my projects.</Link></p>
