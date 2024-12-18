@@ -29,15 +29,16 @@ export default function Index() {
     ))}
     </div>
     
+    <h2>Recent work experience 👩🏻‍💻</h2>
+    {experience.slice(0, 3).map((experience) => (
+      <BlockResumee id={experience.id} position={experience.position} locationUrl={experience.location.url} locationName={experience.location.name} description={experience.description} time={experience.time} />
+    ))}
+    
     <h2>Life lately ✨</h2>
     <p>Moved to Oslo four years ago for my studies, about to finish my third year at <a href="https://aho.no" target="_blank" rel="external">The Oslo School of Architecture and Design</a>. I enjoy going to concerts, doing yoga and spending time with horses. Also, I recently joined the startup company <a href="https://www.gemz.fashion/" target="_blank" rel="external">Gemz</a> as their product lead, and we just started working on the MVP, which is a lot of fun!</p>
     
     <p className={utils.small}>Last updated in December 2024. Inspired by <a href="https://nownownow.com/about" target="_blank" rel="external">Now</a>.</p>
     
-    <h2>Recent work experience 👩🏻‍💻</h2>
-    {experience.slice(0, 3).map((experience) => (
-      <BlockResumee id={experience.id} position={experience.position} locationUrl={experience.location.url} locationName={experience.location.name} description={experience.description} time={experience.time} />
-    ))}
     
     <h2>Contact 🤝</h2>
     <p>My email is <a href="mailto:heia@astridmathilde.no?subject=Heia!">heia@astridmathilde.no</a>, but you can also write to me on <a href="https://instagram.com/astridmathildeb" target="_blank" rel="nofollow noreferrer">Instagram</a> or <a href="https://www.linkedin.com/in/astridmathilde/" target="_blank" rel="nofollow noreferrer">add me on LinkedIn</a>!</p>

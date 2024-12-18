@@ -1,7 +1,7 @@
 export const experience = [
     {
     "id": 10,
-    "time": "December 2024 ->",
+    "time": "December 2024->",
     "position": "Product Lead",
     "location": {
       "name": "Gemz Technology",
