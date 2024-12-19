@@ -29,21 +29,21 @@ export default function Index() {
     ))}
     </div>
     
-    <h2>Recent work experience 👩🏻‍💻</h2>
+    <h2>Recent work experience <BlockIcon>👩🏻‍💻</BlockIcon></h2>
     {experience.slice(0, 3).map((experience) => (
       <BlockResumee id={experience.id} position={experience.position} locationUrl={experience.location.url} locationName={experience.location.name} description={experience.description} time={experience.time} />
     ))}
     
-    <h2>Life lately ✨</h2>
-    <p>Moved to Oslo four years ago for my studies, about to finish my third year at <a href="https://aho.no" target="_blank" rel="external">The Oslo School of Architecture and Design</a>. I enjoy going to concerts, doing yoga and spending time with horses. Also, I recently joined the startup company <a href="https://www.gemz.fashion/" target="_blank" rel="external">Gemz</a> as their product lead, and we just started working on the MVP, which is a lot of fun!</p>
+    <h2>Life lately <BlockIcon>✨</BlockIcon></h2>
+    <p>Moved to Oslo four years ago for my studies, about to finish my third year at <a href="https://aho.no" target="_blank" rel="external">The Oslo School of Architecture and Design</a> after having a break. I enjoy going to concerts, doing yoga and spending time with horses. Also, I recently joined the startup company <a href="https://www.gemz.fashion/" target="_blank" rel="external">Gemz</a> as their product lead, and we just started working on the MVP, which is a lot of fun!</p>
     
-    <p className={utils.small}>Last updated in December 2024. Inspired by <a href="https://nownownow.com/about" target="_blank" rel="external">Now</a>.</p>
+    <p className={utils.small}>Last updated December 18th, 2024. Inspired by <a href="https://nownownow.com/about" target="_blank" rel="external">Now</a>.</p>
     
     
-    <h2>Contact 🤝</h2>
+    <h2>Contact <BlockIcon>🤝</BlockIcon></h2>
     <p>My email is <a href="mailto:heia@astridmathilde.no?subject=Heia!">heia@astridmathilde.no</a>, but you can also write to me on <a href="https://instagram.com/astridmathildeb" target="_blank" rel="nofollow noreferrer">Instagram</a> or <a href="https://www.linkedin.com/in/astridmathilde/" target="_blank" rel="nofollow noreferrer">add me on LinkedIn</a>!</p>
     
-    <h2>Further discovery 🔎</h2>
+    <h2>Further discovery <BlockIcon>🔎</BlockIcon></h2>
     <p>You can <Link href="/about">learn more about me</Link>, <a href="https://github.com/astridmathilde/portfolio/" target="_blank" rel="nofollow noreferrer">view the code on Github</a> or see what I have done to reduce <Link href="colophon">this site’s carbon emissions</Link>.</p>
     </>
   );

@@ -21,7 +21,7 @@ export const metadata = {
 export default function Resumee() {
   return (
     <>
-    <BlockRow align="center" height="50vh">
+    <BlockRow align="center">
     <BlockColumn>
     <h2>About me</h2>
     <p>I was born in April 1998 (currently 26 <BlockIcon>🎉</BlockIcon>) and I have 6 years experience with digital design and coding after working for design agencies in Harstad, Tromsø and Oslo. In August 2021, I started doing a five year integrated master in design at <a href="https://aho.no" target="_blank" rel="external">The Oslo School of Architecture and Design</a>.</p>
@@ -56,11 +56,11 @@ export default function Resumee() {
     </BlockRow>
     </div>
     
-    <h2>Contact 🤝</h2>
+    <h2>Contact <BlockIcon>🤝</BlockIcon></h2>
     <p>My email is <a href="mailto:heia@astridmathilde.no?subject=Heia!">heia@astridmathilde.no</a>, but you can also write to me on <a href="https://instagram.com/astridmathildeb" target="_blank" rel="nofollow noreferrer">Instagram</a> or add me on <a href="https://www.linkedin.com/in/astridmathilde/" target="_blank" rel="nofollow noreferrer">LinkedIn</a>!</p>
     
-    <h2>Further discovery 🔎</h2>
-    <p>You can see what I have done to reduce <Link href="colophon">this site’s carbon emissions</Link>, look at <Link href="/projects/kahos">one of my projects</Link>, or <a href="https://github.com/astridmathilde/portfolio/" target="_blank" rel="nofollow noreferrer">view the code on Github</a>.</p>              
+    <h2>Further discovery <BlockIcon>🔎</BlockIcon></h2>
+    <p>You can find out <Link href="now">what I have been up to lately</Link>, see <Link href="colophon">how I built this website</Link>, look at <Link href="/projects/mensn">one of my projects</Link> or <a href="https://github.com/astridmathilde/astridmathilde/" target="_blank" rel="nofollow noreferrer">view the code on Github</a>.</p>         
     </>
   )
 }
