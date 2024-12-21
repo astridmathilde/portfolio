@@ -31,12 +31,12 @@ export default function Resumee() {
     </BlockColumn>
     </BlockRow>
     
-    <h2>Work experience <BlockIcon>👩🏻‍💻</BlockIcon></h2>
+    <h3>Work experience <BlockIcon>👩🏻‍💻</BlockIcon></h3>
     {experience.map((experience) => (
       <BlockResumee key={experience.id} position={experience.position} locationUrl={experience.location.url} locationName={experience.location.name} description={experience.description} time={experience.time} />
     ))}
     
-    <h2>Education <BlockIcon>👩🏻‍🎓</BlockIcon></h2>
+    <h3>Education <BlockIcon>👩🏻‍🎓</BlockIcon></h3>
     {education.map((education) => (
       <BlockResumee key={education.id} position={education.grade} locationUrl={education.location.url} locationName={education.location.name} description={education.description} time={education.time} />
     ))}
@@ -45,7 +45,7 @@ export default function Resumee() {
     <BlockRow>
     {skills.map((skills) => (
       <BlockColumn key={skills.title}>
-      <h2>{skills.title}</h2>
+      <h3>{skills.title}</h3>
       <ul>
       {skills.keywords.sort().map((keyword) => (
         <li key={keyword}>{keyword}</li>
@@ -60,7 +60,7 @@ export default function Resumee() {
     <p>My email is <a href="mailto:heia@astridmathilde.no?subject=Heia!">heia@astridmathilde.no</a>, but you can also write to me on <a href="https://instagram.com/astridmathildeb" target="_blank" rel="nofollow noreferrer">Instagram</a> or add me on <a href="https://www.linkedin.com/in/astridmathilde/" target="_blank" rel="nofollow noreferrer">LinkedIn</a>!</p>
     
     <h2>Further discovery <BlockIcon>🔎</BlockIcon></h2>
-    <p>You can find out <Link href="now">what I have been up to lately</Link>, see <Link href="colophon">how I built this website</Link>, look at <Link href="/projects/mensn">one of my projects</Link> or <a href="https://github.com/astridmathilde/astridmathilde/" target="_blank" rel="nofollow noreferrer">view the code on Github</a>.</p>         
+    <p>You can find out <Link href="/now">what I have been up to lately</Link>, look at <Link href="/projects/mensn">one of my projects</Link>, or see <Link href="/colophon">how I have reduced the carbon emissions on this website.</Link></p>
     </>
   )
 }

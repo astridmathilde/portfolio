@@ -22,11 +22,11 @@ export default function Colophon() {
     
     <h3>Currently reading <BlockIcon>📚</BlockIcon></h3>
     <ul>
+    <li><em>The design of everyday things</em>, Don Norman</li>
     <li><em>Radical Focus</em>, Christina Wodtke</li>
     <li><em>Bedre produkter</em>, Ida Aalen</li>
     <li><em>Intermezzo</em>, Sally Rooney</li>
-    <li><em>The body keeps the score</em>, Bessel van der Kolk</li>
-    <li><em>The design of everyday things</em>, Don Norman</li>
+    <li><em>Outline</em>, Rachel Cusk</li>
     </ul>
     
     <h3>Music on repeat <BlockIcon>🎧</BlockIcon></h3>
@@ -36,8 +36,8 @@ export default function Colophon() {
     <li>My playlist <a href="https://open.spotify.com/album/5q2iMctlDvEMYVIawF6Vop?si=i2pS51P6T2OXgtlgjDEkHQ" rel="external norefferer" target="_blank">"into the zone"</a></li>
     </ul>
     
-    <h3>Further discovery <BlockIcon>🔎</BlockIcon></h3>
-    <p>You can <Link href="/colophon">read my thoughts about the usage of AI</Link>, <Link href="/about">learn more about me</Link>,<Link href="/projects/internship-fremtind"> look at one of my projects</Link> or <a href="https://github.com/astridmathilde/portfolio/" target="_blank" rel="nofollow noreferrer">view the code on Github</a>.</p>
+    <h2>Further discovery <BlockIcon>🔎</BlockIcon></h2>
+    <p>You can <Link href="/colophon">read my thoughts about the usage of AI</Link>, find out <Link href="/about">more about me</Link>, or <Link href="/projects/internship-fremtind">look at one of my projects</Link>.</p>
     </>
   )
 }
