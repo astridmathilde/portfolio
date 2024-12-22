@@ -6,19 +6,25 @@
   align-items: center;
   padding-bottom: $padding;
   font-size: 0.85em;
-  
+
   @media all and (min-width: $screen-md) {
     padding-top: $padding / 4;
     font-size: 0.8em;
   }
-  
+
   .site_title {
     margin: 0;
   }
-  
+
   a {
     text-decoration-color: transparent;
-    
+
+    @media all and (max-width: $screen-md) {
+      display: inline-flex;
+      align-items: center;
+      height: 48px;
+    }
+
     &:hover,
     &:focus {
       text-decoration-color: inherit;
