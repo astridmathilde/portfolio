@@ -13,7 +13,7 @@
     }
   }
 
-  @media all and (min-width: $screen-md) {
+  @media all and (min-width: $screen-lg) {
     grid-template-columns: 1fr 1fr 1fr;
 
     img {

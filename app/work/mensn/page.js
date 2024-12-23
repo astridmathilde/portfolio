@@ -15,7 +15,6 @@ import img_prosess_4 from "../../../assets/img/projects/mensn/prosess-4.jpg"
 import img_resultat_1 from "../../../assets/img/projects/mensn/resultat-1.jpg"
 import img_resultat_2 from "../../../assets/img/projects/mensn/resultat-2.jpg"
 import img_proto_1 from "../../../assets/img/projects/mensn/prototype-1.jpg"
-import img_proto_2 from "../../../assets/img/projects/mensn/prototype-2.jpg"
 
 const pageTitle = 'Helping young girls understand their own menstrual cycle';
 
@@ -88,7 +87,7 @@ export default function mensn() {
     <h2>Keep looking 👀</h2>
     <div className={projectNav.container}>
     {projects.filter(project => project.id != '1').toReversed().map((project) => (
-      <BlockProjects id={project.id} slug={project.slug} title={project.title} category={project.category} location={project.location.name} thumbnail={project.thumbnail} sizes="(min-width: 400px) 50vw, (min-width: 900px) 33vw, 100vw" />
+      <BlockProjects key={project.id} slug={project.slug} title={project.title} category={project.category} location={project.location.name} thumbnail={project.thumbnail} sizes="(min-width: 400px) 50vw, (min-width: 900px) 33vw, 100vw" />
     ))}
     </div>
     </>

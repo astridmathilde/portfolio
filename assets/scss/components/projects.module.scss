@@ -44,7 +44,7 @@
     flex-direction: column;
 
     .title {
-      margin-top: 0.2em;
+      margin-top: 0.3em;
       margin-bottom: 0;
       font-size: 0.8em;
     }
@@ -52,7 +52,7 @@
     .meta {
       order: -1;
       margin: 0;
-      padding: 0;
+      padding: 0.25em 0 0 0;
       font-size: 0.7em;
       opacity: 0.8;
       filter: alpha(opacity=80);

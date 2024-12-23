@@ -2,7 +2,6 @@ import Link from "next/link";
 import { siteTitle } from "../layout";
 import utils from "../../assets/scss/utils.module.scss";
 import BlockIcon from "../../components/icon";
-import BlockEmphasis from "../../components/emphasis";
 
 const pageTitle = 'My life lately';
 
@@ -37,7 +36,7 @@ export default function Colophon() {
     </ul>
     
     <h2>Further discovery <BlockIcon>🔎</BlockIcon></h2>
-    <p>You can <Link href="/colophon">read my thoughts about the usage of AI</Link>, find out <Link href="/about">more about me</Link>, or <Link href="/projects/internship-fremtind">look at one of my projects</Link>.</p>
+    <p>You can <Link href="/colophon">read my thoughts about the usage of AI</Link>, find out <Link href="/about">more about me</Link>, or <Link href="/work/internship-fremtind">look at one of my projects</Link>.</p>
     </>
   )
 }

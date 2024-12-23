@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { siteTitle } from "../../layout";
 import { projects } from "../../../data/projects";
 import style from "../../../assets/scss/project.module.scss";
@@ -79,7 +78,7 @@ export default function kahos() {
     <h2>Keep looking 👀</h2>
     <div className={projectNav.container}>
     {projects.filter(project => project.id != '0').toReversed().map((project) => (
-      <BlockProjects id={project.id} slug={project.slug} title={project.title} category={project.category} location={project.location.name} thumbnail={project.thumbnail} sizes="(min-width: 400px) 50vw, (min-width: 900px) 33vw, 100vw" />
+      <BlockProjects key={project.id} slug={project.slug} title={project.title} category={project.category} location={project.location.name} thumbnail={project.thumbnail} sizes="(min-width: 400px) 50vw, (min-width: 900px) 33vw, 100vw" />
     ))}
     </div>
     </>

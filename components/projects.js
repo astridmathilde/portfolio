@@ -18,7 +18,7 @@ export default function BlockProjects(project) {
 
   return (
     <>
-      <Link className={style.project} key={project.id} href={"/projects/" + project.slug}>
+      <Link className={style.project} key={project.id} href={"/work/" + project.slug}>
       <article id={project.id}>
       <header>
       <h3 className={style.title + " " + inter.className}>{project.title}</h3>

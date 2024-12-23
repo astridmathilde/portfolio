@@ -34,7 +34,7 @@ export default function Colophon() {
     </BlockEmphasis>
     
     <h2>Further discovery <BlockIcon>🔎</BlockIcon></h2>
-    <p>You can <a href="https://github.com/astridmathilde/portfolio/" target="_blank" rel="nofollow noreferrer">view the code on Github</a>, find out <Link href="/about">more about me</Link>, or look at <Link href="/projects/kahos">one of my projects</Link>.</p>
+    <p>You can <a href="https://github.com/astridmathilde/portfolio/" target="_blank" rel="nofollow noreferrer">view the code on Github</a>, find out <Link href="/about">more about me</Link>, or look at <Link href="/work/kahos">one of my projects</Link>.</p>
     </>
   )
 }
