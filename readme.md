@@ -1,3 +1,3 @@
-## Heia! 👋 I am a designer and developer from Northern Norway 🏔️ with a passion for sustainability. Currently I am doing a master's degree in design at The Oslo School of Architecture and Design, while managing the product development at [Gemz](https://gemz.fashion) 💃
+## heia! 👋 i'm a designer and developer from northern norway 🏔️ with a passion for sustainability. currently I'm doing a master's degree in design at [the oslo school of architecture and design](https://aho.no/en), while managing the product development at [gemz](https://gemz.fashion) 💃
 
-If you want to find out more about me or check out my projects, [this is my portfolio](https://astridmathilde.no)
+if you want to find out more about me or check out my projects, [this is my portfolio](https://astridmathilde.no)
