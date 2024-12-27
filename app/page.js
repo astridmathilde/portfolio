@@ -12,6 +12,9 @@ import { experience } from "../data/resumee";
 export const metadata = {
   metadataBase: new URL('https://astridmathilde.no'),
   title: siteTitle + " – Designer & developer",
+  openGraph: {
+    images: '/opengraph-image.jpg',
+  },
   description: 'Heia! I am a designer and developer from Northern Norway with a passion for sustainability. Currently I am doing a masters degree in design at The Oslo School of Architecture and Design, while managing the product development at Gemz.'
 }
 
