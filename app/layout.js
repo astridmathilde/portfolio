@@ -31,7 +31,7 @@ export default function Layout({ children }) {
     <Wrapper>
     <Providers>
     <header id={styles.header}>
-    <h1 className={styles.site_title}><a href="/">{siteTitle}</a></h1>
+    <h1 className={styles.site_title}><a href="/">Astrid Mathilde Boberg</a></h1>
     <nav className={styles.navigation}>
     <ul>
     <li key="work"><Link href="/work">Work</Link></li>

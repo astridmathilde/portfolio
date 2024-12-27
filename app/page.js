@@ -12,7 +12,7 @@ import { experience } from "../data/resumee";
 export const metadata = {
   metadataBase: new URL('https://astridmathilde.no'),
   title: siteTitle + " – Designer & developer",
-  description: 'Heia! I am a designer from Northern Norway with a background in web development and a passion for sustainability, currently doing a masters degree in design at The Oslo School of Architecture and Design while being in charge of the product development at Gemz.'
+  description: 'Heia! I am a designer and developer from Northern Norway with a passion for sustainability. Currently I am doing a masters degree in design at The Oslo School of Architecture and Design, while managing the product development at Gemz.'
 }
 
 export default function Index() {
