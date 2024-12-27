@@ -10,7 +10,7 @@ export const metadata = {
   metadataBase: new URL('https://astridmathilde.no/colophon'),
   title: pageTitle + ' – ' + siteTitle,
    openGraph: {
-    images: '/opengraph-image.jpg',
+    images: 'https://astridmathilde.no/opengraph-image.jpg',
   },
 }
 

@@ -7,7 +7,10 @@ const pageTitle = 'My life lately';
 
 export const metadata = {
   metadataBase: new URL('https://astridmathilde.no/now'),
-  title: pageTitle + ' – ' + siteTitle
+  title: pageTitle + ' – ' + siteTitle,
+   openGraph: {
+    images: 'https://astridmathilde.no/opengraph-image.jpg',
+  }
 }
 
 export default function Colophon() {
