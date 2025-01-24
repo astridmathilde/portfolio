@@ -30,3 +30,5 @@ assets/videos/*
 !assets/videos/*.js
 !assets/videos/*.ts
 public/_next-video
+
+certificates

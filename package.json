@@ -2,7 +2,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "https": "next dev --experimental-https"
   },
   "dependencies": {
     "@nextui-org/react": "^2.4.6",
