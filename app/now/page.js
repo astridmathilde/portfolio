@@ -8,7 +8,7 @@ const pageTitle = 'My life lately';
 export const metadata = {
   metadataBase: new URL('https://astridmathilde.no/now'),
   title: pageTitle + ' – ' + siteTitle,
-   openGraph: {
+  openGraph: {
     images: 'https://astridmathilde.no/opengraph-image.jpg',
   }
 }
@@ -17,25 +17,23 @@ export default function Colophon() {
   return (
     <>
     <h2>My life lately <BlockIcon>✨</BlockIcon></h2>
-    <p>Moved to Oslo four years ago for my studies, about to finish my third year at <a href="https://aho.no" target="_blank" rel="external">The Oslo School of Architecture and Design</a> after having a break. I enjoy going to concerts, doing yoga and spending time with horses. Also, I recently joined the startup company <a href="https://www.gemz.fashion/" target="_blank" rel="external">Gemz</a> as their product lead, and we just started working on the MVP, which is a lot of fun!</p>
-
-        <p className={utils.small}>Last updated December 18th, 2024. Inspired by <a href="https://nownownow.com/about" target="_blank" rel="external">Now</a>.</p>
-
+    <p>Continuing on my third year at <a href="https://aho.no/en" target="_blank" rel="external">The Oslo School of Architecture and Design</a> after having a break. I might go on an exchange this fall. In December I joined the startup <a href="https://www.gemz.fashion/" target="_blank" rel="external">Gemz</a> as their head of product and CTO, currently working on the MVP. I spend my days trying to find a good way to balance this with my school projects, doing yoga and listening to music. I have also started writing more, might share something at some point.</p>
+    
+    <p className={utils.small}>Last updated on January 24th, 2025. Inspired by <a href="https://nownownow.com/about" target="_blank" rel="external">Now</a>.</p>
+    
     
     <h3>Currently reading <BlockIcon>📚</BlockIcon></h3>
     <ul>
-    <li><em>The design of everyday things</em>, Don Norman</li>
-    <li><em>Radical Focus</em>, Christina Wodtke</li>
     <li><em>Bedre produkter</em>, Ida Aalen</li>
     <li><em>Intermezzo</em>, Sally Rooney</li>
     <li><em>Outline</em>, Rachel Cusk</li>
+    <li><em>Designing Complexity</em>, Birger Sevaldson</li>
     </ul>
     
     <h3>Music on repeat <BlockIcon>🎧</BlockIcon></h3>
     <ul>
-    <li><a href="https://open.spotify.com/album/5q2iMctlDvEMYVIawF6Vop?si=i2pS51P6T2OXgtlgjDEkHQ" rel="external norefferer" target="_blank">This album</a> by Fred again</li>
-    <li>Bibio, especially the album <a href="https://open.spotify.com/album/5J9NcB7nK8kF7JsJur1V3G?si=2wPkucD9QAy-n8uJXTNBMg" rel="external norefferer" target="_blank"><em>Ambivalence Avenue</em></a></li>
-    <li>My playlist <a href="https://open.spotify.com/album/5q2iMctlDvEMYVIawF6Vop?si=i2pS51P6T2OXgtlgjDEkHQ" rel="external norefferer" target="_blank">"into the zone"</a></li>
+    <li>My playlist "<a href="https://open.spotify.com/playlist/7jC9vbS62NA9tjJyjx4BsX?si=992409c7f8fb4711" rel="external norefferer" target="_blank">soft stimulants"</a></li>
+    <li>The album <em><a href="https://open.spotify.com/album/07iv0tkKefJPUp9RFDOuNQ?si=XFWIOAjYQIC5iTCS6SBp0Q" rel="external norefferer" target="_blank">New Light</a></em> by Gidge</li>
     </ul>
     
     <h2>Further discovery <BlockIcon>🔎</BlockIcon></h2>

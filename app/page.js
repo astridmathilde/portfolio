@@ -21,7 +21,7 @@ export const metadata = {
 export default function Index() {
   return (
     <>
-    <BlockDisplay>Heia! <BlockIcon>👋</BlockIcon> I am a designer and developer from Northern Norway <BlockIcon>🏔️</BlockIcon> with a passion for sustainability. Currently I am doing a master's degree in design at <a href="https://aho.no/en" target="_blank" rel="external">The Oslo School of Architecture and Design</a>, while managing the product development at <a href="https://www.gemz.fashion/" target="_blank" rel="external">Gemz</a> 💃</BlockDisplay>
+    <BlockDisplay>Heia! <BlockIcon>👋</BlockIcon> I am a designer and developer from Northern Norway <BlockIcon>🏔️</BlockIcon> with a passion for sustainability. Currently I am doing a master's degree in design at <a href="https://aho.no/en" target="_blank" rel="external">The Oslo School of Architecture and Design</a>, while leading the product development at <a href="https://www.gemz.fashion/" target="_blank" rel="external">Gemz</a> 💃</BlockDisplay>
     
     
     <h2 className={utils.screen_reader_text}>This is some of my projects 👇</h2>
@@ -38,11 +38,11 @@ export default function Index() {
     ))}
     
     <h2>Life lately <BlockIcon>✨</BlockIcon></h2>
-    <p>Moved to Oslo four years ago for my studies, about to finish my third year at <a href="https://aho.no" target="_blank" rel="external">The Oslo School of Architecture and Design</a> after having a break. I enjoy going to concerts, doing yoga and spending time with horses. Also, I recently joined the startup company <a href="https://www.gemz.fashion/" target="_blank" rel="external">Gemz</a> as their product lead, and we just started working on the MVP, which is a lot of fun!</p>
+    <p>Continuing on my third year at <a href="https://aho.no/en" target="_blank" rel="external">The Oslo School of Architecture and Design</a> after having a break. I might go on an exchange this fall. In December I joined the startup <a href="https://www.gemz.fashion/" target="_blank" rel="external">Gemz</a> as their head of product and CTO, currently working on the MVP. I spend my days trying to find a good way to balance this with my school projects, doing yoga and listening to music. I have also started writing more, might share something at some point.</p>
     
-    <p className={utils.small}>Last updated December 18th, 2024. Inspired by <a href="https://nownownow.com/about" target="_blank" rel="external">Now</a>.</p>
+    <p className={utils.small}>Last updated on January 24th, 2025. Inspired by <a href="https://nownownow.com/about" target="_blank" rel="external">Now</a>.</p>
     
-    
+  
     <h2>Contact <BlockIcon>🤝</BlockIcon></h2>
     <p>My email is <a href="mailto:heia@astridmathilde.no?subject=Heia!">heia@astridmathilde.no</a>, but you can also write to me on <a href="https://instagram.com/astridmathildeb" target="_blank" rel="nofollow noreferrer">Instagram</a> or <a href="https://www.linkedin.com/in/astridmathilde/" target="_blank" rel="nofollow noreferrer">add me on LinkedIn</a>!</p>
     

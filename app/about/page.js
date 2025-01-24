@@ -41,6 +41,7 @@ export default function Resumee() {
       <BlockResumee key={education.id} position={education.grade} locationUrl={education.location.url} locationName={education.location.name} description={education.description} time={education.time} />
     ))}
     
+    
     <div className={style.container}>
     <BlockRow>
     {skills.map((skills) => (
