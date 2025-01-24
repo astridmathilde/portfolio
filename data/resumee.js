@@ -2,7 +2,7 @@ export const experience = [
     {
     "id": 10,
     "time": "December 2024->",
-    "position": "Product Lead",
+    "position": "Head of Product / CTO",
     "location": {
       "name": "Gemz Technology",
       "url": "https://gemz.fashion"
@@ -27,7 +27,7 @@ export const experience = [
       "name": "Fremtind Forsikring",
       "url": "https://www.fremtind.no/"
     },
-    "description": "A summer internship where I worked in a multi-disiplinary product team with 3 other interns, designing and developing an internal application for <a href=\"/projects/internship-fremtind\" rel=\"external\" target=\"_blank\">managing the configuration of insurance products</a>."
+    "description": "A summer internship where I worked in a multi-disiplinary product team with 3 other interns, designing and developing an internal application for <a href=\"/work/internship-fremtind\">managing the configuration of insurance products</a>."
   },
   {
     "id": 7,
@@ -120,7 +120,7 @@ export const education = [
       "name": "The Oslo School of Architecture and Design",
       "url": "https://aho.no"
     },
-    "description": "I specialize in interaction design and service design, and in November 2022 I contributed with establishing the <a href=\"https://www.arkitektur.no/aktuelt/utdanning/krever-mer-kunnskap-om-klima-paa-studiet\" rel=\"external\" target=\"_blank\">student association KAHOS</a>, aiming to strengthen the students’ knowledge about sustainablility to meet future needs. Up until January 2024 I was responsible for <a href=\"projects/kahos\">graphic design and marketing</a>."
+    "description": "Specializing in designing digital products and services. In November 2022 I contributed with the establishment of the <a href=\"work/kahos\">student association KAHOS</a>, and up until January 2024 I was responsible for graphic design and marketing."
   }
 ];
 
